@@ -11,7 +11,7 @@
 }
 
 #about {
-  height: 100vh;
+  height: 120vh;
   background-color: #000;
 }
 #about .about_tit {
@@ -89,7 +89,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: -72%;
+  bottom: -96%;
   left: 0;
   margin: auto;
   width: 34px;
