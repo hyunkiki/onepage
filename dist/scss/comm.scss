@@ -9,31 +9,29 @@
 
 $md: 768px;
 
-<<<<<<< HEAD
 // .sec-g {
 //     padding: 75px 0;
 // }
 
 #about {
-    .about_tit {
-        font-family: 'Noto Serif KR', serif;
-        font-size: 3.125rem;
-        color: #fff;
-    }
+  .about_tit {
+    font-family: "Noto Serif KR", serif;
+    font-size: 3.125rem;
+    color: #fff;
+  }
 
-    p {
-        font-family: 'Noto Serif KR', serif;
-        color: #fff;
-        font-size: 1.125rem;
-    }
+  p {
+    font-family: "Noto Serif KR", serif;
+    color: #fff;
+    font-size: 1.125rem;
+  }
 
-    .profile_img {
-        width: 80%;
-        margin-left: 70px;
-    }
+  .profile_img {
+    width: 80%;
+    margin-left: 70px;
+  }
 }
 
-=======
 .sec-g {
   padding: 200px 0;
 }
@@ -63,7 +61,6 @@ $md: 768px;
   background-color: #000;
 }
 
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 #portfolio {
   height: 100vh;
   background-color: #000;
@@ -85,61 +82,55 @@ $md: 768px;
     // align-items: flex-end;
     width: 100%;
     height: 100%;
-
-<<<<<<< HEAD
     // .profile_photo {
     //     margin-right: 100px;
     // }
-=======
     li {
       margin-bottom: 30px;
     }
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 
     .privacy {
       font-size: 1.875rem;
       color: #fff;
+      li {
+        margin-bottom: 30px;
+        display: block;
+      }
 
-<<<<<<< HEAD
-        li {
-            margin-bottom: 30px;
-            display: block;
+      .privacy {
+        font-size: 1.875rem;
+        color: #fff;
+
+        .tel::after {
+          content: "\f3cd";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          font-size: 20px;
         }
 
-        .privacy {
-            font-size: 1.875rem;
-            color: #fff;
-
-            .tel::after {
-                content: "\f3cd";
-                font-family: 'Line Awesome Free';
-                font-weight: 900;
-                font-size: 20px;
-            }
-
-            .email::after {
-                content: "\f0e0";
-                font-family: 'Line Awesome Free';
-                font-weight: 900;
-                font-size: 20px;
-            }
+        .email::after {
+          content: "\f0e0";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          font-size: 20px;
         }
+      }
 
-        h2 {
-            font-size: 1.875rem;
-            color: #fff;
-            font-family: 'Noto Serif KR', serif;
+      h2 {
+        font-size: 1.875rem;
+        color: #fff;
+        font-family: "Noto Serif KR", serif;
+      }
+
+      img {
+        width: 10%;
+        margin-right: 20px;
+
+        &:nth-child(6) {
+          border-radius: 10px;
         }
+      }
 
-        img {
-            width: 10%;
-            margin-right: 20px;
-
-            &:nth-child(6) {
-                border-radius: 10px;
-            }
-        }
-=======
       &::before {
         display: none;
       }
@@ -147,7 +138,6 @@ $md: 768px;
       strong {
         margin-right: 20px;
       }
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
     }
 
     h2 {
@@ -176,17 +166,16 @@ $md: 768px;
 }
 
 .scroll-downs {
-<<<<<<< HEAD
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -75%;
-    left: 0;
-    margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -75%;
+  left: 0;
+  margin: auto;
 
-    width: 34px;
-    height: 55px;
-=======
+  width: 34px;
+  height: 55px;
+
   position: absolute;
   top: 0;
   right: 0;
@@ -195,7 +184,6 @@ $md: 768px;
   margin: auto;
   width: 34px;
   height: 55px;
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 }
 
 .mousey {
@@ -246,77 +234,73 @@ $md: 768px;
 // }
 
 #header {
-<<<<<<< HEAD
-    position: fixed;
-    top: 0;
-    left: 0;
-    // height: 40px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 
-    // height: 80px;
-    // padding: 0 30px;
-    // background-color: #000 !important;
-
+  // height: 80px;
+  // padding: 0 30px;
+  // background-color: #000 !important;
 }
 
 #navbar-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    margin-right: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin-right: 50px;
 
-    li {
-        display: block;
+  li {
+    display: block;
 
-        &.active a {
-            color: red;
-        }
+    &.active a {
+      color: red;
     }
+  }
 
-    a {
-        padding: 20px 30px;
-        color: #fff;
+  a {
+    padding: 20px 30px;
+    color: #fff;
 
-        &:hover {
-            color: red;
-        }
+    &:hover {
+      color: red;
     }
+  }
 }
 
 #fp-nav {
-    ul li a.active span {
-        height: 12px;
-        width: 12px;
-        margin: -6px 0 0 -6px;
-        border-radius: 100%;
-    }
+  ul li a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+  }
 }
 
 .sec1 {
-    background: gray;
+  background: gray;
 }
 
 .sec2 {
-    background: gray;
+  background: gray;
 }
 
 .sec3 {
-    background: gray;
+  background: gray;
 }
 
 .sec4 {
-    background: gray;
-=======
+  background: gray;
   height: 80px;
   padding: 0 30px;
   background-color: #000 !important;
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 }
 
 .container-fluid {
@@ -346,17 +330,16 @@ $md: 768px;
 // }
 
 #jumbotron {
-<<<<<<< HEAD
-    h1 {
-        font-size: 8rem;
-        font-family: 'Bebas Neue', sans-serif;
-    }
+  h1 {
+    font-size: 8rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
 
-    p {
-        font-size: 2.5rem;
-        font-family: 'Bebas Neue', sans-serif;
-    }
-=======
+  p {
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
   height: 100vh;
   background-color: #000 !important;
 
@@ -371,7 +354,6 @@ $md: 768px;
     font-family: "Bebas Neue", sans-serif;
     padding-top: 160px;
   }
->>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 }
 
 #contact {
