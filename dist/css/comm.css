@@ -6,6 +6,17 @@
   --bs-primary-rgb: 0, 255, 187;
 }
 
+<<<<<<< HEAD
+=======
+.sec-g {
+  padding: 200px 0;
+}
+
+#about {
+  height: 120vh;
+  background-color: #000;
+}
+>>>>>>> cac992c1185291b8717645da077f60f6be9221fd
 #about .about_tit {
   font-family: "Noto Serif KR", serif;
   font-size: 3.125rem;
@@ -75,7 +86,11 @@
   position: absolute;
   top: 0;
   right: 0;
+<<<<<<< HEAD
   bottom: -75%;
+=======
+  bottom: -96%;
+>>>>>>> cac992c1185291b8717645da077f60f6be9221fd
   left: 0;
   margin: auto;
   width: 34px;
