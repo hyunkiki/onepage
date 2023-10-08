@@ -10,36 +10,32 @@
   font-family: "Noto Serif KR", serif;
   font-size: 3.125rem;
   color: #fff;
-}
-#about p {
-  font-family: "Noto Serif KR", serif;
-  color: #fff;
-  font-size: 1.125rem;
-}
-#about .profile_img {
-  width: 80%;
-  margin-left: 70px;
-}
-
-.sec-g {
-  padding: 200px 0;
-}
-
-#about {
-  height: 120vh;
-  background-color: #000;
-}
-#about .about_tit {
-  font-family: "Noto Serif KR", serif;
-  font-size: 50px;
-  color: #fff;
+  margin: 0;
+  text-align: center;
 }
 #about p {
   font-family: "Noto Serif KR", serif;
   color: #fff;
 }
 #about .profile_img {
-  width: 100%;
+  width: 70%;
+  margin-left: 100px;
+}
+#about .privacy {
+  font-size: px;
+  color: #fff;
+}
+#about .privacy .tel::after {
+  content: "\f3cd";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 20px;
+}
+#about .privacy .email::after {
+  content: "\f0e0";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 20px;
 }
 
 #service {
@@ -55,7 +51,7 @@
 .profile_container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .profile_container .profile_photo {
   margin-right: 100px;
@@ -65,46 +61,23 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  margin: 0;
 }
 .profile_container .profile_info li {
-  margin-bottom: 30px;
+  display: block;
+  width: 60%;
 }
 .profile_container .profile_info .privacy {
-  font-size: 1.875rem;
-  color: #fff;
+  font-size: 1rem;
 }
 .profile_container .profile_info .privacy li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: block;
-}
-.profile_container .profile_info .privacy .privacy {
-  font-size: 1.875rem;
-  color: #fff;
-}
-.profile_container .profile_info .privacy .privacy .tel::after {
-  content: "\f3cd";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  font-size: 20px;
-}
-.profile_container .profile_info .privacy .privacy .email::after {
-  content: "\f0e0";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  font-size: 20px;
 }
 .profile_container .profile_info .privacy h2 {
   font-size: 1.875rem;
   color: #fff;
   font-family: "Noto Serif KR", serif;
-}
-.profile_container .profile_info .privacy img {
-  width: 10%;
-  margin-right: 20px;
-}
-.profile_container .profile_info .privacy img:nth-child(6) {
-  border-radius: 10px;
 }
 .profile_container .profile_info .privacy::before {
   display: none;
@@ -117,16 +90,8 @@
   color: #fff;
   font-family: "Noto Serif KR", serif;
 }
-.profile_container .profile_info h2::before {
-  display: inline-block;
-  content: "";
-  width: 9px;
-  height: 25px;
-  background: #fff;
-}
 .profile_container .profile_info img {
   width: 10%;
-  margin-right: 20px;
 }
 .profile_container .profile_info img:nth-child(6) {
   border-radius: 10px;
@@ -137,14 +102,6 @@
   top: 0;
   right: 0;
   bottom: -75%;
-  left: 0;
-  margin: auto;
-  width: 34px;
-  height: 55px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -96%;
   left: 0;
   margin: auto;
   width: 34px;
@@ -230,22 +187,20 @@
 }
 
 .sec1 {
-  background: gray;
+  background: url(../../images/wood.jpg) no-repeat;
+  background-size: cover;
 }
 
 .sec2 {
-  background: gray;
+  background: burlywood;
 }
 
 .sec3 {
-  background: gray;
+  background: burlywood;
 }
 
 .sec4 {
-  background: gray;
-  height: 80px;
-  padding: 0 30px;
-  background-color: #000 !important;
+  background: burlywood;
 }
 
 .container-fluid .navbar-brand {
@@ -262,27 +217,18 @@
   color: red;
 }
 
-#jumbotron {
-  height: 100vh;
-  background-color: #000 !important;
-}
 #jumbotron h1 {
-  font-size: 8rem;
+  font-size: 11rem;
   font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
 }
 #jumbotron p {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-family: "Bebas Neue", sans-serif;
-}
-#jumbotron h1 {
-  font-size: 12.5rem;
-  font-family: "Bebas Neue", sans-serif;
-  padding-top: 100px;
-}
-#jumbotron p {
-  font-size: 70px;
-  font-family: "Bebas Neue", sans-serif;
-  padding-top: 160px;
+  text-align: center;
+  color: white;
 }
 
 #contact {
