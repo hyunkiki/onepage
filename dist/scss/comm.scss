@@ -41,7 +41,7 @@ $md: 768px;
 
   .about_tit {
     font-family: "Noto Serif KR", serif;
-    font-size: 3.125rem;
+    font-size: 3.75rem;
     color: #fff;
     margin: 0;
     text-align: center;
@@ -50,40 +50,33 @@ $md: 768px;
   p {
     font-family: "Noto Serif KR", serif;
     color: #fff;
+    font-size: 1.125rem;
   }
-
+  .profile_thumb {
+    width: 30%;
+  }
   .profile_img {
-    width: 70%;
-    margin-left: 100px;
+    width: 100%;
+    margin-left: 60%;
   }
   .privacy {
-    font-size: px;
+    font-size: 1.125rem;
     color: #fff;
 
     .tel::after {
       content: "\f3cd";
       font-family: "Line Awesome Free";
       font-weight: 900;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     .email::after {
       content: "\f0e0";
       font-family: "Line Awesome Free";
       font-weight: 900;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
-}
-
-#service {
-  height: 100vh;
-  background-color: #000;
-}
-
-#portfolio {
-  height: 100vh;
-  background-color: #000;
 }
 
 .profile_container {
@@ -91,15 +84,12 @@ $md: 768px;
   align-items: center;
   justify-content: space-between;
 
-  .profile_photo {
-    margin-right: 100px;
-  }
-
   .profile_info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    align-items: flex-end;
     margin: 0;
     li {
       // margin-bottom: 30px;
@@ -232,16 +222,20 @@ $md: 768px;
     display: block;
 
     &.active a {
-      color: red;
+      text-decoration: none;
+      color: brown;
     }
   }
 
   a {
-    padding: 20px 30px;
+    padding: 30px;
     color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    font-size: 1.5625rem;
 
     &:hover {
-      color: red;
+      color: brown;
     }
   }
 }
