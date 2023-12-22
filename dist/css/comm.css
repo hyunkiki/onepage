@@ -16,7 +16,7 @@
 #about p {
   font-family: "Noto Serif KR", serif;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 20px;
 }
 #about .profile_thumb {
   width: 30%;
@@ -26,20 +26,28 @@
   margin-left: 60%;
 }
 #about .privacy {
-  font-size: 1.125rem;
+  font-size: 20px;
   color: #fff;
 }
 #about .privacy .tel::after {
   content: "\f3cd";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 #about .privacy .email::after {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 20px;
+}
+
+#project .project_tit {
+  font-family: "Noto Serif KR", serif;
+  font-size: 3.75rem;
+  color: #fff;
+  margin: 0;
+  text-align: center;
 }
 
 .profile_container {
@@ -173,13 +181,6 @@
 }
 #navbar-nav a:hover {
   color: brown;
-}
-
-#fp-nav ul li a.active span {
-  height: 12px;
-  width: 12px;
-  margin: -6px 0 0 -6px;
-  border-radius: 100%;
 }
 
 .sec1 {
