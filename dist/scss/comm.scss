@@ -87,6 +87,15 @@ $md: 768px;
     text-align: center;
   }
 }
+#contact {
+  .contact_tit {
+    font-family: "Noto Serif KR", serif;
+    font-size: 3.75rem;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+}
 
 .profile_container {
   display: flex;
@@ -249,15 +258,6 @@ $md: 768px;
   }
 }
 
-// #fp-nav {
-//   ul li a.active span {
-//     height: 12px;
-//     width: 12px;
-//     margin: -6px 0 0 -6px;
-//     border-radius: 100%;
-//   }
-// }
-
 .sec1 {
   background: url(../../images/wood.jpg) no-repeat;
   background-size: cover;
@@ -298,11 +298,6 @@ $md: 768px;
     }
   }
 }
-
-// .navbar-nav .nav-link.active,
-// .navbar-nav .nav-link.show {
-//     color: red;
-// }
 
 #jumbotron {
   // background-color: #000 !important;
