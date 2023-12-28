@@ -83,8 +83,66 @@ $md: 768px;
     font-family: "Noto Serif KR", serif;
     font-size: 3.75rem;
     color: #fff;
-    margin: 0;
+    margin: 50px 0;
     text-align: center;
+  }
+  .project_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .thumb_img {
+      width: 45%;
+      margin-left: 100px;
+      .project_img {
+        width: 100%;
+      }
+    }
+    .right_box {
+      width: 45%;
+      .desc {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 20px 0;
+        font-size: 20px;
+        font-family: "Noto Serif KR", serif;
+        .mini_tit {
+          margin: 0;
+          font-size: 20px;
+          color: #fff;
+          font-family: "Noto Serif KR", serif;
+        }
+        strong {
+          margin-right: 20px;
+          color: #fff;
+          font-family: "Noto Serif KR", serif;
+        }
+        p {
+          margin: 0;
+          color: #fff;
+          font-family: "Noto Serif KR", serif;
+        }
+      }
+      .site {
+        list-style-type: none;
+        width: 70%;
+        display: flex;
+        .link {
+          display: block;
+          width: 150px;
+          border: 1px solid #fff;
+          text-align: center;
+          border-radius: 15px;
+          color: #fff;
+          font-family: "Noto Serif KR", serif;
+          font-size: 20px;
+          text-decoration: none;
+          padding: 20px 0px;
+          margin-right: 20px;
+        }
+      }
+    }
   }
 }
 #contact {

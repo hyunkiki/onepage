@@ -9,7 +9,14 @@ new fullpage("#fullpage", {
 
   navigation: true,
   responsiveWidth: 700,
-  navigationTooltips: ["a", "b", "c", "d"],
+  navigationTooltips: [
+    "HOME",
+    "ABOUT",
+    "PROJECT1",
+    "PROJECT2",
+    "PROJECT3",
+    "CONTACT",
+  ],
   anchors: ["INTRO", "PROFILE", "PORTFOLIO", "CONTACT"],
   menu: ["#navbar-nav"],
   parallax: true,
