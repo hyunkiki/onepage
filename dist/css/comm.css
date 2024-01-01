@@ -7,14 +7,14 @@
 }
 
 #about .about_tit {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
   font-size: 3.75rem;
   color: #fff;
   margin: 0;
   text-align: center;
 }
 #about p {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
   color: #fff;
   font-size: 20px;
 }
@@ -43,7 +43,7 @@
 }
 
 #project .project_tit {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
   font-size: 3.75rem;
   color: #fff;
   margin: 50px 0;
@@ -71,23 +71,23 @@
   width: 80%;
   margin: 20px 0;
   font-size: 20px;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
 }
 #project .project_wrap .right_box .desc .mini_tit {
   margin: 0;
   font-size: 20px;
   color: #fff;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
 }
 #project .project_wrap .right_box .desc strong {
   margin-right: 20px;
   color: #fff;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
 }
 #project .project_wrap .right_box .desc p {
   margin: 0;
   color: #fff;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
 }
 #project .project_wrap .right_box .site {
   list-style-type: none;
@@ -101,7 +101,7 @@
   text-align: center;
   border-radius: 15px;
   color: #fff;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
   font-size: 20px;
   text-decoration: none;
   padding: 20px 0px;
@@ -109,7 +109,7 @@
 }
 
 #contact .contact_tit {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
   font-size: 3.75rem;
   color: #fff;
   margin: 0;
