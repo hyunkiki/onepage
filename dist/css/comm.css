@@ -151,10 +151,10 @@
 .profile_container .profile_info .privacy strong {
   margin-right: 20px;
 }
-.profile_container .profile_info h2 {
+.profile_container .profile_info .about_min_tit {
   font-size: 1.875rem;
   color: #fff;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard";
 }
 .profile_container .profile_info img {
   width: 10%;
