@@ -146,11 +146,42 @@ $md: 768px;
   }
 }
 #contact {
-  .contact_tit {
+  .contact_container {
+    display: flex;
+    align-items: center;
+    .contact_tit {
+      font-family: "Pretendard";
+      font-size: 3.75rem;
+      color: #fff;
+      padding: 20px;
+      margin: 0;
+    }
+    .line {
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+  .contact_email {
+    font-size: 25px;
     font-family: "Pretendard";
-    font-size: 3.75rem;
     color: #fff;
-    margin: 0;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .last_indu {
+    font-size: 25px;
+    font-family: "Pretendard";
+    color: #fff;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .copyright {
+    font-size: 25px;
+    font-family: "Pretendard";
+    color: #fff;
+    margin: 50px 0;
     text-align: center;
   }
 }
@@ -371,12 +402,12 @@ $md: 768px;
 
   p {
     font-size: 1.875rem;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pretendard";
     text-align: center;
     color: white;
   }
 }
 
-#contact {
-  height: 500px;
-}
+// #contact {
+//   height: 500px;
+// }

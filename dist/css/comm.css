@@ -108,11 +108,42 @@
   margin-right: 20px;
 }
 
-#contact .contact_tit {
+#contact .contact_container {
+  display: flex;
+  align-items: center;
+}
+#contact .contact_container .contact_tit {
   font-family: "Pretendard";
   font-size: 3.75rem;
   color: #fff;
+  padding: 20px;
   margin: 0;
+}
+#contact .contact_container .line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+#contact .contact_email {
+  font-size: 25px;
+  font-family: "Pretendard";
+  color: #fff;
+  margin: 50px 0;
+  text-align: center;
+}
+#contact .last_indu {
+  font-size: 25px;
+  font-family: "Pretendard";
+  color: #fff;
+  margin: 50px 0;
+  text-align: center;
+}
+#contact .copyright {
+  font-size: 25px;
+  font-family: "Pretendard";
+  color: #fff;
+  margin: 50px 0;
   text-align: center;
 }
 
@@ -289,11 +320,7 @@
 }
 #jumbotron p {
   font-size: 1.875rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Pretendard";
   text-align: center;
   color: white;
-}
-
-#contact {
-  height: 500px;
 }/*# sourceMappingURL=comm.css.map */

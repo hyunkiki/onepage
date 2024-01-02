@@ -12,12 +12,19 @@ new fullpage("#fullpage", {
   navigationTooltips: [
     "HOME",
     "ABOUT",
-    "PROJECT1",
-    "PROJECT2",
-    "PROJECT3",
+    "PORTFOLIO",
+    "PORTFOLIO2",
+    "PORTFOLIO3",
     "CONTACT",
   ],
-  anchors: ["INTRO", "PROFILE", "PORTFOLIO", "CONTACT"],
+  anchors: [
+    "INTRO",
+    "PROFILE",
+    "PORTFOLIO",
+    "PORTFOLIO2",
+    "PORTFOLIO3",
+    "CONTACT",
+  ],
   menu: ["#navbar-nav"],
   parallax: true,
   onLeave: function (origin, destination, direction) {
