@@ -49,13 +49,17 @@
   margin: 50px 0;
   text-align: center;
 }
-#project .tab_title {
+#project .tab_menu_wrap .tab_menu_box {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
   margin: 0 auto;
 }
-#project .tab_title a {
+#project .tab_menu_wrap .tab_menu_box .tab_box {
+  list-style-type: none;
+}
+#project .tab_menu_wrap .tab_menu_box .tab-menu {
+  display: block;
   font-size: 25px;
   margin-bottom: 50px;
   font-weight: 700;
@@ -68,31 +72,34 @@
   color: #fff;
   text-decoration: none;
 }
-#project .tab_title a:hover {
+#project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
   border: 2px solid brown;
   color: brown;
 }
-#project .tab_title a:active {
+#project .tab_menu_wrap .tab_menu_box .tab-menu.active {
   box-shadow: 0 3px 0 brown;
   border: 2px solid brown;
   color: brown;
 }
-#project .project_wrap {
+#project .tab {
+  display: none;
+}
+#project .tab .project_box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-#project .project_wrap .thumb_img {
+#project .tab .project_box .thumb_img {
   width: 35%;
   margin-left: 200px;
 }
-#project .project_wrap .thumb_img .project_img {
+#project .tab .project_box .thumb_img .project_img {
   width: 100%;
 }
-#project .project_wrap .right_box {
+#project .tab .project_box .right_box {
   width: 45%;
 }
-#project .project_wrap .right_box .desc {
+#project .tab .project_box .right_box .desc {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -101,28 +108,28 @@
   font-size: 20px;
   font-family: "Pretendard";
 }
-#project .project_wrap .right_box .desc .mini_tit {
+#project .tab .project_box .right_box .desc .mini_tit {
   margin: 0;
   font-size: 20px;
   color: #fff;
   font-family: "Pretendard";
 }
-#project .project_wrap .right_box .desc strong {
+#project .tab .project_box .right_box .desc strong {
   margin-right: 20px;
   color: #fff;
   font-family: "Pretendard";
 }
-#project .project_wrap .right_box .desc p {
+#project .tab .project_box .right_box .desc p {
   margin: 0;
   color: #fff;
   font-family: "Pretendard";
 }
-#project .project_wrap .right_box .site {
+#project .tab .project_box .right_box .site {
   list-style-type: none;
   width: 70%;
   display: flex;
 }
-#project .project_wrap .right_box .site .link {
+#project .tab .project_box .right_box .site .link {
   display: block;
   width: 150px;
   border: 1px solid #fff;
@@ -134,6 +141,9 @@
   text-decoration: none;
   padding: 20px 0px;
   margin-right: 20px;
+}
+#project .tab.active_menu {
+  display: block;
 }
 
 #contact .contact_container {

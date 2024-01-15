@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./dist/js/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./dist/js/comm.js"></script>
@@ -161,118 +162,139 @@
             <div class="title d-flex justify-content-center mb-5">
               <h2 class="project_tit">WEB PROJECT</h2>
             </div>
-            <div class="tab_title">
-              <a href="#" class="active">GOAL</a>
-              <a href="#">PARDA</a>
-              <a href="#">GHIBLI</a>
+            <div class="tab_menu_wrap">
+              <ul class="tab_menu_box">
+                <li class="tab_box">
+                  <a href="#" class="tab-menu active" data-id="tab-1">GOAL</a>
+                </li>
+                <li class="tab_box">
+                  <a href="#" class="tab-menu" data-id="tab-2">PARDA</a>
+                </li>
+                <li class="tab_box">
+                  <a href="#" class="tab-menu" data-id="tab-3">GHIBLI</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="tab_contents">
-            <div class="tab_content1 project_wrap" style="display: flex">
-              <div class="thumb_img">
-                <img class="project_img" src="./images/GOAL.png" alt="GOAL" />
+            <div class="tab active_menu" data-id="tab-1">
+              <div class="project_box">
+                <div class="thumb_img">
+                  <img class="project_img" src="./images/GOAL.png" alt="GOAL" />
+                </div>
+                <ul class="right_box">
+                  <li class="desc">
+                    <strong>NAME</strong>
+                    <h3 class="mini_tit">GOAL</h3>
+                  </li>
+                  <li class="desc">
+                    <strong>TYPE</strong>
+                    <p>반응형 웹사이트(PC,TABLET,MOBILE)</p>
+                  </li>
+                  <li class="desc">
+                    <strong>PAGE</strong>
+                    <p>Main,Sub page*3(팀소개,리그팀 리스트,뉴스)</p>
+                  </li>
+                  <li class="desc">
+                    <strong>TOOL</strong>
+                    <p>Figma,Photoshop,HTML,CSS,Javescript,Gnuboard,Git</p>
+                  </li>
+                  <li class="desc">
+                    <strong>기여도</strong>
+                    <p>개인디자인,퍼블리싱 100%</p>
+                  </li>
+                  <li class="site">
+                    <a
+                      class="link"
+                      href="https://www.figma.com/file/S8drWmZREiCnYthFQbBFBo/GOAL?type=design&node-id=0%3A1&mode=design&t=i6ghJizEV90PvEA0-1"
+                    >
+                      FIGMA
+                    </a>
+                    <a
+                      class="link"
+                      href="https://hyunki98.cafe24.com/gnuboard5/"
+                    >
+                      WEB
+                    </a>
+                    <a class="link" href="https://www.goal.com/kr">BEFORE</a>
+                  </li>
+                </ul>
               </div>
-              <ul class="right_box">
-                <li class="desc">
-                  <strong>NAME</strong>
-                  <h3 class="mini_tit">GOAL</h3>
-                </li>
-                <li class="desc">
-                  <strong>TYPE</strong>
-                  <p>반응형 웹사이트(PC,TABLET,MOBILE)</p>
-                </li>
-                <li class="desc">
-                  <strong>PAGE</strong>
-                  <p>Main,Sub page*3(팀소개,리그팀 리스트,뉴스)</p>
-                </li>
-                <li class="desc">
-                  <strong>TOOL</strong>
-                  <p>Figma,Photoshop,HTML,CSS,Javescript,Gnuboard,Git</p>
-                </li>
-                <li class="desc">
-                  <strong>기여도</strong>
-                  <p>개인디자인,퍼블리싱 100%</p>
-                </li>
-                <li class="site">
-                  <a
-                    class="link"
-                    href="https://www.figma.com/file/S8drWmZREiCnYthFQbBFBo/GOAL?type=design&node-id=0%3A1&mode=design&t=i6ghJizEV90PvEA0-1"
-                  >
-                    FIGMA
-                  </a>
-                  <a class="link" href="https://hyunki98.cafe24.com/gnuboard5/">
-                    WEB
-                  </a>
-                  <a class="link" href="https://www.goal.com/kr">BEFORE</a>
-                </li>
-              </ul>
             </div>
-            <div class="tab_content2 project_wrap" style="display: none">
-              <div class="thumb_img">
-                <img class="project_img" src="./images/prada.png" alt="prada" />
+            <div class="tab" data-id="tab-2">
+              <div class="project_box">
+                <div class="thumb_img">
+                  <img
+                    class="project_img"
+                    src="./images/prada.png"
+                    alt="prada"
+                  />
+                </div>
+                <ul class="right_box">
+                  <li class="desc">
+                    <strong>NAME</strong>
+                    <h3 class="mini_tit">PRADA</h3>
+                  </li>
+                  <li class="desc">
+                    <strong>TYPE</strong>
+                    <p>반응형 웹사이트(PC,MOBILE)</p>
+                  </li>
+                  <li class="desc">
+                    <strong>PAGE</strong>
+                    <p>Main,Sub page*2(상품상세,상품리스트)</p>
+                  </li>
+                  <li class="desc">
+                    <strong>TOOL</strong>
+                    <p>Photoshop,HTML,CSS,Javescript,Git</p>
+                  </li>
+                  <li class="desc">
+                    <strong>기여도</strong>
+                    <p>개인디자인,퍼블리싱 100%</p>
+                  </li>
+                  <li class="site">
+                    <a class="link" href="../PRADA/index.html"> WEB </a>
+                    <a class="link" href="https://www.prada.com/kr/ko.html">
+                      BEFORE
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="right_box">
-                <li class="desc">
-                  <strong>NAME</strong>
-                  <h3 class="mini_tit">PRADA</h3>
-                </li>
-                <li class="desc">
-                  <strong>TYPE</strong>
-                  <p>반응형 웹사이트(PC,MOBILE)</p>
-                </li>
-                <li class="desc">
-                  <strong>PAGE</strong>
-                  <p>Main,Sub page*2(상품상세,상품리스트)</p>
-                </li>
-                <li class="desc">
-                  <strong>TOOL</strong>
-                  <p>Photoshop,HTML,CSS,Javescript,Git</p>
-                </li>
-                <li class="desc">
-                  <strong>기여도</strong>
-                  <p>개인디자인,퍼블리싱 100%</p>
-                </li>
-                <li class="site">
-                  <a class="link" href="../PRADA/index.html"> WEB </a>
-                  <a class="link" href="https://www.prada.com/kr/ko.html">
-                    BEFORE
-                  </a>
-                </li>
-              </ul>
             </div>
-            <div class="tab_content3 project_wrap" style="display: none">
-              <div class="thumb_img">
-                <img
-                  class="project_img"
-                  src="./images/Ghibli.png"
-                  alt="Ghibli"
-                />
+            <div class="tab" data-id="tab-3">
+              <div class="project_box">
+                <div class="thumb_img">
+                  <img
+                    class="project_img"
+                    src="./images/Ghibli.png"
+                    alt="Ghibli"
+                  />
+                </div>
+                <ul class="right_box">
+                  <li class="desc">
+                    <strong>NAME</strong>
+                    <h3 class="mini_tit">GHIBLI</h3>
+                  </li>
+                  <li class="desc">
+                    <strong>TYPE</strong>
+                    <p>원페이지</p>
+                  </li>
+                  <li class="desc">
+                    <strong>PAGE</strong>
+                    <p>Main</p>
+                  </li>
+                  <li class="desc">
+                    <strong>TOOL</strong>
+                    <p>Photoshop,HTML,CSS,JQuery,Git</p>
+                  </li>
+                  <li class="desc">
+                    <strong>기여도</strong>
+                    <p>개인디자인,퍼블리싱 100%</p>
+                  </li>
+                  <li class="site">
+                    <a class="link" href="../Ghibli/index.html"> WEB </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="right_box">
-                <li class="desc">
-                  <strong>NAME</strong>
-                  <h3 class="mini_tit">GHIBLI</h3>
-                </li>
-                <li class="desc">
-                  <strong>TYPE</strong>
-                  <p>원페이지</p>
-                </li>
-                <li class="desc">
-                  <strong>PAGE</strong>
-                  <p>Main</p>
-                </li>
-                <li class="desc">
-                  <strong>TOOL</strong>
-                  <p>Photoshop,HTML,CSS,JQuery,Git</p>
-                </li>
-                <li class="desc">
-                  <strong>기여도</strong>
-                  <p>개인디자인,퍼블리싱 100%</p>
-                </li>
-                <li class="site">
-                  <a class="link" href="../Ghibli/index.html"> WEB </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

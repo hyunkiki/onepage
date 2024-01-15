@@ -86,90 +86,103 @@ $md: 768px;
     margin: 50px 0;
     text-align: center;
   }
-  .tab_title {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: 0 auto;
-    a {
-      font-size: 25px;
-      margin-bottom: 50px;
-      font-weight: 700;
-      text-align: center;
-      width: 200px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      padding: 15px;
-      transition: all 0.3s;
-      color: #fff;
-      text-decoration: none;
-      &:hover {
-        border: 2px solid brown;
-        color: brown;
+  .tab_menu_wrap {
+    .tab_menu_box {
+      display: flex;
+      justify-content: space-evenly;
+      width: 60%;
+      margin: 0 auto;
+      .tab_box {
+        list-style-type: none;
       }
-      &:active {
-        box-shadow: 0 3px 0 brown;
-        border: 2px solid brown;
-        color: brown;
+      .tab-menu {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 50px;
+        font-weight: 700;
+        text-align: center;
+        width: 200px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 15px;
+        transition: all 0.3s;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          border: 2px solid brown;
+          color: brown;
+        }
+        &.active {
+          box-shadow: 0 3px 0 brown;
+          border: 2px solid brown;
+          color: brown;
+        }
       }
     }
   }
-  .project_wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .thumb_img {
-      width: 35%;
-      margin-left: 200px;
-      .project_img {
-        width: 100%;
+  .tab {
+    display: none;
+    .project_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .thumb_img {
+        width: 35%;
+        margin-left: 200px;
+        .project_img {
+          width: 100%;
+        }
+      }
+      .right_box {
+        width: 45%;
+        .desc {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          width: 80%;
+          margin: 20px 0;
+          font-size: 20px;
+          font-family: "Pretendard";
+          .mini_tit {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+            font-family: "Pretendard";
+          }
+          strong {
+            margin-right: 20px;
+            color: #fff;
+            font-family: "Pretendard";
+          }
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: "Pretendard";
+          }
+        }
+        .site {
+          list-style-type: none;
+          width: 70%;
+          display: flex;
+          .link {
+            display: block;
+            width: 150px;
+            border: 1px solid #fff;
+            text-align: center;
+            border-radius: 15px;
+            color: #fff;
+            font-family: "Pretendard";
+            font-size: 20px;
+            text-decoration: none;
+            padding: 20px 0px;
+            margin-right: 20px;
+          }
+        }
       }
     }
-    .right_box {
-      width: 45%;
-      .desc {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        width: 80%;
-        margin: 20px 0;
-        font-size: 20px;
-        font-family: "Pretendard";
-        .mini_tit {
-          margin: 0;
-          font-size: 20px;
-          color: #fff;
-          font-family: "Pretendard";
-        }
-        strong {
-          margin-right: 20px;
-          color: #fff;
-          font-family: "Pretendard";
-        }
-        p {
-          margin: 0;
-          color: #fff;
-          font-family: "Pretendard";
-        }
-      }
-      .site {
-        list-style-type: none;
-        width: 70%;
-        display: flex;
-        .link {
-          display: block;
-          width: 150px;
-          border: 1px solid #fff;
-          text-align: center;
-          border-radius: 15px;
-          color: #fff;
-          font-family: "Pretendard";
-          font-size: 20px;
-          text-decoration: none;
-          padding: 20px 0px;
-          margin-right: 20px;
-        }
-      }
+
+    &.active_menu {
+      display: block;
     }
   }
 }
