@@ -46,35 +46,70 @@ $md: 768px;
     margin: 0;
     text-align: center;
   }
-
-  p {
-    font-family: "Pretendard";
-    color: #fff;
-    font-size: 20px;
-  }
-  .profile_thumb {
-    width: 30%;
-  }
-  .profile_img {
-    width: 100%;
-    margin-left: 60%;
-  }
-  .privacy {
-    font-size: 20px;
-    color: #fff;
-
-    .tel::after {
-      content: "\f3cd";
-      font-family: "Line Awesome Free";
-      font-weight: 900;
-      font-size: 20px;
+  .profile_wrap {
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .profile_img {
+      width: 35%;
+      img {
+        width: 100%;
+      }
     }
-
-    .email::after {
-      content: "\f0e0";
-      font-family: "Line Awesome Free";
-      font-weight: 900;
-      font-size: 20px;
+    .profile_contents {
+      display: flex;
+      .txt_box {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 350px;
+        padding: 0;
+        li {
+          list-style-type: none;
+          h3 {
+            display: block;
+            font-size: 35px;
+            font-family: "Pretendard";
+            font-weight: bold;
+            color: brown;
+            margin: 0;
+          }
+          .phone {
+            &::before {
+              content: "\f095";
+              font-family: "Line Awesome Free";
+              font-weight: 900;
+              margin-right: 10px;
+            }
+          }
+          .email_adr {
+            &::before {
+              content: "\f0e0";
+              font-family: "Line Awesome Free";
+              font-weight: 900;
+              margin-right: 10px;
+            }
+          }
+          span {
+            display: block;
+            font-size: 25px;
+            font-family: "Pretendard";
+            margin: 20px 0;
+            color: #fff;
+          }
+          strong {
+            color: rgb(165, 42, 42, 0.5);
+            display: block;
+            margin-bottom: 10px;
+            font-family: "Pretendard";
+          }
+        }
+        &:last-child {
+          width: 500px;
+          margin-left: 50px;
+        }
+      }
     }
   }
 }
@@ -227,63 +262,6 @@ $md: 768px;
   }
 }
 
-.profile_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .profile_info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: flex-end;
-    margin: 0;
-    li {
-      // margin-bottom: 30px;
-      display: block;
-      width: 60%;
-    }
-
-    .privacy {
-      font-size: 1rem;
-      // color: #fff;
-      li {
-        margin-bottom: 20px;
-        display: block;
-      }
-
-      h2 {
-        font-size: 1.875rem;
-        color: #fff;
-        font-family: "Noto Serif KR", serif;
-      }
-
-      &::before {
-        display: none;
-      }
-
-      strong {
-        margin-right: 20px;
-      }
-    }
-
-    .about_min_tit {
-      font-size: 1.875rem;
-      color: #fff;
-      font-family: "Pretendard";
-    }
-
-    img {
-      width: 10%;
-
-      &:nth-child(6) {
-        border-radius: 10px;
-      }
-    }
-  }
-}
-
 .scroll-downs {
   position: absolute;
   top: 0;
@@ -389,8 +367,7 @@ $md: 768px;
 }
 
 .sec1 {
-  background: url(../../images/wood.jpg) no-repeat;
-  background-size: cover;
+  background: burlywood;
 }
 
 .sec2 {
@@ -406,6 +383,10 @@ $md: 768px;
   // height: 80px;
   // padding: 0 30px;
   // background-color: #000 !important;
+}
+
+.sec5 {
+  background: burlywood;
 }
 
 .container-fluid {

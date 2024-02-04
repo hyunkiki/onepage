@@ -9,8 +9,8 @@ new fullpage("#fullpage", {
 
   navigation: true,
   responsiveWidth: 700,
-  navigationTooltips: ["HOME", "ABOUT", "PORTFOLIO", "CONTACT"],
-  anchors: ["INTRO", "PROFILE", "PORTFOLIO", "CONTACT"],
+  navigationTooltips: ["HOME", "ABOUT", "SKILL", "PORTFOLIO", "CONTACT"],
+  anchors: ["INTRO", "PROFILE", "SKILL", "PORTFOLIO", "CONTACT"],
   menu: ["#navbar-nav"],
   parallax: true,
   onLeave: function (origin, destination, direction) {

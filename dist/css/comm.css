@@ -13,33 +13,67 @@
   margin: 0;
   text-align: center;
 }
-#about p {
-  font-family: "Pretendard";
-  color: #fff;
-  font-size: 20px;
+#about .profile_wrap {
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#about .profile_thumb {
-  width: 30%;
+#about .profile_wrap .profile_img {
+  width: 35%;
 }
-#about .profile_img {
+#about .profile_wrap .profile_img img {
   width: 100%;
-  margin-left: 60%;
 }
-#about .privacy {
-  font-size: 20px;
-  color: #fff;
+#about .profile_wrap .profile_contents {
+  display: flex;
 }
-#about .privacy .tel::after {
-  content: "\f3cd";
+#about .profile_wrap .profile_contents .txt_box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 350px;
+  padding: 0;
+}
+#about .profile_wrap .profile_contents .txt_box li {
+  list-style-type: none;
+}
+#about .profile_wrap .profile_contents .txt_box li h3 {
+  display: block;
+  font-size: 35px;
+  font-family: "Pretendard";
+  font-weight: bold;
+  color: brown;
+  margin: 0;
+}
+#about .profile_wrap .profile_contents .txt_box li .phone::before {
+  content: "\f095";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 20px;
+  margin-right: 10px;
 }
-#about .privacy .email::after {
+#about .profile_wrap .profile_contents .txt_box li .email_adr::before {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 20px;
+  margin-right: 10px;
+}
+#about .profile_wrap .profile_contents .txt_box li span {
+  display: block;
+  font-size: 25px;
+  font-family: "Pretendard";
+  margin: 20px 0;
+  color: #fff;
+}
+#about .profile_wrap .profile_contents .txt_box li strong {
+  color: rgba(165, 42, 42, 0.5);
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Pretendard";
+}
+#about .profile_wrap .profile_contents .txt_box:last-child {
+  width: 500px;
+  margin-left: 50px;
 }
 
 #project .project_tit {
@@ -185,53 +219,6 @@
   text-align: center;
 }
 
-.profile_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.profile_container .profile_info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: flex-end;
-  margin: 0;
-}
-.profile_container .profile_info li {
-  display: block;
-  width: 60%;
-}
-.profile_container .profile_info .privacy {
-  font-size: 1rem;
-}
-.profile_container .profile_info .privacy li {
-  margin-bottom: 20px;
-  display: block;
-}
-.profile_container .profile_info .privacy h2 {
-  font-size: 1.875rem;
-  color: #fff;
-  font-family: "Noto Serif KR", serif;
-}
-.profile_container .profile_info .privacy::before {
-  display: none;
-}
-.profile_container .profile_info .privacy strong {
-  margin-right: 20px;
-}
-.profile_container .profile_info .about_min_tit {
-  font-size: 1.875rem;
-  color: #fff;
-  font-family: "Pretendard";
-}
-.profile_container .profile_info img {
-  width: 10%;
-}
-.profile_container .profile_info img:nth-child(6) {
-  border-radius: 10px;
-}
-
 .scroll-downs {
   position: absolute;
   top: 0;
@@ -319,8 +306,7 @@
 }
 
 .sec1 {
-  background: url(../../images/wood.jpg) no-repeat;
-  background-size: cover;
+  background: burlywood;
 }
 
 .sec2 {
@@ -332,6 +318,10 @@
 }
 
 .sec4 {
+  background: burlywood;
+}
+
+.sec5 {
   background: burlywood;
 }
 
