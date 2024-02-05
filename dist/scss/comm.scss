@@ -412,16 +412,14 @@ $md: 768px;
 
 #jumbotron {
   // background-color: #000 !important;
-  h1 {
-    font-family: "Pretendard";
-    display: block;
+  #str {
+    height: auto;
+    font-family: sans-serif;
+    font-size: 175px;
     color: #fff;
-    font-size: 144px;
+    font-weight: bold;
     text-align: center;
-    .name_point {
-      font-size: 175px;
-      color: brown;
-    }
+    padding: 0 200px;
   }
   .wavly {
     position: relative;

@@ -339,16 +339,14 @@
   color: red;
 }
 
-#jumbotron h1 {
-  font-family: "Pretendard";
-  display: block;
-  color: #fff;
-  font-size: 144px;
-  text-align: center;
-}
-#jumbotron h1 .name_point {
+#jumbotron #str {
+  height: auto;
+  font-family: sans-serif;
   font-size: 175px;
-  color: brown;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 200px;
 }
 #jumbotron .wavly {
   position: relative;
