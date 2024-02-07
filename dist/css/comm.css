@@ -14,7 +14,7 @@
   margin: 50px 0;
 }
 #about .profile_wrap {
-  padding: 0 200px;
+  padding: 0 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@
 }
 #about .profile_wrap .profile_contents .txt_box li h3 {
   display: block;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Pretendard";
   font-weight: bold;
   color: brown;
@@ -60,7 +60,7 @@
 }
 #about .profile_wrap .profile_contents .txt_box li span {
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Pretendard";
   margin: 20px 0;
   color: #fff;
@@ -84,32 +84,42 @@
   margin: 50px 0;
 }
 #skill .skill_box {
-  padding: 0 200px;
+  padding: 0px 150px;
   display: flex;
   flex-flow: column wrap;
-  height: 490px;
+  height: 650px;
   margin: 0;
 }
 #skill .skill_box li {
+  width: 45%;
+  margin-bottom: 30px;
   display: flex;
-  list-style-type: none;
-  margin-bottom: 40px;
   flex-flow: row nowrap;
   align-items: center;
-  width: 50%;
 }
 #skill .skill_box li .icon_img_thumb {
   width: 80px;
-  height: 80px;
-  margin-right: 30px;
 }
 #skill .skill_box li .icon_img_thumb .icon_img {
   width: 100%;
 }
 #skill .skill_box li .icon_contents {
+  width: calc(100% - 80px);
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 20px;
+}
+#skill .skill_box li .icon_contents .icon_tit {
+  font-size: 30px;
+  font-family: "Pretendard";
+  color: brown;
+  font-weight: bold;
+}
+#skill .skill_box li .icon_contents .icon_exp {
+  font-size: 20px;
+  font-family: "Pretendard";
+  color: #fff;
+  margin: 20px 0;
 }
 
 #project .project_tit {
@@ -378,11 +388,11 @@
 #jumbotron #str {
   height: auto;
   font-family: "Pretendard";
-  font-size: 144px;
+  font-size: 160px;
   color: #fff;
   font-weight: bold;
   text-align: center;
-  padding: 0 200px;
+  padding: 0 150px;
 }
 #jumbotron .wavly {
   position: relative;
