@@ -167,17 +167,25 @@
 #project .tab .project_box {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 150px;
 }
 #project .tab .project_box .thumb_img {
-  width: 35%;
-  margin-left: 200px;
+  width: 750px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 900;
 }
 #project .tab .project_box .thumb_img .project_img {
   width: 100%;
 }
 #project .tab .project_box .right_box {
   width: 45%;
+  margin: 0;
+  padding: 0;
 }
 #project .tab .project_box .right_box .desc {
   list-style-type: none;
