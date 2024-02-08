@@ -219,6 +219,17 @@ $md: 768px;
         z-index: 900;
         .project_img {
           width: 100%;
+          &:hover {
+            animation: slideUpDown 15s infinite linear;
+          }
+        }
+        @keyframes slideUpDown {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-78%);
+          }
         }
       }
       .right_box {
@@ -241,8 +252,9 @@ $md: 768px;
           }
           strong {
             margin-right: 20px;
-            color: #fff;
+            color: brown;
             font-family: "Pretendard";
+            font-weight: 800;
           }
           p {
             margin: 0;
@@ -423,8 +435,8 @@ $md: 768px;
 
 .sec1 {
   .bg {
-    animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #deb887 50%, #c2904e 50%);
+    animation: slide 9s ease-in-out infinite alternate;
+    background-image: linear-gradient(-70deg, #deb887 50%, #c2904e 50%);
     bottom: 0;
     left: -50%;
     opacity: 0.5;
@@ -435,10 +447,10 @@ $md: 768px;
   }
   .bg2 {
     animation-direction: alternate-reverse;
-    animation-duration: 4s;
+    animation-duration: 7s;
   }
   .bg3 {
-    animation-duration: 5s;
+    animation-duration: 7s;
   }
   @keyframes slide {
     0% {
