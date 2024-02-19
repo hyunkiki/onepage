@@ -18,15 +18,26 @@ new fullpage("#fullpage", {
   },
 });
 
-var string = "HYUNKI KIM'S PORTFOLIO"; //출력할 문자열을 변수 string에 할당합니다.
-var str = string.split(""); // 문자열을 한 글자씩 나누어 배열로 만듭니다. 이렇게 하면 문자열의 각 문자를 배열의 요소로 갖게 됩니다.
-var el = document.getElementById("str"); // HTML 문서에서 id가 'str'인 요소를 찾아서 el 변수에 할당합니다. 이 요소는 JavaScript로 제어될 대상이며, 문자열이 출력될 곳입니다.
-(function animate() {
-  str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
-  //str 배열의 길이가 0보다 크면, 배열의 첫 번째 요소를 el 요소의 innerHTML에 추가합니다. 추가된 요소는 배열에서 제거됩니다. 그렇지 않으면, setTimeout 함수를 종료합니다.
-  var running = setTimeout(animate, 90);
-  // animate 함수를 90밀리초마다 호출하여 애니메이션 효과를 생성합니다.
-})(); // 익명 함수를 정의하고 즉시 호출합니다. 이 함수는 애니메이션을 실행합니다.
+var strings = ["HYUNKI KIM'S", "PORTFOLIO"]; // 출력할 문자열을 배열로 나눕니다.
+var el = document.getElementById("str"); // HTML 문서에서 id가 'str'인 요소를 찾아서 el 변수에 할당합니다.
+
+function animateStrings(index) {
+  var string = strings[index];
+  var str = string.split(""); // 문자열을 한 글자씩 나누어 배열로 만듭니다.
+  var interval = setInterval(function () {
+    if (str.length > 0) {
+      el.innerHTML += str.shift(); // 배열의 첫 번째 요소를 el 요소의 innerHTML에 추가합니다.
+    } else {
+      clearInterval(interval); // 모든 문자열이 출력되면 interval을 종료합니다.
+      if (index < strings.length - 1) {
+        el.innerHTML += "<br>"; // 줄바꿈을 추가합니다.
+        animateStrings(index + 1); // 다음 문자열을 출력하기 위해 재귀적으로 함수를 호출합니다.
+      }
+    }
+  }, 90);
+}
+
+animateStrings(0); // 함수 호출로 애니메이션을 시작합니다.
 
 $(document).ready(function () {
   //$(document).ready(function () {...}); 이부분은 문서가 완전히 로드되면 실행되는 jQuery 코드를 정의함.
