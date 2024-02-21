@@ -153,7 +153,7 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span {
   height: 12px;
   width: 12px;
-  background-color: brown;
+  background-color: #336;
   margin: -6px 0 0 -6px;
   border-radius: 100%;
 }

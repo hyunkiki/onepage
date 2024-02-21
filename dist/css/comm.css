@@ -8,10 +8,10 @@
 
 #about .about_tit {
   font-family: "Pretendard";
-  font-size: 3.75rem;
+  font-size: 70px;
   color: #fff;
-  text-align: center;
   margin: 50px 0;
+  padding: 0 150px;
 }
 #about .profile_wrap {
   padding: 0 150px;
@@ -39,7 +39,7 @@
 #about .profile_wrap .profile_box .intro_my em {
   font-style: normal;
   font-family: "Pretendard";
-  color: rgba(165, 42, 42, 0.5);
+  color: rgba(51, 51, 102, 0.5);
   font-weight: 900;
   margin: 0;
 }
@@ -62,7 +62,7 @@
   font-size: 30px;
   font-family: "Pretendard";
   font-weight: bold;
-  color: brown;
+  color: #336;
   margin: 0;
 }
 #about .profile_wrap .profile_contents .txt_box li .phone::before {
@@ -85,7 +85,7 @@
   color: #fff;
 }
 #about .profile_wrap .profile_contents .txt_box li strong {
-  color: rgba(165, 42, 42, 0.5);
+  color: rgba(51, 51, 102, 0.5);
   display: block;
   margin-bottom: 10px;
   font-family: "Pretendard";
@@ -97,10 +97,10 @@
 
 #skill .skill_tit {
   font-family: "Pretendard";
-  font-size: 3.75rem;
+  font-size: 70px;
   color: #fff;
-  text-align: center;
   margin: 50px 0;
+  padding: 0 150px;
 }
 #skill .skill_box {
   padding: 0px 150px;
@@ -108,6 +108,7 @@
   flex-flow: column wrap;
   height: 650px;
   margin: 0;
+  align-content: space-between;
 }
 #skill .skill_box li {
   width: 45%;
@@ -131,7 +132,7 @@
 #skill .skill_box li .icon_contents .icon_tit {
   font-size: 30px;
   font-family: "Pretendard";
-  color: brown;
+  color: #336;
   font-weight: bold;
 }
 #skill .skill_box li .icon_contents .icon_exp {
@@ -143,10 +144,10 @@
 
 #project .project_tit {
   font-family: "Pretendard";
-  font-size: 3.75rem;
+  font-size: 70px;
   color: #fff;
   margin: 50px 0;
-  text-align: center;
+  padding: 0 150px;
 }
 #project .tab_menu_wrap .tab_menu_box {
   display: flex;
@@ -172,13 +173,13 @@
   text-decoration: none;
 }
 #project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid #336;
+  color: #336;
 }
 #project .tab_menu_wrap .tab_menu_box .tab-menu.active {
-  box-shadow: 0 3px 0 brown;
-  border: 2px solid brown;
-  color: brown;
+  box-shadow: 0 3px 0 #336;
+  border: 2px solid #336;
+  color: #336;
 }
 #project .tab {
   display: none;
@@ -234,7 +235,7 @@
 }
 #project .tab .project_box .right_box .desc strong {
   margin-right: 20px;
-  color: brown;
+  color: #336;
   font-family: "Pretendard";
   font-weight: 800;
 }
@@ -271,7 +272,7 @@
 }
 #contact .contact_container .contact_tit {
   font-family: "Pretendard";
-  font-size: 3.75rem;
+  font-size: 70px;
   color: #fff;
   padding: 20px;
   margin: 0;
@@ -377,7 +378,7 @@
 }
 #navbar-nav li.active a {
   text-decoration: none;
-  color: brown;
+  color: #336;
 }
 #navbar-nav a {
   padding: 30px;
@@ -387,50 +388,44 @@
   font-size: 1.5625rem;
 }
 #navbar-nav a:hover {
-  color: brown;
+  color: #336;
 }
 
-.sec1 .bg {
-  animation: slide 9s ease-in-out infinite alternate;
-  background-image: linear-gradient(-70deg, #deb887 50%, #c2904e 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
-  z-index: -1;
+.sec1 {
+  display: flex;
+  /*   min-height: 100vh; */
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfdfec;
+  /*   font-family: system-ui, calibri, serif; */
+  background-repeat: repeat-x;
+  background-image: url("https://i.stack.imgur.com/b7z29.png");
+  animation: movement 10s linear infinite;
 }
-.sec1 .bg2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 7s;
-}
-.sec1 .bg3 {
-  animation-duration: 7s;
-}
-@keyframes slide {
+@keyframes movement {
   0% {
-    transform: translateX(-25%);
+    background-position: 0px 0px;
   }
   100% {
-    transform: translateX(25%);
+    background-position: 560px 0px;
   }
 }
 
 .sec2 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .sec3 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .sec4 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .sec5 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .container-fluid .navbar-brand {
@@ -458,7 +453,7 @@
 }
 #jumbotron .wavly {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
   font-size: 60px;
 }
 #jumbotron .wavly p {
@@ -468,7 +463,6 @@
   text-align: center;
   color: #fff;
   font-size: 30px;
-  text-transform: uppercase;
   animation: waviy 4s infinite;
   animation-delay: calc(0.3s * var(--i));
 }

@@ -41,10 +41,10 @@ $md: 768px;
 
   .about_tit {
     font-family: "Pretendard";
-    font-size: 3.75rem;
+    font-size: 70px;
     color: #fff;
-    text-align: center;
     margin: 50px 0;
+    padding: 0 150px;
   }
   .profile_wrap {
     padding: 0 150px;
@@ -69,7 +69,7 @@ $md: 768px;
         em {
           font-style: normal;
           font-family: "Pretendard";
-          color: rgba(165, 42, 42, 0.5);
+          color: rgb(51, 51, 102, 0.5);
           font-weight: 900;
           margin: 0;
         }
@@ -91,7 +91,7 @@ $md: 768px;
             font-size: 30px;
             font-family: "Pretendard";
             font-weight: bold;
-            color: brown;
+            color: #336;
             margin: 0;
           }
           .phone {
@@ -118,7 +118,7 @@ $md: 768px;
             color: #fff;
           }
           strong {
-            color: rgb(165, 42, 42, 0.5);
+            color: rgb(51, 51, 102, 0.5);
             display: block;
             margin-bottom: 10px;
             font-family: "Pretendard";
@@ -135,10 +135,10 @@ $md: 768px;
 #skill {
   .skill_tit {
     font-family: "Pretendard";
-    font-size: 3.75rem;
+    font-size: 70px;
     color: #fff;
-    text-align: center;
     margin: 50px 0;
+    padding: 0 150px;
   }
   .skill_box {
     padding: 0px 150px;
@@ -146,7 +146,7 @@ $md: 768px;
     flex-flow: column wrap;
     height: 650px;
     margin: 0;
-
+    align-content: space-between;
     li {
       width: 45%;
       margin-bottom: 30px;
@@ -167,7 +167,7 @@ $md: 768px;
         .icon_tit {
           font-size: 30px;
           font-family: "Pretendard";
-          color: brown;
+          color: #336;
           font-weight: bold;
         }
         .icon_exp {
@@ -183,10 +183,10 @@ $md: 768px;
 #project {
   .project_tit {
     font-family: "Pretendard";
-    font-size: 3.75rem;
+    font-size: 70px;
     color: #fff;
     margin: 50px 0;
-    text-align: center;
+    padding: 0 150px;
   }
   .tab_menu_wrap {
     .tab_menu_box {
@@ -211,13 +211,13 @@ $md: 768px;
         color: #fff;
         text-decoration: none;
         &:hover {
-          border: 2px solid brown;
-          color: brown;
+          border: 2px solid #336;
+          color: #336;
         }
         &.active {
-          box-shadow: 0 3px 0 brown;
-          border: 2px solid brown;
-          color: brown;
+          box-shadow: 0 3px 0 #336;
+          border: 2px solid #336;
+          color: #336;
         }
       }
     }
@@ -272,7 +272,7 @@ $md: 768px;
           }
           strong {
             margin-right: 20px;
-            color: brown;
+            color: #336;
             font-family: "Pretendard";
             font-weight: 800;
           }
@@ -314,7 +314,7 @@ $md: 768px;
     align-items: center;
     .contact_tit {
       font-family: "Pretendard";
-      font-size: 3.75rem;
+      font-size: 70px;
       color: #fff;
       padding: 20px;
       margin: 0;
@@ -436,7 +436,7 @@ $md: 768px;
 
     &.active a {
       text-decoration: none;
-      color: brown;
+      color: #336;
     }
   }
 
@@ -448,57 +448,49 @@ $md: 768px;
     font-size: 1.5625rem;
 
     &:hover {
-      color: brown;
+      color: #336;
     }
   }
 }
 
 .sec1 {
-  .bg {
-    animation: slide 9s ease-in-out infinite alternate;
-    background-image: linear-gradient(-70deg, #deb887 50%, #c2904e 50%);
-    bottom: 0;
-    left: -50%;
-    opacity: 0.5;
-    position: fixed;
-    right: -50%;
-    top: 0;
-    z-index: -1;
-  }
-  .bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 7s;
-  }
-  .bg3 {
-    animation-duration: 7s;
-  }
-  @keyframes slide {
+  display: flex;
+  /*   min-height: 100vh; */
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfdfec;
+  /*   font-family: system-ui, calibri, serif; */
+  background-repeat: repeat-x;
+  background-image: url("https://i.stack.imgur.com/b7z29.png");
+  animation: movement 10s linear infinite;
+  @keyframes movement {
     0% {
-      transform: translateX(-25%);
+      background-position: 0px 0px;
     }
     100% {
-      transform: translateX(25%);
+      background-position: 560px 0px;
     }
   }
 }
 
 .sec2 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .sec3 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .sec4 {
-  background: burlywood;
+  background: #bfdfec;
   // height: 80px;
   // padding: 0 30px;
   // background-color: #000 !important;
 }
 
 .sec5 {
-  background: burlywood;
+  background: #bfdfec;
 }
 
 .container-fluid {
@@ -535,7 +527,7 @@ $md: 768px;
   }
   .wavly {
     position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     font-size: 60px;
     p {
       font-family: "Pretendard";
@@ -544,7 +536,7 @@ $md: 768px;
       text-align: center;
       color: #fff;
       font-size: 30px;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       animation: waviy 4s infinite;
       animation-delay: calc(0.3s * var(--i));
     }
