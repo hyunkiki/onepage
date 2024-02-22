@@ -244,8 +244,10 @@ $shadow-distance-step: 0.033333em;
         z-index: 900;
         .project_img {
           width: 100%;
-          animation: slideUpDown 20s linear;
-          animation-fill-mode: forwards;
+          &:hover {
+            animation: slideUpDown 20s linear;
+            animation-fill-mode: forwards;
+          }
         }
         @keyframes slideUpDown {
           0% {

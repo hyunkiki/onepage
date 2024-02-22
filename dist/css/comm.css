@@ -204,6 +204,8 @@
 }
 #project .tab .project_box .thumb_img .project_img {
   width: 100%;
+}
+#project .tab .project_box .thumb_img .project_img:hover {
   animation: slideUpDown 20s linear;
   animation-fill-mode: forwards;
 }
