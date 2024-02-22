@@ -12,6 +12,7 @@
   color: #fff;
   margin: 50px 0;
   padding: 0 150px;
+  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
 }
 #about .profile_wrap {
   padding: 0 150px;
@@ -101,6 +102,7 @@
   color: #fff;
   margin: 50px 0;
   padding: 0 150px;
+  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
 }
 #skill .skill_box {
   padding: 0px 150px;
@@ -148,6 +150,7 @@
   color: #fff;
   margin: 50px 0;
   padding: 0 150px;
+  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
 }
 #project .tab_menu_wrap .tab_menu_box {
   display: flex;
@@ -266,22 +269,13 @@
   display: block;
 }
 
-#contact .contact_container {
-  display: flex;
-  align-items: center;
-}
-#contact .contact_container .contact_tit {
-  font-family: "Pretendard";
-  font-size: 70px;
+#contact .contact_tit {
+  font-family: Mr Dafoe, sans-serif;
+  font-size: 140px;
+  text-align: center;
   color: #fff;
-  padding: 20px;
-  margin: 0;
-}
-#contact .contact_container .line {
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: #fff;
+  margin: 50px 0;
+  padding: 0 150px;
 }
 #contact .contact_email {
   font-size: 25px;
