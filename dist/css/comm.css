@@ -204,16 +204,15 @@
 }
 #project .tab .project_box .thumb_img .project_img {
   width: 100%;
-}
-#project .tab .project_box .thumb_img .project_img:hover {
-  animation: slideUpDown 15s infinite linear;
+  animation: slideUpDown 20s linear;
+  animation-fill-mode: forwards;
 }
 @keyframes slideUpDown {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-75%);
+    transform: translateY(-78%);
   }
 }
 #project .tab .project_box .right_box {

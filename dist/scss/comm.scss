@@ -242,16 +242,15 @@ $md: 768px;
         z-index: 900;
         .project_img {
           width: 100%;
-          &:hover {
-            animation: slideUpDown 15s infinite linear;
-          }
+          animation: slideUpDown 20s linear;
+          animation-fill-mode: forwards;
         }
         @keyframes slideUpDown {
           0% {
             transform: translateY(0);
           }
           100% {
-            transform: translateY(-75%);
+            transform: translateY(-78%);
           }
         }
       }
@@ -320,6 +319,7 @@ $md: 768px;
     margin: 50px 0;
     padding: 0 150px;
   }
+
   .contact_email {
     font-size: 25px;
     font-family: "Pretendard";
