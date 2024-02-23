@@ -40,7 +40,7 @@
 #about .profile_wrap .profile_box .intro_my em {
   font-style: normal;
   font-family: "Pretendard";
-  color: rgba(51, 51, 102, 0.5);
+  color: rgb(51, 51, 102);
   font-weight: 900;
   margin: 0;
 }
@@ -78,6 +78,16 @@
   font-weight: 900;
   margin-right: 10px;
 }
+#about .profile_wrap .profile_contents .txt_box li .name_box {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+#about .profile_wrap .profile_contents .txt_box li .birth_box {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
 #about .profile_wrap .profile_contents .txt_box li span {
   display: block;
   font-size: 20px;
@@ -110,7 +120,7 @@
   flex-flow: column wrap;
   height: 650px;
   margin: 0;
-  align-content: space-between;
+  align-content: space-around;
 }
 #skill .skill_box li {
   width: 45%;
@@ -272,9 +282,9 @@
 
 #contact .contact_tit {
   font-family: Mr Dafoe, sans-serif;
-  font-size: 140px;
+  font-size: 160px;
   text-align: center;
-  color: #336;
+  color: #fff;
   margin: 50px 0;
   padding: 0 150px;
   text-shadow: 0 10px 8px rgba(51, 51, 102, 0.5), 0px -2px 6px #fff;
