@@ -244,28 +244,40 @@ $shadow-distance-step: 0.033333em;
       align-items: center;
       justify-content: space-between;
       padding: 0 150px;
-      .thumb_img {
+      .project_img_box {
         width: 750px;
         height: 600px;
-        overflow: hidden;
-        border-radius: 30px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        position: relative;
-        z-index: 900;
-        .project_img {
-          width: 100%;
-          &:hover {
-            animation: slideUpDown 20s linear;
-            animation-fill-mode: forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(51, 51, 102, 0.5);
+        border-radius: 20px;
+        .thumb_img {
+          width: 600px;
+          height: 500px;
+          overflow: hidden;
+          border-radius: 30px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          position: relative;
+          z-index: 900;
+          .project_img {
+            width: 100%;
+            &:hover {
+              animation: slideUpDown 20s linear;
+              animation-fill-mode: forwards;
+            }
+          }
+          @keyframes slideUpDown {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-78%);
+            }
           }
         }
-        @keyframes slideUpDown {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-78%);
-          }
+        &:hover {
+          background: rgb(51, 51, 102);
         }
       }
       .right_box {
