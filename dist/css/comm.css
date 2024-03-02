@@ -233,7 +233,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-78%);
+    transform: translateY(-77%);
   }
 }
 #project .tab .project_box .project_img_box:hover {
