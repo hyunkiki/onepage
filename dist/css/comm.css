@@ -6,48 +6,58 @@
   --bs-primary-rgb: 0, 255, 187;
 }
 
-#about .about_tit {
+body {
   font-family: "Pretendard";
+}
+
+.sec2 #about .title {
+  transition: 0.8s all;
+  transform: translateY(50px);
+  opacity: 0;
+}
+.sec2 #about .title .about_tit {
   font-size: 70px;
   color: #fff;
-  margin: 50px 0;
+  margin: 50px 0 80px;
   padding: 0 150px;
-  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+  color: #f2446e;
 }
-#about .profile_wrap {
+.sec2 #about .profile_wrap {
   padding: 0 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#about .profile_wrap .profile_box {
+.sec2 #about .profile_wrap .profile_box {
   display: flex;
   width: 40%;
   flex-direction: column;
   align-items: center;
 }
-#about .profile_wrap .profile_box .profile_img {
+.sec2 #about .profile_wrap .profile_box .profile_img {
   width: 55%;
 }
-#about .profile_wrap .profile_box .profile_img img {
+.sec2 #about .profile_wrap .profile_box .profile_img img {
   width: 100%;
 }
-#about .profile_wrap .profile_box .intro_my {
+.sec2 #about .profile_wrap .profile_box .intro_my {
   font-size: 20px;
   color: #fff;
   font-family: "Pretendard";
 }
-#about .profile_wrap .profile_box .intro_my em {
+.sec2 #about .profile_wrap .profile_box .intro_my em {
   font-style: normal;
   font-family: "Pretendard";
   color: rgb(51, 51, 102);
   font-weight: 900;
   margin: 0;
 }
-#about .profile_wrap .profile_contents {
+.sec2 #about .profile_wrap .profile_contents {
   display: flex;
 }
-#about .profile_wrap .profile_contents .txt_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -55,10 +65,10 @@
   padding: 0;
   margin: 0;
 }
-#about .profile_wrap .profile_contents .txt_box li {
+.sec2 #about .profile_wrap .profile_contents .txt_box li {
   list-style-type: none;
 }
-#about .profile_wrap .profile_contents .txt_box li h3 {
+.sec2 #about .profile_wrap .profile_contents .txt_box li h3 {
   display: block;
   font-size: 30px;
   font-family: "Pretendard";
@@ -66,55 +76,60 @@
   color: #336;
   margin: 0;
 }
-#about .profile_wrap .profile_contents .txt_box li .phone::before {
+.sec2 #about .profile_wrap .profile_contents .txt_box li .phone::before {
   content: "\f095";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-#about .profile_wrap .profile_contents .txt_box li .email_adr::before {
+.sec2 #about .profile_wrap .profile_contents .txt_box li .email_adr::before {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-#about .profile_wrap .profile_contents .txt_box li .name_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box li .name_box {
   display: flex;
   width: 55%;
   justify-content: space-between;
 }
-#about .profile_wrap .profile_contents .txt_box li .birth_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box li .birth_box {
   display: flex;
   width: 55%;
   justify-content: space-between;
 }
-#about .profile_wrap .profile_contents .txt_box li span {
+.sec2 #about .profile_wrap .profile_contents .txt_box li span {
   display: block;
   font-size: 20px;
   font-family: "Pretendard";
   margin: 20px 0;
   color: #fff;
 }
-#about .profile_wrap .profile_contents .txt_box li strong {
+.sec2 #about .profile_wrap .profile_contents .txt_box li strong {
   color: rgba(51, 51, 102, 0.5);
   display: block;
   margin-bottom: 10px;
   font-family: "Pretendard";
 }
-#about .profile_wrap .profile_contents .txt_box:last-child {
+.sec2 #about .profile_wrap .profile_contents .txt_box:last-child {
   width: 500px;
   margin-left: 50px;
 }
+.sec2.active #about .title {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
-#skill .skill_tit {
-  font-family: "Pretendard";
+.sec3 #skill .title .skill_tit {
   font-size: 70px;
   color: #fff;
-  margin: 50px 0;
+  margin: 50px 0 80px;
   padding: 0 150px;
-  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+  color: #6137f9;
 }
-#skill .skill_box {
+.sec3 #skill .skill_box {
   padding: 0px 150px;
   display: flex;
   flex-flow: column wrap;
@@ -122,56 +137,55 @@
   margin: 0;
   align-content: space-around;
 }
-#skill .skill_box li {
+.sec3 #skill .skill_box li {
   width: 45%;
   margin-bottom: 30px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
-#skill .skill_box li .icon_img_thumb {
+.sec3 #skill .skill_box li .icon_img_thumb {
   width: 80px;
 }
-#skill .skill_box li .icon_img_thumb .icon_img {
+.sec3 #skill .skill_box li .icon_img_thumb .icon_img {
   width: 100%;
 }
-#skill .skill_box li .icon_contents {
+.sec3 #skill .skill_box li .icon_contents {
   width: calc(100% - 80px);
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-#skill .skill_box li .icon_contents .icon_tit {
+.sec3 #skill .skill_box li .icon_contents .icon_tit {
   font-size: 30px;
-  font-family: "Pretendard";
   color: #336;
   font-weight: bold;
 }
-#skill .skill_box li .icon_contents .icon_exp {
+.sec3 #skill .skill_box li .icon_contents .icon_exp {
   font-size: 20px;
-  font-family: "Pretendard";
   color: #fff;
   margin: 20px 0;
 }
 
-#project .project_tit {
-  font-family: "Pretendard";
+.sec4 #project .title .project_tit {
   font-size: 70px;
   color: #fff;
-  margin: 50px 0;
+  margin: 50px 0 80px;
   padding: 0 150px;
-  text-shadow: 0 10px 8px #336, 0px -2px 6px #fff;
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+  color: #6137f9;
 }
-#project .tab_menu_wrap .tab_menu_box {
+.sec4 #project .tab_menu_wrap .tab_menu_box {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
   margin: 0 auto;
 }
-#project .tab_menu_wrap .tab_menu_box .tab_box {
+.sec4 #project .tab_menu_wrap .tab_menu_box .tab_box {
   list-style-type: none;
 }
-#project .tab_menu_wrap .tab_menu_box .tab-menu {
+.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
   display: block;
   font-size: 25px;
   margin-bottom: 50px;
@@ -185,46 +199,35 @@
   color: #fff;
   text-decoration: none;
 }
-#project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
+.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
   border: 2px solid #336;
   color: #336;
 }
-#project .tab_menu_wrap .tab_menu_box .tab-menu.active {
+.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu.active {
   box-shadow: 0 3px 0 #336;
   border: 2px solid #336;
   color: #336;
 }
-#project .tab {
+.sec4 #project .tab {
   display: none;
 }
-#project .tab .project_box {
+.sec4 #project .tab .project_box {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 150px;
 }
-#project .tab .project_box .project_img_box {
-  width: 750px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(51, 51, 102, 0.5);
-  border-radius: 20px;
-}
-#project .tab .project_box .project_img_box .thumb_img {
-  width: 600px;
-  height: 500px;
+.sec4 #project .tab .project_box .thumb_img {
+  width: 650px;
+  height: 550px;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 900;
 }
-#project .tab .project_box .project_img_box .thumb_img .project_img {
+.sec4 #project .tab .project_box .thumb_img .project_img {
   width: 100%;
-}
-#project .tab .project_box .project_img_box .thumb_img .project_img:hover {
   animation: slideUpDown 20s linear;
   animation-fill-mode: forwards;
 }
@@ -236,59 +239,51 @@
     transform: translateY(-77%);
   }
 }
-#project .tab .project_box .project_img_box:hover {
-  background: rgb(51, 51, 102);
-}
-#project .tab .project_box .right_box {
+.sec4 #project .tab .project_box .right_box {
   width: 45%;
   margin: 0;
   padding: 0;
 }
-#project .tab .project_box .right_box .desc {
+.sec4 #project .tab .project_box .right_box .desc {
   list-style-type: none;
   display: flex;
   align-items: center;
   width: 80%;
   margin: 20px 0;
   font-size: 20px;
-  font-family: "Pretendard";
 }
-#project .tab .project_box .right_box .desc .mini_tit {
+.sec4 #project .tab .project_box .right_box .desc .mini_tit {
   margin: 0;
   font-size: 20px;
   color: #fff;
-  font-family: "Pretendard";
 }
-#project .tab .project_box .right_box .desc strong {
+.sec4 #project .tab .project_box .right_box .desc strong {
   margin-right: 20px;
   color: #336;
-  font-family: "Pretendard";
   font-weight: 800;
 }
-#project .tab .project_box .right_box .desc p {
+.sec4 #project .tab .project_box .right_box .desc p {
   margin: 0;
   color: #fff;
-  font-family: "Pretendard";
 }
-#project .tab .project_box .right_box .site {
+.sec4 #project .tab .project_box .right_box .site {
   list-style-type: none;
   width: 70%;
   display: flex;
 }
-#project .tab .project_box .right_box .site .link {
+.sec4 #project .tab .project_box .right_box .site .link {
   display: block;
   width: 150px;
   border: 1px solid #fff;
   text-align: center;
   border-radius: 15px;
   color: #fff;
-  font-family: "Pretendard";
   font-size: 20px;
   text-decoration: none;
   padding: 20px 0px;
   margin-right: 20px;
 }
-#project .tab.active_menu {
+.sec4 #project .tab.active_menu {
   display: block;
 }
 
@@ -303,21 +298,18 @@
 }
 #contact .contact_email {
   font-size: 25px;
-  font-family: "Pretendard";
   color: #fff;
   margin: 50px 0;
   text-align: center;
 }
 #contact .last_indu {
   font-size: 25px;
-  font-family: "Pretendard";
   color: #fff;
   margin: 50px 0;
   text-align: center;
 }
 #contact .copyright {
   font-size: 25px;
-  font-family: "Pretendard";
   color: #fff;
   margin: 50px 0;
   text-align: center;
@@ -396,56 +388,61 @@
 }
 #navbar-nav li.active a {
   text-decoration: none;
-  color: #336;
+  color: #fff;
 }
 #navbar-nav a {
   padding: 30px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.3);
   font-family: "Bebas Neue", sans-serif;
   text-decoration: none;
   font-size: 1.5625rem;
 }
 #navbar-nav a:hover {
-  color: #336;
+  color: #fff;
 }
 
-.sec1 {
+.section {
+  background: #241f20;
+}
+.section.sec1 {
   display: flex;
   /*   min-height: 100vh; */
   margin: 0;
   align-items: center;
   justify-content: center;
-  background-color: #bfdfec;
-  /*   font-family: system-ui, calibri, serif; */
+  /*   font-family: system-ui, calibri, serif; 
   background-repeat: repeat-x;
   background-image: url("https://i.stack.imgur.com/b7z29.png");
   animation: movement 10s linear infinite;
+  @keyframes movement {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: 560px 0px;
+    }
+  }
+  */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #241f20 0%, #241f20 25%, #241f20 51%, #85787a 100%);
+  animation: AnimateBG 20s ease infinite;
 }
-@keyframes movement {
+@keyframes AnimateBG {
   0% {
-    background-position: 0px 0px;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 560px 0px;
+    background-position: 0% 50%;
   }
 }
-
-.sec2 {
-  background: #bfdfec;
-}
-
-.sec3 {
-  background: #bfdfec;
-}
-
-.sec4 {
-  background: #bfdfec;
-}
-
-.sec5 {
-  background: #bfdfec;
-}
-
 .container-fluid .navbar-brand {
   color: #fff;
 }
@@ -462,7 +459,7 @@
 
 #jumbotron #str {
   height: auto;
-  font-family: "Pretendard";
+  font-family: "mosk";
   font-size: 180px;
   color: #fff;
   font-weight: bold;
@@ -475,7 +472,6 @@
   font-size: 60px;
 }
 #jumbotron .wavly p {
-  font-family: "Pretendard";
   position: relative;
   display: block;
   text-align: center;
