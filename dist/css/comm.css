@@ -45,12 +45,11 @@ body {
 .sec2 #about .profile_wrap .profile_box .intro_my {
   font-size: 20px;
   color: #fff;
-  font-family: "Pretendard";
+  line-height: 1.5em;
 }
 .sec2 #about .profile_wrap .profile_box .intro_my em {
   font-style: normal;
-  font-family: "Pretendard";
-  color: rgb(51, 51, 102);
+  color: rgba(242, 68, 110, 0.5);
   font-weight: 900;
   margin: 0;
 }
@@ -71,9 +70,9 @@ body {
 .sec2 #about .profile_wrap .profile_contents .txt_box li h3 {
   display: block;
   font-size: 30px;
-  font-family: "Pretendard";
+  font-family: "Fugaz One", sans-serif;
   font-weight: bold;
-  color: #336;
+  color: rgb(242, 68, 110);
   margin: 0;
 }
 .sec2 #about .profile_wrap .profile_contents .txt_box li .phone::before {
@@ -101,15 +100,13 @@ body {
 .sec2 #about .profile_wrap .profile_contents .txt_box li span {
   display: block;
   font-size: 20px;
-  font-family: "Pretendard";
   margin: 20px 0;
   color: #fff;
 }
 .sec2 #about .profile_wrap .profile_contents .txt_box li strong {
-  color: rgba(51, 51, 102, 0.5);
+  color: rgba(242, 68, 110, 0.5);
   display: block;
   margin-bottom: 10px;
-  font-family: "Pretendard";
 }
 .sec2 #about .profile_wrap .profile_contents .txt_box:last-child {
   width: 500px;
@@ -158,13 +155,15 @@ body {
 }
 .sec3 #skill .skill_box li .icon_contents .icon_tit {
   font-size: 30px;
-  color: #336;
+  font-family: "Fugaz One", sans-serif;
+  color: #6137f9;
   font-weight: bold;
 }
 .sec3 #skill .skill_box li .icon_contents .icon_exp {
   font-size: 20px;
   color: #fff;
   margin: 20px 0;
+  line-height: 1.5em;
 }
 
 .sec4 #project .title .project_tit {
@@ -174,7 +173,7 @@ body {
   padding: 0 150px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
-  color: #6137f9;
+  color: #22de1b;
 }
 .sec4 #project .tab_menu_wrap .tab_menu_box {
   display: flex;
@@ -192,21 +191,19 @@ body {
   font-weight: 700;
   text-align: center;
   width: 200px;
-  border: 2px solid #fff;
   border-radius: 10px;
   padding: 15px;
   transition: all 0.3s;
   color: #fff;
   text-decoration: none;
+  border: 1px solid #22de1b;
 }
 .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
-  border: 2px solid #336;
-  color: #336;
+  background: rgba(34, 222, 27, 0.5);
 }
 .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu.active {
-  box-shadow: 0 3px 0 #336;
-  border: 2px solid #336;
-  color: #336;
+  color: #fff;
+  background: #22de1b;
 }
 .sec4 #project .tab {
   display: none;
@@ -236,7 +233,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-77%);
+    transform: translateY(-76%);
   }
 }
 .sec4 #project .tab .project_box .right_box {
@@ -259,7 +256,7 @@ body {
 }
 .sec4 #project .tab .project_box .right_box .desc strong {
   margin-right: 20px;
-  color: #336;
+  color: #22de1b;
   font-weight: 800;
 }
 .sec4 #project .tab .project_box .right_box .desc p {
@@ -270,6 +267,7 @@ body {
   list-style-type: none;
   width: 70%;
   display: flex;
+  margin-top: 50px;
 }
 .sec4 #project .tab .project_box .right_box .site .link {
   display: block;
@@ -288,13 +286,12 @@ body {
 }
 
 #contact .contact_tit {
-  font-family: Mr Dafoe, sans-serif;
-  font-size: 160px;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 180px;
   text-align: center;
   color: #fff;
-  margin: 50px 0;
+  margin: 50px 0 80px;
   padding: 0 150px;
-  text-shadow: 0 10px 8px rgba(51, 51, 102, 0.5), 0px -2px 6px #fff;
 }
 #contact .contact_email {
   font-size: 25px;
