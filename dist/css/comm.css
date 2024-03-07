@@ -321,13 +321,7 @@ body {
   text-decoration: none;
   padding: 20px 0px;
   margin-right: 20px;
-}
-.sec4 #project .tab .project_box .right_box .site .link span {
-  color: #fff;
-  font-weight: 500;
-  z-index: 2;
-  position: relative;
-  transition: all ease 0.5s;
+  overflow: hidden;
 }
 .sec4 #project .tab .project_box .right_box .site .link::before {
   content: "";
@@ -340,6 +334,16 @@ body {
   left: 0;
   transition: all ease 0.5s;
   z-index: 1;
+}
+.sec4 #project .tab .project_box .right_box .site .link span {
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+  transition: all ease 0.5s;
+}
+.sec4 #project .tab .project_box .right_box .site .link:hover::before {
+  top: 0;
 }
 .sec4 #project .tab.active_menu {
   display: block;

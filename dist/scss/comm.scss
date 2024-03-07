@@ -353,13 +353,7 @@ body {
               text-decoration: none;
               padding: 20px 0px;
               margin-right: 20px;
-              span {
-                color: #fff;
-                font-weight: 500;
-                z-index: 2;
-                position: relative;
-                transition: all ease 0.5s;
-              }
+              overflow: hidden;
               &::before {
                 content: "";
                 width: 100%;
@@ -369,8 +363,22 @@ body {
                 position: absolute;
                 top: 100%;
                 left: 0;
+                -webkit-transition: all ease 0.5s;
                 transition: all ease 0.5s;
                 z-index: 1;
+              }
+              span {
+                color: #fff;
+                font-weight: 500;
+                z-index: 2;
+                position: relative;
+                -webkit-transition: all ease 0.5s;
+                transition: all ease 0.5s;
+              }
+              &:hover {
+                &::before {
+                  top: 0;
+                }
               }
             }
           }
