@@ -55,19 +55,20 @@ body {
 }
 .sec2 #about .profile_wrap .profile_contents {
   display: flex;
+  flex-direction: column;
+  width: 55%;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  width: 350px;
+  justify-content: flex-start;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li {
   list-style-type: none;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li h3 {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
   display: block;
   font-size: 30px;
   font-family: "Fugaz One", sans-serif;
@@ -75,42 +76,85 @@ body {
   color: rgb(242, 68, 110);
   margin: 0;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li .phone::before {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li .phone::before {
   content: "\f095";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li .email_adr::before {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li .email_adr::before {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li .name_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
   display: flex;
-  width: 55%;
+  width: 60%;
   justify-content: space-between;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li .birth_box {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
   display: flex;
-  width: 55%;
+  width: 60%;
   justify-content: space-between;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li span {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
   display: block;
   font-size: 20px;
   margin: 20px 0;
   color: #fff;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box li strong {
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li strong {
   color: rgba(242, 68, 110, 0.5);
   display: block;
   margin-bottom: 10px;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box:last-child {
-  width: 500px;
-  margin-left: 50px;
+.sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
+  width: 320px;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li {
+  list-style-type: none;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
+  display: block;
+  font-size: 30px;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: bold;
+  color: rgb(242, 68, 110);
+  margin: 0;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li .phone::before {
+  content: "\f095";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li .email_adr::before {
+  content: "\f0e0";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
+  display: block;
+  font-size: 20px;
+  margin: 20px 0;
+  color: #fff;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li strong {
+  color: rgba(242, 68, 110, 0.5);
+  display: block;
+  margin-bottom: 10px;
+}
+.sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
+  width: 320px;
 }
 .sec2.active #about .title {
   transform: translateY(0px);
@@ -168,12 +212,11 @@ body {
 
 .sec4 #project .title .project_tit {
   font-size: 70px;
-  color: #fff;
+  color: #22de1b;
   margin: 50px 0 80px;
   padding: 0 150px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
-  color: #22de1b;
 }
 .sec4 #project .tab_menu_wrap .tab_menu_box {
   display: flex;
@@ -196,14 +239,11 @@ body {
   transition: all 0.3s;
   color: #fff;
   text-decoration: none;
-  border: 1px solid #22de1b;
-}
-.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu:hover {
-  background: rgba(34, 222, 27, 0.5);
+  border: 1px solid #fff;
 }
 .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu.active {
-  color: #fff;
   background: #22de1b;
+  border: 1px solid #22de1b;
 }
 .sec4 #project .tab {
   display: none;
@@ -270,16 +310,36 @@ body {
   margin-top: 50px;
 }
 .sec4 #project .tab .project_box .right_box .site .link {
+  position: relative;
   display: block;
   width: 150px;
   border: 1px solid #fff;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
   font-size: 20px;
   text-decoration: none;
   padding: 20px 0px;
   margin-right: 20px;
+}
+.sec4 #project .tab .project_box .right_box .site .link span {
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+  transition: all ease 0.5s;
+}
+.sec4 #project .tab .project_box .right_box .site .link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #22de1b;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all ease 0.5s;
+  z-index: 1;
 }
 .sec4 #project .tab.active_menu {
   display: block;
@@ -293,11 +353,33 @@ body {
   margin: 50px 0 80px;
   padding: 0 150px;
 }
-#contact .contact_email {
+#contact .contact_box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 0 auto;
+}
+#contact .contact_box .contact_email {
   font-size: 25px;
   color: #fff;
-  margin: 50px 0;
-  text-align: center;
+  margin: 0;
+}
+#contact .contact_box .contact_email::before {
+  content: "\f0e0";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#contact .contact_box .contact_phonenum {
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+}
+#contact .contact_box .contact_phonenum::before {
+  content: "\f095";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
 }
 #contact .last_indu {
   font-size: 25px;

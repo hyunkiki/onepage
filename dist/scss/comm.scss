@@ -64,11 +64,12 @@ body {
       }
       .profile_contents {
         display: flex;
-        .txt_box {
+        flex-direction: column;
+        width: 55%;
+        .txt_box1 {
           display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-between;
-          width: 350px;
+          justify-content: flex-start;
+          width: 100%;
           padding: 0;
           margin: 0;
           li {
@@ -99,12 +100,12 @@ body {
             }
             .name_box {
               display: flex;
-              width: 55%;
+              width: 60%;
               justify-content: space-between;
             }
             .birth_box {
               display: flex;
-              width: 55%;
+              width: 60%;
               justify-content: space-between;
             }
             span {
@@ -118,10 +119,57 @@ body {
               display: block;
               margin-bottom: 10px;
             }
+            &:first-child {
+              width: 320px;
+            }
           }
-          &:last-child {
-            width: 500px;
-            margin-left: 50px;
+        }
+        .txt_box2 {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          li {
+            list-style-type: none;
+            h3 {
+              display: block;
+              font-size: 30px;
+              font-family: "Fugaz One", sans-serif;
+              font-weight: bold;
+              color: rgb(242, 68, 110);
+              margin: 0;
+            }
+            .phone {
+              &::before {
+                content: "\f095";
+                font-family: "Line Awesome Free";
+                font-weight: 900;
+                margin-right: 10px;
+              }
+            }
+            .email_adr {
+              &::before {
+                content: "\f0e0";
+                font-family: "Line Awesome Free";
+                font-weight: 900;
+                margin-right: 10px;
+              }
+            }
+            span {
+              display: block;
+              font-size: 20px;
+              margin: 20px 0;
+              color: #fff;
+            }
+            strong {
+              color: rgb(242, 68, 110, 0.5);
+              display: block;
+              margin-bottom: 10px;
+            }
+            &:first-child {
+              width: 320px;
+            }
           }
         }
       }
@@ -195,12 +243,11 @@ body {
     .title {
       .project_tit {
         font-size: 70px;
-        color: #fff;
+        color: #22de1b;
         margin: 50px 0 80px;
         padding: 0 150px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
-        color: #22de1b;
       }
     }
     .tab_menu_wrap {
@@ -225,13 +272,10 @@ body {
           transition: all 0.3s;
           color: #fff;
           text-decoration: none;
-          border: 1px solid #22de1b;
-          &:hover {
-            background: rgb(34, 222, 27, 0.5);
-          }
+          border: 1px solid #fff;
           &.active {
-            color: #fff;
             background: #22de1b;
+            border: 1px solid #22de1b;
           }
         }
       }
@@ -286,6 +330,7 @@ body {
               color: #22de1b;
               font-weight: 800;
             }
+
             p {
               margin: 0;
               color: #fff;
@@ -297,16 +342,36 @@ body {
             display: flex;
             margin-top: 50px;
             .link {
+              position: relative;
               display: block;
               width: 150px;
               border: 1px solid #fff;
               text-align: center;
-              border-radius: 15px;
+              border-radius: 10px;
               color: #fff;
               font-size: 20px;
               text-decoration: none;
               padding: 20px 0px;
               margin-right: 20px;
+              span {
+                color: #fff;
+                font-weight: 500;
+                z-index: 2;
+                position: relative;
+                transition: all ease 0.5s;
+              }
+              &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #22de1b;
+                border-radius: 10px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: all ease 0.5s;
+                z-index: 1;
+              }
             }
           }
         }
@@ -328,12 +393,35 @@ body {
     margin: 50px 0 80px;
     padding: 0 150px;
   }
-  .contact_email {
-    font-size: 25px;
-    color: #fff;
-    margin: 50px 0;
-    text-align: center;
+  .contact_box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 auto;
+    .contact_email {
+      font-size: 25px;
+      color: #fff;
+      margin: 0;
+      &::before {
+        content: "\f0e0";
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+    }
+    .contact_phonenum {
+      font-size: 25px;
+      color: #fff;
+      margin: 0;
+      &::before {
+        content: "\f095";
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+    }
   }
+
   .last_indu {
     font-size: 25px;
     color: #fff;
