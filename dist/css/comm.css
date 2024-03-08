@@ -368,7 +368,7 @@ body {
   opacity: 1;
 }
 
-#contact .contact_tit {
+.sec5 #contact .contact_tit {
   font-family: "Poetsen One", sans-serif;
   font-size: 180px;
   text-align: center;
@@ -376,41 +376,49 @@ body {
   margin: 50px 0 80px;
   padding: 0 150px;
 }
-#contact .contact_box {
+.sec5 #contact .contact_box {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
-#contact .contact_box .contact_email {
+.sec5 #contact .contact_box .contact_email {
   font-size: 25px;
   color: #fff;
   margin: 0;
 }
-#contact .contact_box .contact_email::before {
+.sec5 #contact .contact_box .contact_email::before {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  margin-right: 10px;
+  margin-right: 20px;
 }
-#contact .contact_box .contact_phonenum {
+.sec5 #contact .contact_box .contact_email span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 20px;
+}
+.sec5 #contact .contact_box .contact_phonenum {
   font-size: 25px;
   color: #fff;
   margin: 0;
 }
-#contact .contact_box .contact_phonenum::before {
+.sec5 #contact .contact_box .contact_phonenum::before {
   content: "\f095";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  margin-right: 10px;
+  margin-right: 20px;
 }
-#contact .last_indu {
+.sec5 #contact .contact_box .contact_phonenum span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 20px;
+}
+.sec5 #contact .last_indu {
   font-size: 25px;
   color: #fff;
   margin: 50px 0;
   text-align: center;
 }
-#contact .copyright {
+.sec5 #contact .copyright {
   font-size: 25px;
   color: #fff;
   margin: 50px 0;

@@ -408,56 +408,65 @@ body {
     }
   }
 }
-
-#contact {
-  .contact_tit {
-    font-family: "Poetsen One", sans-serif;
-    font-size: 180px;
-    text-align: center;
-    color: #fff;
-    margin: 50px 0 80px;
-    padding: 0 150px;
-  }
-  .contact_box {
-    display: flex;
-    justify-content: space-evenly;
-    width: 40%;
-    margin: 0 auto;
-    .contact_email {
-      font-size: 25px;
+.sec5 {
+  #contact {
+    .contact_tit {
+      font-family: "Poetsen One", sans-serif;
+      font-size: 180px;
+      text-align: center;
       color: #fff;
-      margin: 0;
-      &::before {
-        content: "\f0e0";
-        font-family: "Line Awesome Free";
-        font-weight: 900;
-        margin-right: 10px;
+      margin: 50px 0 80px;
+      padding: 0 150px;
+    }
+    .contact_box {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      margin: 0 auto;
+      .contact_email {
+        font-size: 25px;
+        color: #fff;
+        margin: 0;
+        &::before {
+          content: "\f0e0";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          margin-right: 20px;
+        }
+        span {
+          color: rgb(255, 255, 255, 0.5);
+          margin-right: 20px;
+        }
+      }
+      .contact_phonenum {
+        font-size: 25px;
+        color: #fff;
+        margin: 0;
+        &::before {
+          content: "\f095";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          margin-right: 20px;
+        }
+        span {
+          color: rgb(255, 255, 255, 0.5);
+          margin-right: 20px;
+        }
       }
     }
-    .contact_phonenum {
+
+    .last_indu {
       font-size: 25px;
       color: #fff;
-      margin: 0;
-      &::before {
-        content: "\f095";
-        font-family: "Line Awesome Free";
-        font-weight: 900;
-        margin-right: 10px;
-      }
+      margin: 50px 0;
+      text-align: center;
     }
-  }
-
-  .last_indu {
-    font-size: 25px;
-    color: #fff;
-    margin: 50px 0;
-    text-align: center;
-  }
-  .copyright {
-    font-size: 25px;
-    color: #fff;
-    margin: 50px 0;
-    text-align: center;
+    .copyright {
+      font-size: 25px;
+      color: #fff;
+      margin: 50px 0;
+      text-align: center;
+    }
   }
 }
 
