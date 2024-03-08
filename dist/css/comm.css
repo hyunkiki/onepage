@@ -11,7 +11,7 @@ body {
 }
 
 .sec2 #about .title {
-  transition: 0.8s all;
+  transition: 2s all;
   transform: translateY(50px);
   opacity: 0;
 }
@@ -161,6 +161,11 @@ body {
   opacity: 1;
 }
 
+.sec3 #skill .title {
+  transition: 2s all;
+  transform: translateY(50px);
+  opacity: 0;
+}
 .sec3 #skill .title .skill_tit {
   font-size: 70px;
   color: #fff;
@@ -173,10 +178,9 @@ body {
 .sec3 #skill .skill_box {
   padding: 0px 150px;
   display: flex;
-  flex-flow: column wrap;
-  height: 650px;
+  height: 100%;
   margin: 0;
-  align-content: space-around;
+  justify-content: space-around;
 }
 .sec3 #skill .skill_box li {
   width: 45%;
@@ -209,7 +213,20 @@ body {
   margin: 20px 0;
   line-height: 1.5em;
 }
+.sec3 #skill .skill_box:last-child {
+  justify-content: flex-start;
+  padding: 0px 190px;
+}
+.sec3.active #skill .title {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
+.sec4 #project .title {
+  transition: 2s all;
+  transform: translateY(50px);
+  opacity: 0;
+}
 .sec4 #project .title .project_tit {
   font-size: 70px;
   color: #22de1b;
@@ -345,6 +362,10 @@ body {
 }
 .sec4 #project .tab.active_menu {
   display: block;
+}
+.sec4.active #project .title {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 #contact .contact_tit {
