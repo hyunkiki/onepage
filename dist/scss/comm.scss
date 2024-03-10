@@ -708,42 +708,14 @@ body {
   .inner {
     padding: 0 100px;
   }
-  .sec2 {
-    #about {
-      .profile_wrap {
-        .profile_box {
-          .profile_img {
-            width: 65%;
-          }
-        }
-      }
-    }
+  .sec2 #about .profile_wrap .profile_box .profile_img {
+    width: 65%;
   }
-  .sec2 {
-    #about {
-      .profile_wrap {
-        .profile_contents {
-          .txt_box1 li:first-child {
-            width: 260px;
-          }
-        }
-      }
-    }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
+    width: 260px;
   }
-  .sec2 {
-    #about {
-      .profile_wrap {
-        .profile_contents {
-          .txt_box1 {
-            li {
-              .name_box {
-                width: 75%;
-              }
-            }
-          }
-        }
-      }
-    }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
+    width: 75%;
   }
   .sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
     width: 75%;
