@@ -205,6 +205,7 @@ body {
       display: flex;
       height: 100%;
       margin: 0;
+      padding: 0;
       justify-content: space-around;
       li {
         width: 45%;
@@ -239,7 +240,7 @@ body {
       }
       &:last-child {
         justify-content: flex-start;
-        padding-left: 80px;
+        padding-left: 40px;
       }
     }
   }
@@ -345,7 +346,6 @@ body {
               color: #22de1b;
               font-weight: 800;
             }
-
             p {
               margin: 0;
               color: #fff;
@@ -393,7 +393,6 @@ body {
           }
         }
       }
-
       &.active_menu {
         display: block;
       }
@@ -708,17 +707,123 @@ body {
   .inner {
     padding: 0 100px;
   }
+  #jumbotron #str {
+    font-size: 144px;
+  }
+  #jumbotron .wavly p {
+    font-size: 24px;
+  }
+  .sec2 #about .title .about_tit {
+    font-size: 56px;
+    margin: 40px 0 64px;
+  }
+  .sec2 #about .profile_wrap .profile_box {
+    width: 40%;
+  }
   .sec2 #about .profile_wrap .profile_box .profile_img {
     width: 65%;
   }
+  .sec2 #about .profile_wrap .profile_box .intro_my {
+    font-size: 18px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
+    font-size: 24px;
+  }
   .sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
-    width: 260px;
+    width: 275px;
   }
   .sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
-    width: 75%;
+    width: 65%;
   }
   .sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
-    width: 75%;
+    width: 65%;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
+    font-size: 18px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
+    font-size: 24px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
+    font-size: 18px;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 56px;
+    margin: 40px 0 64px;
+  }
+  .sec3 #skill .skill_box {
+    height: 150px;
+  }
+  .sec3 #skill .skill_box:last-child {
+    padding-left: 25px;
+  }
+  .sec3 #skill .skill_box li .icon_img_thumb {
+    width: 64px;
+  }
+  .sec3 #skill .skill_box li .icon_contents .icon_tit {
+    font-size: 24px;
+  }
+  .sec3 #skill .skill_box li .icon_contents .icon_exp {
+    font-size: 18px;
+  }
+  .sec4 #project .title .project_tit {
+    font-size: 56px;
+    margin: 40px 0 64px;
+  }
+  .sec4 #project .tab_menu_wrap .tab_menu_box {
+    width: 80%;
+    padding: 0;
+  }
+  .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
+    width: 150px;
+    font-size: 20px;
+  }
+  .sec4 #project .tab .project_box .thumb_img {
+    width: 520px;
+    height: 400px;
+  }
+  @keyframes slideUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-78%);
+    }
+  }
+  .sec4 #project .tab .project_box .right_box .desc strong {
+    font-size: 18px;
+  }
+  .sec4 #project .tab .project_box .right_box .desc .mini_tit {
+    font-size: 18px;
+  }
+  .sec4 #project .tab .project_box .right_box .desc {
+    width: 90%;
+  }
+  .sec4 #project .tab .project_box .right_box .desc p {
+    font-size: 18px;
+  }
+  .sec4 #project .tab .project_box .right_box .site {
+    width: 90%;
+  }
+  .sec4 #project .tab .project_box .right_box .site .link {
+    font-size: 18px;
+  }
+  .sec5 #contact .contact_tit {
+    font-size: 144px;
+    margin: 40px 0 64px;
+  }
+  .sec5 #contact .contact_box {
+    width: 70%;
+  }
+  .sec5 #contact .contact_box .contact_email {
+    font-size: 20px;
+  }
+  .sec5 #contact .contact_box .contact_phonenum {
+    font-size: 20px;
+  }
+  .sec5 #contact .last_indu {
+    font-size: 20px;
+    margin: 40px 0;
   }
 }
 @media screen and (max-width: 1024px) {
