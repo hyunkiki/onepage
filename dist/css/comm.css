@@ -562,6 +562,10 @@ body {
   color: #fff;
 }
 
+.m_side_nav_menu_wrap {
+  display: none;
+}
+
 .navbar-nav .nav-link {
   color: #fff;
 }
@@ -604,6 +608,9 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+  .m_side_nav_menu_wrap {
+    display: none;
+  }
   .inner {
     padding: 0 100px;
   }
@@ -612,6 +619,9 @@ body {
   }
   #jumbotron .wavly p {
     font-size: 24px;
+  }
+  .scroll-downs {
+    top: -5%;
   }
   .sec2 #about .title .about_tit {
     font-size: 56px;
@@ -724,5 +734,136 @@ body {
   .sec5 #contact .last_indu {
     font-size: 20px;
     margin: 40px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .m_side_nav_menu_wrap {
+    display: none;
+  }
+  .inner {
+    padding: 0 50px;
+  }
+  #jumbotron #str {
+    font-size: 108px;
+  }
+  .scroll-downs {
+    top: -10%;
+  }
+  .sec2 #about .title .about_tit {
+    font-size: 42px;
+    margin: 30px 0 48px;
+  }
+  .sec2 #about .profile_wrap .profile_box .profile_img {
+    width: 60%;
+  }
+  .sec2 #about .profile_wrap .profile_box .intro_my {
+    font-size: 16px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
+    font-size: 18px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
+    font-size: 16px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
+    width: 235px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
+    width: 70%;
+    font-size: 16px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
+    width: 70%;
+    font-size: 16px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
+    width: 280px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
+    font-size: 18px;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
+    font-size: 16px;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 42px;
+    margin: 30px 0 48px;
+  }
+  .sec3 #skill .skill_box li .icon_img_thumb {
+    width: 48px;
+  }
+  .sec3 #skill .skill_box li .icon_contents .icon_tit {
+    font-size: 18px;
+  }
+  .sec3 #skill .skill_box li .icon_contents .icon_exp {
+    font-size: 16px;
+  }
+  .sec4 #project .title .project_tit {
+    font-size: 42px;
+    margin: 30px 0 48px;
+  }
+  .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
+    width: 100px;
+    font-size: 18px;
+  }
+  .sec4 #project .tab .project_box .thumb_img {
+    width: 390px;
+    height: 300px;
+  }
+  .sec4 #project .tab .project_box .right_box .desc strong {
+    font-size: 16px;
+  }
+  .sec4 #project .tab .project_box .right_box .desc .mini_tit {
+    font-size: 16px;
+  }
+  .sec4 #project .tab .project_box .right_box .desc p {
+    font-size: 16px;
+  }
+  .sec4 #project .tab .project_box .right_box .site {
+    width: 100%;
+  }
+  .sec4 #project .tab .project_box .right_box .site .link {
+    font-size: 16px;
+  }
+  .sec5 #contact .contact_tit {
+    font-size: 108px;
+    margin: 30px 0 48px;
+  }
+  .sec5 #contact .contact_box .contact_email {
+    font-size: 18px;
+  }
+  .sec5 #contact .contact_box .contact_phonenum {
+    font-size: 18px;
+  }
+  .sec5 #contact .last_indu {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    padding: 0 50px;
+  }
+  #navbar-nav {
+    display: none;
+  }
+  .m_side_nav_menu_wrap {
+    display: block;
+    position: relative;
+  }
+  .hamburger_btn {
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .hamburger_btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=comm.css.map */
