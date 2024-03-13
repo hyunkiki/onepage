@@ -30,7 +30,6 @@ body {
 .sec2 #about .profile_wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .sec2 #about .profile_wrap .profile_box {
   display: flex;
@@ -48,6 +47,7 @@ body {
   font-size: 20px;
   color: #fff;
   line-height: 1.5em;
+  text-align: center;
 }
 .sec2 #about .profile_wrap .profile_box .intro_my em {
   font-style: normal;
@@ -55,108 +55,67 @@ body {
   font-weight: 900;
   margin: 0;
 }
-.sec2 #about .profile_wrap .profile_contents {
+.sec2 #about .profile_wrap .profile_txt {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap,
+.sec2 #about .profile_wrap .profile_txt .box {
+  list-style-type: none;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap {
+  display: flex;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box {
+  width: 50%;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
+  display: block;
+  font-size: 30px;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: bold;
+  color: rgb(242, 68, 110);
+  margin-bottom: 20px;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box {
+  padding: 0;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box li .profile_smail_tit {
+  min-width: 80px;
+  font-size: 20px;
+  color: rgba(242, 68, 110, 0.5);
+  font-weight: 700;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box li .profile_smail_sub {
+  font-size: 20px;
+  color: #fff;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box .phone::before {
+  content: "\f095";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box .email::before {
+  content: "\f0e0";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box2 li {
   display: flex;
   flex-direction: column;
-  width: 55%;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box1 {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box2 li .profile_smail_tit {
+  margin-bottom: 20px;
 }
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li {
-  list-style-type: none;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
-  display: block;
-  font-size: 30px;
-  font-family: "Fugaz One", sans-serif;
-  font-weight: bold;
-  color: rgb(242, 68, 110);
-  margin: 0;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li .phone::before {
-  content: "\f095";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li .email_adr::before {
-  content: "\f0e0";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
-  display: block;
-  font-size: 20px;
-  margin: 20px 0;
-  color: #fff;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li strong {
-  color: rgba(242, 68, 110, 0.5);
-  display: block;
-  margin-bottom: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
-  width: 320px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li {
-  list-style-type: none;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
-  display: block;
-  font-size: 30px;
-  font-family: "Fugaz One", sans-serif;
-  font-weight: bold;
-  color: rgb(242, 68, 110);
-  margin: 0;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li .phone::before {
-  content: "\f095";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li .email_adr::before {
-  content: "\f0e0";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
-  display: block;
-  font-size: 20px;
-  margin: 20px 0;
-  color: #fff;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li strong {
-  color: rgba(242, 68, 110, 0.5);
-  display: block;
-  margin-bottom: 10px;
-}
-.sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
-  width: 320px;
+.sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
+  width: 30%;
 }
 .sec2.active #about .title {
   transform: translateY(0px);
@@ -852,20 +811,20 @@ body {
   }
   .m_side_nav_menu_wrap {
     display: block;
-    width: 80%;
+    width: 100%;
     position: fixed;
     top: 0%;
     right: 0;
     z-index: 1010;
-    height: 100%;
+    height: 20%;
   }
   .m_side_nav_menu_wrap .checkbox {
     position: absolute;
     display: block;
     height: 34px;
     width: 34px;
-    top: 5%;
-    right: 3%;
+    top: 20%;
+    right: 4%;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -875,7 +834,7 @@ body {
     width: 30px;
     cursor: pointer;
     position: absolute;
-    top: 5%;
+    top: 25%;
     right: 5%;
   }
   .m_side_nav_menu_wrap .hamburger_btn span {
@@ -896,14 +855,14 @@ body {
   }
   .m_side_nav_menu_wrap .menu_list {
     position: absolute;
-    top: 2%;
-    right: 15%;
-    width: 70%;
+    top: 9%;
+    right: 13%;
+    width: 45%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    transform: translate(130%);
+    transform: translate(140%);
     transition: transform 0.7s ease-in-out;
   }
   .m_side_nav_menu_wrap .menu_list .menu {
@@ -934,5 +893,31 @@ body {
   }
   .m_side_nav_menu_wrap input[type=checkbox]:checked ~ .menu_list {
     transform: translateX(0);
+  }
+  #jumbotron #str {
+    font-size: 72px;
+  }
+  .scroll-downs {
+    top: -15%;
+  }
+  .sec2 #about .title .about_tit {
+    margin: 20px 0 32px;
+  }
+  .sec2 #about .profile_wrap {
+    flex-direction: column;
+  }
+  .sec2 #about .profile_wrap .profile_box {
+    width: 50%;
+  }
+  .sec2 #about .profile_wrap .profile_box .profile_img {
+    width: 65%;
+  }
+  .sec2 #about .profile_wrap .profile_contents {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
+    width: 235px;
   }
 }/*# sourceMappingURL=comm.css.map */
