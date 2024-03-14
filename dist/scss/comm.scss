@@ -40,11 +40,11 @@ body {
       align-items: center;
       .profile_box {
         display: flex;
-        width: 40%;
+        width: 30%;
         flex-direction: column;
         align-items: center;
-        .profile_img {
-          width: 55%;
+        .profile_img_thumb {
+          width: 65%;
           img {
             width: 100%;
           }
@@ -72,14 +72,15 @@ body {
         }
         .txt_wrap {
           display: flex;
+          justify-content: space-between;
           .txt_box {
-            width: 50%;
+            width: 60%;
             .big_tit {
               display: block;
               font-size: 30px;
               font-family: "Fugaz One", sans-serif;
               font-weight: bold;
-              color: rgb(242, 68, 110);
+              color: #f2446e;
               margin-bottom: 20px;
             }
             .box {
@@ -114,9 +115,9 @@ body {
             .box2 {
               li {
                 display: flex;
-                flex-direction: column;
                 .profile_smail_tit {
                   margin-bottom: 20px;
+                  margin-right: 20px;
                 }
               }
             }
@@ -221,9 +222,10 @@ body {
     .tab_menu_wrap {
       .tab_menu_box {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 60%;
         margin: 0 auto;
+        padding: 0;
         .tab_box {
           list-style-type: none;
         }
@@ -673,31 +675,45 @@ body {
   .sec2 #about .profile_wrap .profile_box {
     width: 40%;
   }
-  .sec2 #about .profile_wrap .profile_box .profile_img {
-    width: 65%;
+  .sec2 #about .profile_wrap .profile_box .profile_img_thumb {
+    width: 70%;
   }
   .sec2 #about .profile_wrap .profile_box .intro_my {
     font-size: 18px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box2 li {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap {
+    justify-content: space-around;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box {
+    width: 55%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
     font-size: 24px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
-    width: 275px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
-    width: 65%;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
-    width: 65%;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_tit {
     font-size: 18px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
-    font-size: 24px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_sub {
     font-size: 18px;
   }
   .sec3 #skill .title .skill_tit {
@@ -728,7 +744,7 @@ body {
     padding: 0;
   }
   .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
-    width: 150px;
+    width: 180px;
     font-size: 20px;
   }
   .sec4 #project .tab .project_box .thumb_img {
@@ -796,36 +812,44 @@ body {
     font-size: 42px;
     margin: 30px 0 48px;
   }
-  .sec2 #about .profile_wrap .profile_box .profile_img {
-    width: 60%;
+  .sec2 #about .profile_wrap .profile_box .profile_img_thumb {
+    width: 75%;
   }
   .sec2 #about .profile_wrap .profile_box .intro_my {
     font-size: 16px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li h3 {
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap {
+    justify-content: space-between;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
+    width: 35%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box {
+    width: 60%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
     font-size: 18px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li span {
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_tit {
     font-size: 16px;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li:first-child {
-    width: 235px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .name_box {
-    width: 70%;
-    font-size: 16px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box1 li .birth_box {
-    width: 70%;
-    font-size: 16px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
-    width: 280px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li h3 {
-    font-size: 18px;
-  }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li span {
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_sub {
     font-size: 16px;
   }
   .sec3 #skill .title .skill_tit {
@@ -846,7 +870,7 @@ body {
     margin: 30px 0 48px;
   }
   .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
-    width: 100px;
+    width: 160px;
     font-size: 18px;
   }
   .sec4 #project .tab .project_box .thumb_img {
@@ -989,7 +1013,7 @@ body {
     top: -15%;
   }
   .sec2 #about .title .about_tit {
-    margin: 20px 0 32px;
+    margin: 50px 0 48px;
   }
   .sec2 #about .profile_wrap {
     flex-direction: column;
@@ -997,21 +1021,67 @@ body {
   .sec2 #about .profile_wrap .profile_box {
     width: 50%;
   }
-  .sec2 #about .profile_wrap .profile_box .profile_img {
-    width: 65%;
+  .sec2 #about .profile_wrap .profile_box .profile_img_thumb {
+    width: 70%;
   }
-  .sec2 #about .profile_wrap .profile_contents {
-    display: flex;
+  .sec2 #about .profile_wrap .profile_txt {
+    width: 100%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box {
+    width: 55%;
+  }
+  .sec3 #skill .title .skill_tit {
+    margin: 40px 0 48px;
+  }
+  .sec3 #skill .title {
+    transition: 2s all;
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  .sec3.active #skill .title {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  .sec3 #skill .skill_box {
+    height: 100%;
     flex-direction: column;
-    width: 85%;
   }
-  .sec2 #about .profile_wrap .profile_contents .txt_box2 li:first-child {
-    width: 235px;
+  .sec3 #skill .skill_box li {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
-  // .sec3 #skill .title .skill_tit {
-  //   font-size: 42px;
-  //   margin: 20px 0 32px;
-  // }
+  .sec3 #skill .skill_box:last-child {
+    padding-left: 0;
+  }
+  .sec3 #skill .skill_box li .icon_img_thumb {
+    width: 64px;
+  }
+  .sec4 #project .title .project_tit {
+    margin: 70px 0 48px;
+  }
+  .sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
+    width: 130px;
+  }
+  .sec4 #project .tab .project_box {
+    flex-direction: column;
+  }
+  .sec4 #project .tab .project_box .thumb_img {
+    width: 520px;
+    height: 400px;
+  }
+  .sec4 #project .tab .project_box .right_box {
+    width: 80%;
+  }
+  .sec4 #project .tab .project_box .right_box .desc strong {
+    font-size: 18px;
+  }
+  .sec5 #contact .contact_tit {
+    font-size: 72px;
+  }
+  .sec5 #contact .contact_box {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 428px) {
 }
