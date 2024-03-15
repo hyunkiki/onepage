@@ -1084,4 +1084,11 @@ body {
   }
 }
 @media screen and (max-width: 428px) {
+  .m_side_nav_menu_wrap .menu_list {
+    right: 25%;
+    transform: translate(160%);
+  }
+  .m_side_nav_menu_wrap .menu_list .menu a {
+    font-size: 18px;
+  }
 }
