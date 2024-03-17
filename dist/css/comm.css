@@ -547,7 +547,7 @@ body {
 }
 #jumbotron .wavly {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
   font-size: 60px;
 }
 #jumbotron .wavly p {
@@ -556,7 +556,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 30px;
-  animation: waviy 4s infinite;
+  animation: waviy 5s infinite;
   animation-delay: calc(0.3s * var(--i));
 }
 @keyframes waviy {
@@ -964,11 +964,55 @@ body {
   }
 }
 @media screen and (max-width: 428px) {
+  .inner {
+    padding: 0 10px;
+  }
   .m_side_nav_menu_wrap .menu_list {
-    right: 25%;
+    right: 20%;
     transform: translate(160%);
+    width: 60%;
   }
   .m_side_nav_menu_wrap .menu_list .menu a {
+    font-size: 16px;
+  }
+  #jumbotron #str {
+    font-size: 36px;
+  }
+  #jumbotron .wavly p {
     font-size: 18px;
+  }
+  .scroll-downs {
+    top: -20%;
+  }
+  .sec2 #about .profile_wrap .profile_box {
+    width: 100%;
+  }
+  .sec2 #about .profile_wrap .profile_box .profile_img_thumb {
+    width: 60%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap {
+    flex-direction: column;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
+    width: 100%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box {
+    width: 100%;
+  }
+  .sec2 #about .title .about_tit {
+    margin: 60px 0 48px;
+    font-size: 28px;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 28px;
+  }
+  .sec3 #skill .skill_box li .icon_img_thumb {
+    width: 48px;
+  }
+  .sec4 #project .title .project_tit {
+    font-size: 28px;
+  }
+  .sec4 #project .tab_menu_wrap .tab_menu_box {
+    width: 80%;
   }
 }/*# sourceMappingURL=comm.css.map */
