@@ -11,7 +11,7 @@ body {
 }
 
 .inner {
-  padding: 0 150px;
+  padding: 0 100px;
 }
 
 .sec2 #about .title {
@@ -183,55 +183,19 @@ body {
   opacity: 1;
 }
 
-.sec4 #project .title {
-  transition: 2s all;
-  transform: translateY(50px);
-  opacity: 0;
-}
-.sec4 #project .title .project_tit {
+.sec4 #GOAL .title .project_tit {
   font-size: 70px;
   color: #22de1b;
   margin: 50px 0 80px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
 }
-.sec4 #project .tab_menu_wrap .tab_menu_box {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin: 0 auto;
-  padding: 0;
-}
-.sec4 #project .tab_menu_wrap .tab_menu_box .tab_box {
-  list-style-type: none;
-}
-.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu {
-  display: block;
-  font-size: 25px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  text-align: center;
-  width: 200px;
-  border-radius: 10px;
-  padding: 15px;
-  transition: all 0.3s;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid #fff;
-}
-.sec4 #project .tab_menu_wrap .tab_menu_box .tab-menu.active {
-  background: #22de1b;
-  border: 1px solid #22de1b;
-}
-.sec4 #project .tab {
-  display: none;
-}
-.sec4 #project .tab .project_box {
+.sec4 #GOAL .project_box {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.sec4 #project .tab .project_box .thumb_img {
+.sec4 #GOAL .project_box .thumb_img {
   width: 650px;
   height: 500px;
   overflow: hidden;
@@ -240,7 +204,7 @@ body {
   position: relative;
   z-index: 900;
 }
-.sec4 #project .tab .project_box .thumb_img .project_img {
+.sec4 #GOAL .project_box .thumb_img .project_img {
   width: 100%;
   animation: slideUpDown 30s linear;
   animation-fill-mode: forwards;
@@ -253,12 +217,12 @@ body {
     transform: translateY(-79%);
   }
 }
-.sec4 #project .tab .project_box .right_box {
+.sec4 #GOAL .project_box .right_box {
   width: 45%;
   margin: 0;
   padding: 0;
 }
-.sec4 #project .tab .project_box .right_box .desc {
+.sec4 #GOAL .project_box .right_box .desc {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -266,27 +230,27 @@ body {
   margin: 20px 0;
   font-size: 20px;
 }
-.sec4 #project .tab .project_box .right_box .desc .mini_tit {
+.sec4 #GOAL .project_box .right_box .desc .mini_tit {
   margin: 0;
   font-size: 20px;
   color: #fff;
 }
-.sec4 #project .tab .project_box .right_box .desc strong {
+.sec4 #GOAL .project_box .right_box .desc strong {
   margin-right: 20px;
   color: #22de1b;
   font-weight: 800;
 }
-.sec4 #project .tab .project_box .right_box .desc p {
+.sec4 #GOAL .project_box .right_box .desc p {
   margin: 0;
   color: #fff;
 }
-.sec4 #project .tab .project_box .right_box .site {
+.sec4 #GOAL .project_box .right_box .site {
   list-style-type: none;
   width: 70%;
   display: flex;
   margin-top: 50px;
 }
-.sec4 #project .tab .project_box .right_box .site .link {
+.sec4 #GOAL .project_box .right_box .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -299,7 +263,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-.sec4 #project .tab .project_box .right_box .site .link::before {
+.sec4 #GOAL .project_box .right_box .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -313,22 +277,228 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-.sec4 #project .tab .project_box .right_box .site .link:hover {
+.sec4 #GOAL .project_box .right_box .site .link:hover {
   text-indent: -20px;
 }
-.sec4 #project .tab .project_box .right_box .site .link:hover:before {
+.sec4 #GOAL .project_box .right_box .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
 }
-.sec4 #project .tab.active_menu {
+.sec4 #GOAL.active_menu {
   display: block;
 }
-.sec4.active #project .title {
-  transform: translateY(0px);
+
+.sec5 #PRADA .title .project_tit {
+  font-size: 70px;
+  color: #22de1b;
+  margin: 50px 0 80px;
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+}
+.sec5 #PRADA .project_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec5 #PRADA .project_box .thumb_img {
+  width: 650px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 900;
+}
+.sec5 #PRADA .project_box .thumb_img .project_img {
+  width: 100%;
+  animation: slideUpDown 30s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-79%);
+  }
+}
+.sec5 #PRADA .project_box .right_box {
+  width: 45%;
+  margin: 0;
+  padding: 0;
+}
+.sec5 #PRADA .project_box .right_box .desc {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.sec5 #PRADA .project_box .right_box .desc .mini_tit {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+.sec5 #PRADA .project_box .right_box .desc strong {
+  margin-right: 20px;
+  color: #22de1b;
+  font-weight: 800;
+}
+.sec5 #PRADA .project_box .right_box .desc p {
+  margin: 0;
+  color: #fff;
+}
+.sec5 #PRADA .project_box .right_box .site {
+  list-style-type: none;
+  width: 70%;
+  display: flex;
+  margin-top: 50px;
+}
+.sec5 #PRADA .project_box .right_box .site .link {
+  position: relative;
+  display: block;
+  width: 130px;
+  background: #106d0d;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+.sec5 #PRADA .project_box .right_box .site .link::before {
+  position: absolute;
+  content: "\f061";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  right: 0;
+  top: 20px;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.3s linear 0s;
+}
+.sec5 #PRADA .project_box .right_box .site .link:hover {
+  text-indent: -20px;
+}
+.sec5 #PRADA .project_box .right_box .site .link:hover:before {
   opacity: 1;
+  text-indent: 0;
+}
+.sec5 #PRADA.active_menu {
+  display: block;
 }
 
-.sec5 #contact .contact_tit {
+.sec6 #GHIBLI .title .project_tit {
+  font-size: 70px;
+  color: #22de1b;
+  margin: 50px 0 80px;
+  text-align: center;
+  font-family: "Fugaz One", sans-serif;
+}
+.sec6 #GHIBLI .project_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec6 #GHIBLI .project_box .thumb_img {
+  width: 650px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 900;
+}
+.sec6 #GHIBLI .project_box .thumb_img .project_img {
+  width: 100%;
+  animation: slideUpDown 30s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-79%);
+  }
+}
+.sec6 #GHIBLI .project_box .right_box {
+  width: 45%;
+  margin: 0;
+  padding: 0;
+}
+.sec6 #GHIBLI .project_box .right_box .desc {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.sec6 #GHIBLI .project_box .right_box .desc .mini_tit {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+.sec6 #GHIBLI .project_box .right_box .desc strong {
+  margin-right: 20px;
+  color: #22de1b;
+  font-weight: 800;
+}
+.sec6 #GHIBLI .project_box .right_box .desc p {
+  margin: 0;
+  color: #fff;
+}
+.sec6 #GHIBLI .project_box .right_box .site {
+  list-style-type: none;
+  width: 70%;
+  display: flex;
+  margin-top: 50px;
+}
+.sec6 #GHIBLI .project_box .right_box .site .link {
+  position: relative;
+  display: block;
+  width: 130px;
+  background: #106d0d;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+.sec6 #GHIBLI .project_box .right_box .site .link::before {
+  position: absolute;
+  content: "\f061";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  right: 0;
+  top: 20px;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.3s linear 0s;
+}
+.sec6 #GHIBLI .project_box .right_box .site .link:hover {
+  text-indent: -20px;
+}
+.sec6 #GHIBLI .project_box .right_box .site .link:hover:before {
+  opacity: 1;
+  text-indent: 0;
+}
+.sec6 #GHIBLI.active_menu {
+  display: block;
+}
+
+.sec7 #contact .contact_tit {
   transition: 2s all;
   transform: translateY(70px);
   opacity: 0;
@@ -338,55 +508,55 @@ body {
   color: #fff;
   margin: 50px 0 80px;
 }
-.sec5 #contact .contact_box {
+.sec7 #contact .contact_box {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
   margin: 0 auto;
 }
-.sec5 #contact .contact_box .contact_email {
+.sec7 #contact .contact_box .contact_email {
   font-size: 25px;
   color: #fff;
   margin: 0;
 }
-.sec5 #contact .contact_box .contact_email::before {
+.sec7 #contact .contact_box .contact_email::before {
   content: "\f0e0";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 20px;
 }
-.sec5 #contact .contact_box .contact_email span {
+.sec7 #contact .contact_box .contact_email span {
   color: rgba(255, 255, 255, 0.5);
   margin-right: 20px;
 }
-.sec5 #contact .contact_box .contact_phonenum {
+.sec7 #contact .contact_box .contact_phonenum {
   font-size: 25px;
   color: #fff;
   margin: 0;
 }
-.sec5 #contact .contact_box .contact_phonenum::before {
+.sec7 #contact .contact_box .contact_phonenum::before {
   content: "\f095";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 20px;
 }
-.sec5 #contact .contact_box .contact_phonenum span {
+.sec7 #contact .contact_box .contact_phonenum span {
   color: rgba(255, 255, 255, 0.5);
   margin-right: 20px;
 }
-.sec5 #contact .last_indu {
+.sec7 #contact .last_indu {
   font-size: 25px;
   color: #fff;
   margin: 50px 0;
   text-align: center;
 }
-.sec5 #contact .copyright {
+.sec7 #contact .copyright {
   font-size: 25px;
   color: #fff;
   margin: 50px 0;
   text-align: center;
 }
-.sec5.active #contact .contact_tit {
+.sec7.active #contact .contact_tit {
   transform: translateY(0px);
   opacity: 1;
 }
