@@ -186,6 +186,7 @@ body {
 .sec4 #goal .project_wrap {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .sec4 #goal .project_wrap .slide_cover {
   position: relative;
@@ -206,6 +207,31 @@ body {
   font-size: 50px;
   font-family: "Fugaz One", sans-serif;
   color: #22de1b;
+  margin: 0;
+}
+.sec4 #goal .project_wrap .slide_desc .desc {
+  padding: 0;
+}
+.sec4 #goal .project_wrap .slide_desc .desc li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+.sec4 #goal .project_wrap .slide_desc .desc li .info_tit {
+  display: inline-block;
+  min-width: 120px;
+  color: #22de1b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sec4 #goal .project_wrap .slide_desc .desc li .info_exp {
+  color: #fff;
+  font-size: 18px;
+}
+.sec4 #goal .project_wrap .slide_desc p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 .sec4 #goal .project_wrap .slide_desc .site {
   list-style-type: none;
@@ -251,6 +277,7 @@ body {
 .sec5 #prada .project_wrap {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .sec5 #prada .project_wrap .slide_cover {
   position: relative;
@@ -271,6 +298,31 @@ body {
   font-size: 50px;
   font-family: "Fugaz One", sans-serif;
   color: #22de1b;
+  margin: 0;
+}
+.sec5 #prada .project_wrap .slide_desc .desc {
+  padding: 0;
+}
+.sec5 #prada .project_wrap .slide_desc .desc li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+.sec5 #prada .project_wrap .slide_desc .desc li .info_tit {
+  display: inline-block;
+  min-width: 120px;
+  color: #22de1b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sec5 #prada .project_wrap .slide_desc .desc li .info_exp {
+  color: #fff;
+  font-size: 18px;
+}
+.sec5 #prada .project_wrap .slide_desc p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 .sec5 #prada .project_wrap .slide_desc .site {
   list-style-type: none;
@@ -316,6 +368,7 @@ body {
 .sec6 #ghibli .project_wrap {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .sec6 #ghibli .project_wrap .slide_cover {
   position: relative;
@@ -336,6 +389,31 @@ body {
   font-size: 50px;
   font-family: "Fugaz One", sans-serif;
   color: #22de1b;
+  margin: 0;
+}
+.sec6 #ghibli .project_wrap .slide_desc .desc {
+  padding: 0;
+}
+.sec6 #ghibli .project_wrap .slide_desc .desc li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+.sec6 #ghibli .project_wrap .slide_desc .desc li .info_tit {
+  display: inline-block;
+  min-width: 120px;
+  color: #22de1b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sec6 #ghibli .project_wrap .slide_desc .desc li .info_exp {
+  color: #fff;
+  font-size: 18px;
+}
+.sec6 #ghibli .project_wrap .slide_desc p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 .sec6 #ghibli .project_wrap .slide_desc .site {
   list-style-type: none;
