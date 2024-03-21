@@ -10,7 +10,7 @@ new fullpage("#fullpage", {
   navigation: true,
   responsiveWidth: 700,
   navigationTooltips: [
-    "INTRO",
+    "HOME",
     "PROFILE",
     "SKILL",
     "GOAL",
@@ -18,7 +18,7 @@ new fullpage("#fullpage", {
     "GHIBLI",
     "CONTACT",
   ],
-  anchors: ["INTRO", "PROFILE", "SKILL", "GOAL", "PRADA", "GHIBLI", "CONTACT"],
+  anchors: ["HOME", "PROFILE", "SKILL", "GOAL", "PRADA", "GHIBLI", "CONTACT"],
   menu: ["#navbar-nav"],
   parallax: true,
   onLeave: function (origin, destination, direction) {

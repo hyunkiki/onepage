@@ -206,70 +206,28 @@ body {
   }
 }
 .sec4 {
-  #GOAL {
-    .title {
-      // transition: 2s all;
-      // transform: translateY(50px);
-      // opacity: 0;
-      .project_tit {
-        font-size: 70px;
-        color: #22de1b;
-        margin: 50px 0 80px;
-        text-align: center;
-        font-family: "Fugaz One", sans-serif;
-      }
-    }
-    .project_box {
+  #goal {
+    .project_wrap {
       display: flex;
-      align-items: center;
       justify-content: space-around;
-      .thumb_img {
-        width: 650px;
-        height: 500px;
+      .slide_cover {
+        position: relative;
+        width: 50%;
+        height: 70vh;
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        position: relative;
         z-index: 900;
-        .project_img {
-          width: 100%;
-          animation: slideUpDown 30s linear;
-          animation-fill-mode: forwards;
-        }
-        @keyframes slideUpDown {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-79%);
-          }
+        img {
+          max-width: 100%;
         }
       }
-      .right_box {
-        width: 45%;
-        margin: 0;
-        padding: 0;
-        .desc {
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          width: 80%;
-          margin: 20px 0;
-          font-size: 20px;
-          .mini_tit {
-            margin: 0;
-            font-size: 20px;
-            color: #fff;
-          }
-          strong {
-            margin-right: 20px;
-            color: #22de1b;
-            font-weight: 800;
-          }
-          p {
-            margin: 0;
-            color: #fff;
-          }
+      .slide_desc {
+        width: 40%;
+        .proj_name {
+          font-size: 50px;
+          font-family: "Fugaz One", sans-serif;
+          color: #22de1b;
         }
         .site {
           list-style-type: none;
@@ -313,84 +271,31 @@ body {
         }
       }
     }
-    &.active_menu {
-      display: block;
-    }
   }
-  // &.active {
-  //   #GOAL {
-  //     .title {
-  //       transform: translateY(0px);
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
 }
 .sec5 {
-  #PRADA {
-    .title {
-      // transition: 2s all;
-      // transform: translateY(50px);
-      // opacity: 0;
-      .project_tit {
-        font-size: 70px;
-        color: #22de1b;
-        margin: 50px 0 80px;
-        text-align: center;
-        font-family: "Fugaz One", sans-serif;
-      }
-    }
-    .project_box {
+  #prada {
+    .project_wrap {
       display: flex;
-      align-items: center;
       justify-content: space-around;
-      .thumb_img {
-        width: 650px;
-        height: 500px;
+      .slide_cover {
+        position: relative;
+        width: 50%;
+        height: 70vh;
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        position: relative;
         z-index: 900;
-        .project_img {
-          width: 100%;
-          animation: slideUpDown 30s linear;
-          animation-fill-mode: forwards;
-        }
-        @keyframes slideUpDown {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-79%);
-          }
+        img {
+          max-width: 100%;
         }
       }
-      .right_box {
-        width: 45%;
-        margin: 0;
-        padding: 0;
-        .desc {
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          width: 80%;
-          margin: 20px 0;
-          font-size: 20px;
-          .mini_tit {
-            margin: 0;
-            font-size: 20px;
-            color: #fff;
-          }
-          strong {
-            margin-right: 20px;
-            color: #22de1b;
-            font-weight: 800;
-          }
-          p {
-            margin: 0;
-            color: #fff;
-          }
+      .slide_desc {
+        width: 40%;
+        .proj_name {
+          font-size: 50px;
+          font-family: "Fugaz One", sans-serif;
+          color: #22de1b;
         }
         .site {
           list-style-type: none;
@@ -434,84 +339,31 @@ body {
         }
       }
     }
-    &.active_menu {
-      display: block;
-    }
   }
-  // &.active {
-  //   #PRADA {
-  //     .title {
-  //       transform: translateY(0px);
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
 }
 .sec6 {
-  #GHIBLI {
-    .title {
-      // transition: 2s all;
-      // transform: translateY(50px);
-      // opacity: 0;
-      .project_tit {
-        font-size: 70px;
-        color: #22de1b;
-        margin: 50px 0 80px;
-        text-align: center;
-        font-family: "Fugaz One", sans-serif;
-      }
-    }
-    .project_box {
+  #ghibli {
+    .project_wrap {
       display: flex;
-      align-items: center;
       justify-content: space-around;
-      .thumb_img {
-        width: 650px;
-        height: 500px;
+      .slide_cover {
+        position: relative;
+        width: 50%;
+        height: 70vh;
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        position: relative;
         z-index: 900;
-        .project_img {
-          width: 100%;
-          animation: slideUpDown 30s linear;
-          animation-fill-mode: forwards;
-        }
-        @keyframes slideUpDown {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-79%);
-          }
+        img {
+          max-width: 100%;
         }
       }
-      .right_box {
-        width: 45%;
-        margin: 0;
-        padding: 0;
-        .desc {
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          width: 80%;
-          margin: 20px 0;
-          font-size: 20px;
-          .mini_tit {
-            margin: 0;
-            font-size: 20px;
-            color: #fff;
-          }
-          strong {
-            margin-right: 20px;
-            color: #22de1b;
-            font-weight: 800;
-          }
-          p {
-            margin: 0;
-            color: #fff;
-          }
+      .slide_desc {
+        width: 40%;
+        .proj_name {
+          font-size: 50px;
+          font-family: "Fugaz One", sans-serif;
+          color: #22de1b;
         }
         .site {
           list-style-type: none;
@@ -555,18 +407,7 @@ body {
         }
       }
     }
-    &.active_menu {
-      display: block;
-    }
   }
-  // &.active {
-  //   #GHIBLI {
-  //     .title {
-  //       transform: translateY(0px);
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
 }
 .sec7 {
   #contact {

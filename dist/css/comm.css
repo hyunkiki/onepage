@@ -183,74 +183,37 @@ body {
   opacity: 1;
 }
 
-.sec4 #GOAL .title .project_tit {
-  font-size: 70px;
-  color: #22de1b;
-  margin: 50px 0 80px;
-  text-align: center;
-  font-family: "Fugaz One", sans-serif;
-}
-.sec4 #GOAL .project_box {
+.sec4 #goal .project_wrap {
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
-.sec4 #GOAL .project_box .thumb_img {
-  width: 650px;
-  height: 500px;
+.sec4 #goal .project_wrap .slide_cover {
+  position: relative;
+  width: 50%;
+  height: 70vh;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: relative;
   z-index: 900;
 }
-.sec4 #GOAL .project_box .thumb_img .project_img {
-  width: 100%;
-  animation: slideUpDown 30s linear;
-  animation-fill-mode: forwards;
+.sec4 #goal .project_wrap .slide_cover img {
+  max-width: 100%;
 }
-@keyframes slideUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-79%);
-  }
+.sec4 #goal .project_wrap .slide_desc {
+  width: 40%;
 }
-.sec4 #GOAL .project_box .right_box {
-  width: 45%;
-  margin: 0;
-  padding: 0;
-}
-.sec4 #GOAL .project_box .right_box .desc {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin: 20px 0;
-  font-size: 20px;
-}
-.sec4 #GOAL .project_box .right_box .desc .mini_tit {
-  margin: 0;
-  font-size: 20px;
-  color: #fff;
-}
-.sec4 #GOAL .project_box .right_box .desc strong {
-  margin-right: 20px;
+.sec4 #goal .project_wrap .slide_desc .proj_name {
+  font-size: 50px;
+  font-family: "Fugaz One", sans-serif;
   color: #22de1b;
-  font-weight: 800;
 }
-.sec4 #GOAL .project_box .right_box .desc p {
-  margin: 0;
-  color: #fff;
-}
-.sec4 #GOAL .project_box .right_box .site {
+.sec4 #goal .project_wrap .slide_desc .site {
   list-style-type: none;
   width: 70%;
   display: flex;
   margin-top: 50px;
 }
-.sec4 #GOAL .project_box .right_box .site .link {
+.sec4 #goal .project_wrap .slide_desc .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -263,7 +226,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-.sec4 #GOAL .project_box .right_box .site .link::before {
+.sec4 #goal .project_wrap .slide_desc .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -277,85 +240,45 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-.sec4 #GOAL .project_box .right_box .site .link:hover {
+.sec4 #goal .project_wrap .slide_desc .site .link:hover {
   text-indent: -20px;
 }
-.sec4 #GOAL .project_box .right_box .site .link:hover:before {
+.sec4 #goal .project_wrap .slide_desc .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
-}
-.sec4 #GOAL.active_menu {
-  display: block;
 }
 
-.sec5 #PRADA .title .project_tit {
-  font-size: 70px;
-  color: #22de1b;
-  margin: 50px 0 80px;
-  text-align: center;
-  font-family: "Fugaz One", sans-serif;
-}
-.sec5 #PRADA .project_box {
+.sec5 #prada .project_wrap {
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
-.sec5 #PRADA .project_box .thumb_img {
-  width: 650px;
-  height: 500px;
+.sec5 #prada .project_wrap .slide_cover {
+  position: relative;
+  width: 50%;
+  height: 70vh;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: relative;
   z-index: 900;
 }
-.sec5 #PRADA .project_box .thumb_img .project_img {
-  width: 100%;
-  animation: slideUpDown 30s linear;
-  animation-fill-mode: forwards;
+.sec5 #prada .project_wrap .slide_cover img {
+  max-width: 100%;
 }
-@keyframes slideUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-79%);
-  }
+.sec5 #prada .project_wrap .slide_desc {
+  width: 40%;
 }
-.sec5 #PRADA .project_box .right_box {
-  width: 45%;
-  margin: 0;
-  padding: 0;
-}
-.sec5 #PRADA .project_box .right_box .desc {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin: 20px 0;
-  font-size: 20px;
-}
-.sec5 #PRADA .project_box .right_box .desc .mini_tit {
-  margin: 0;
-  font-size: 20px;
-  color: #fff;
-}
-.sec5 #PRADA .project_box .right_box .desc strong {
-  margin-right: 20px;
+.sec5 #prada .project_wrap .slide_desc .proj_name {
+  font-size: 50px;
+  font-family: "Fugaz One", sans-serif;
   color: #22de1b;
-  font-weight: 800;
 }
-.sec5 #PRADA .project_box .right_box .desc p {
-  margin: 0;
-  color: #fff;
-}
-.sec5 #PRADA .project_box .right_box .site {
+.sec5 #prada .project_wrap .slide_desc .site {
   list-style-type: none;
   width: 70%;
   display: flex;
   margin-top: 50px;
 }
-.sec5 #PRADA .project_box .right_box .site .link {
+.sec5 #prada .project_wrap .slide_desc .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -368,7 +291,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-.sec5 #PRADA .project_box .right_box .site .link::before {
+.sec5 #prada .project_wrap .slide_desc .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -382,85 +305,45 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-.sec5 #PRADA .project_box .right_box .site .link:hover {
+.sec5 #prada .project_wrap .slide_desc .site .link:hover {
   text-indent: -20px;
 }
-.sec5 #PRADA .project_box .right_box .site .link:hover:before {
+.sec5 #prada .project_wrap .slide_desc .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
-}
-.sec5 #PRADA.active_menu {
-  display: block;
 }
 
-.sec6 #GHIBLI .title .project_tit {
-  font-size: 70px;
-  color: #22de1b;
-  margin: 50px 0 80px;
-  text-align: center;
-  font-family: "Fugaz One", sans-serif;
-}
-.sec6 #GHIBLI .project_box {
+.sec6 #ghibli .project_wrap {
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
-.sec6 #GHIBLI .project_box .thumb_img {
-  width: 650px;
-  height: 500px;
+.sec6 #ghibli .project_wrap .slide_cover {
+  position: relative;
+  width: 50%;
+  height: 70vh;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: relative;
   z-index: 900;
 }
-.sec6 #GHIBLI .project_box .thumb_img .project_img {
-  width: 100%;
-  animation: slideUpDown 30s linear;
-  animation-fill-mode: forwards;
+.sec6 #ghibli .project_wrap .slide_cover img {
+  max-width: 100%;
 }
-@keyframes slideUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-79%);
-  }
+.sec6 #ghibli .project_wrap .slide_desc {
+  width: 40%;
 }
-.sec6 #GHIBLI .project_box .right_box {
-  width: 45%;
-  margin: 0;
-  padding: 0;
-}
-.sec6 #GHIBLI .project_box .right_box .desc {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin: 20px 0;
-  font-size: 20px;
-}
-.sec6 #GHIBLI .project_box .right_box .desc .mini_tit {
-  margin: 0;
-  font-size: 20px;
-  color: #fff;
-}
-.sec6 #GHIBLI .project_box .right_box .desc strong {
-  margin-right: 20px;
+.sec6 #ghibli .project_wrap .slide_desc .proj_name {
+  font-size: 50px;
+  font-family: "Fugaz One", sans-serif;
   color: #22de1b;
-  font-weight: 800;
 }
-.sec6 #GHIBLI .project_box .right_box .desc p {
-  margin: 0;
-  color: #fff;
-}
-.sec6 #GHIBLI .project_box .right_box .site {
+.sec6 #ghibli .project_wrap .slide_desc .site {
   list-style-type: none;
   width: 70%;
   display: flex;
   margin-top: 50px;
 }
-.sec6 #GHIBLI .project_box .right_box .site .link {
+.sec6 #ghibli .project_wrap .slide_desc .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -473,7 +356,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-.sec6 #GHIBLI .project_box .right_box .site .link::before {
+.sec6 #ghibli .project_wrap .slide_desc .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -487,15 +370,12 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-.sec6 #GHIBLI .project_box .right_box .site .link:hover {
+.sec6 #ghibli .project_wrap .slide_desc .site .link:hover {
   text-indent: -20px;
 }
-.sec6 #GHIBLI .project_box .right_box .site .link:hover:before {
+.sec6 #ghibli .project_wrap .slide_desc .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
-}
-.sec6 #GHIBLI.active_menu {
-  display: block;
 }
 
 .sec7 #contact .contact_tit {
