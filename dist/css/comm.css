@@ -14,6 +14,49 @@ body {
   padding: 0 100px;
 }
 
+#jumbotron .typing_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jumbotron .typing_box .typing_tit,
+#jumbotron .typing_box i {
+  display: inline-block;
+  color: #d7b94c;
+  font-size: 180px;
+  font-weight: bold;
+  font-family: mosk;
+  margin: 0;
+}
+#jumbotron .typing_box i {
+  width: 2px;
+  height: 1em;
+  background-color: currentColor;
+  margin-left: 0.3rem;
+}
+#jumbotron .wavly {
+  position: relative;
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  font-size: 60px;
+}
+#jumbotron .wavly p {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  animation: waviy 5s infinite;
+  animation-delay: calc(0.3s * var(--i));
+}
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
 .sec2 #about .title {
   transition: 2s all;
   transform: translateY(50px);
@@ -570,12 +613,26 @@ body {
 
 #header {
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 0;
   z-index: 70;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+#header .heeder_box {
+  display: flex;
+  justify-content: space-between;
+}
+#header .heeder_box .header_name {
+  font-size: 25px;
+  color: #fff;
+  font-family: "Fugaz One", sans-serif;
+}
+#header .heeder_box .year {
+  font-size: 25px;
+  color: #fff;
+  font-family: "Fugaz One", sans-serif;
 }
 
 #navbar-nav {
@@ -663,37 +720,6 @@ body {
 }
 .navbar-nav .nav-link:hover {
   color: red;
-}
-
-#jumbotron #str {
-  height: auto;
-  font-family: "mosk";
-  font-size: 180px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
-#jumbotron .wavly {
-  position: relative;
-  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  font-size: 60px;
-}
-#jumbotron .wavly p {
-  position: relative;
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  animation: waviy 5s infinite;
-  animation-delay: calc(0.3s * var(--i));
-}
-@keyframes waviy {
-  0%, 40%, 100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-20px);
-  }
 }
 
 @media screen and (max-width: 1280px) {
