@@ -257,11 +257,11 @@ body {
   #goal {
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
+        width: 45%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -269,6 +269,20 @@ body {
         z-index: 900;
         img {
           max-width: 100%;
+          transition: all 4s;
+          transition-delay: 0.5s;
+          vertical-align: top;
+          &:hover {
+            transform: translateY(-76%);
+            transition: all 3s;
+          }
+        }
+        .icon_img {
+          position: absolute;
+          bottom: 0%;
+          right: 0;
+          width: 15%;
+          animation: up-down 1.5s infinite ease-in-out alternate;
         }
       }
       .slide_desc {
@@ -351,11 +365,11 @@ body {
   #prada {
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
+        width: 45%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -363,6 +377,20 @@ body {
         z-index: 900;
         img {
           max-width: 100%;
+          transition: all 4s;
+          transition-delay: 0.5s;
+          vertical-align: top;
+          &:hover {
+            transform: translateY(-81.5%);
+            transition: all 3s;
+          }
+        }
+        .icon_img {
+          position: absolute;
+          bottom: 0%;
+          right: 0;
+          width: 20%;
+          animation: up-down 1.5s infinite ease-in-out alternate;
         }
       }
       .slide_desc {
@@ -445,11 +473,11 @@ body {
   #ghibli {
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
+        width: 45%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -457,6 +485,28 @@ body {
         z-index: 900;
         img {
           max-width: 100%;
+          transition: all 8s;
+          object-position: top;
+          &:hover {
+            object-position: bottom;
+            transform: translateY(-90.5%);
+            transition: all 5s;
+          }
+        }
+        .icon_img {
+          position: absolute;
+          bottom: 0%;
+          right: 0;
+          width: 15%;
+          animation: up-down 1.5s infinite ease-in-out alternate;
+        }
+      }
+      @keyframes up-down {
+        from {
+          transform: translatey(0px);
+        }
+        to {
+          transform: translatey(-40px);
         }
       }
       .slide_desc {

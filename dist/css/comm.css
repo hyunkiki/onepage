@@ -228,12 +228,12 @@ body {
 
 .sec4 #goal .project_wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .sec4 #goal .project_wrap .slide_cover {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -242,6 +242,20 @@ body {
 }
 .sec4 #goal .project_wrap .slide_cover img {
   max-width: 100%;
+  transition: all 4s;
+  transition-delay: 0.5s;
+  vertical-align: top;
+}
+.sec4 #goal .project_wrap .slide_cover img:hover {
+  transform: translateY(-76%);
+  transition: all 3s;
+}
+.sec4 #goal .project_wrap .slide_cover .icon_img {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 15%;
+  animation: up-down 1.5s infinite ease-in-out alternate;
 }
 .sec4 #goal .project_wrap .slide_desc {
   width: 40%;
@@ -319,12 +333,12 @@ body {
 
 .sec5 #prada .project_wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .sec5 #prada .project_wrap .slide_cover {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -333,6 +347,20 @@ body {
 }
 .sec5 #prada .project_wrap .slide_cover img {
   max-width: 100%;
+  transition: all 4s;
+  transition-delay: 0.5s;
+  vertical-align: top;
+}
+.sec5 #prada .project_wrap .slide_cover img:hover {
+  transform: translateY(-81.5%);
+  transition: all 3s;
+}
+.sec5 #prada .project_wrap .slide_cover .icon_img {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 20%;
+  animation: up-down 1.5s infinite ease-in-out alternate;
 }
 .sec5 #prada .project_wrap .slide_desc {
   width: 40%;
@@ -410,12 +438,12 @@ body {
 
 .sec6 #ghibli .project_wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .sec6 #ghibli .project_wrap .slide_cover {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -424,6 +452,30 @@ body {
 }
 .sec6 #ghibli .project_wrap .slide_cover img {
   max-width: 100%;
+  transition: all 8s;
+  -o-object-position: top;
+     object-position: top;
+}
+.sec6 #ghibli .project_wrap .slide_cover img:hover {
+  -o-object-position: bottom;
+     object-position: bottom;
+  transform: translateY(-90.5%);
+  transition: all 5s;
+}
+.sec6 #ghibli .project_wrap .slide_cover .icon_img {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 15%;
+  animation: up-down 1.5s infinite ease-in-out alternate;
+}
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-40px);
+  }
 }
 .sec6 #ghibli .project_wrap .slide_desc {
   width: 40%;
