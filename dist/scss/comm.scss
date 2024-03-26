@@ -14,6 +14,45 @@ $shadow-distance-step: 0.033333em;
 
 body {
   font-family: "Pretendard";
+  cursor: none;
+}
+.cursor {
+  position: absolute;
+  background: #fff;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  z-index: 10000;
+  transform: scale(1);
+  user-select: none;
+  pointer-events: none;
+  transition: 0.3s ease-in-out transform, 0.2s ease-in-out opacity;
+  &.active {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+  &.hovered {
+    opacity: 0.08;
+  }
+}
+.cursor_follower {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 10000;
+  transform: translatex(5px, 5px);
+  user-select: none;
+  pointer-events: none;
+  transition: 0.6s ease-in-out transform, 0.2s ease-in-out opacity;
+  &.active {
+    opacity: 0.7;
+    transform: scale(3);
+  }
+  &.hovered {
+    opacity: 0.08;
+  }
 }
 
 .inner {
@@ -123,8 +162,8 @@ body {
         display: flex;
       }
       p {
-        animation: secFadeIn 7s forwards;
-        animation-delay: 7s;
+        animation: secFadeIn 7.5s forwards;
+        animation-delay: 7.5s;
         opacity: 0;
         font-weight: 400;
         color: #ffffff;
@@ -218,7 +257,6 @@ body {
     }
   }
 }
-
 .sec2 {
   #about {
     .title {
@@ -412,7 +450,7 @@ body {
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 45%;
+        width: 50%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -424,17 +462,18 @@ body {
           transition-delay: 0.5s;
           vertical-align: top;
           &:hover {
-            transform: translateY(-76%);
+            transform: translateY(-79%);
             transition: all 3s;
           }
         }
-        .icon_img {
-          position: absolute;
-          bottom: 0%;
-          right: 0;
-          width: 15%;
-          animation: up-down 1.5s infinite ease-in-out alternate;
-        }
+      }
+      .icon_img {
+        position: absolute;
+        top: 70%;
+        right: 48%;
+        width: 10%;
+        animation: up-down 1.5s infinite ease-in-out alternate;
+        z-index: 1000;
       }
       .slide_desc {
         width: 40%;
@@ -520,7 +559,7 @@ body {
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 45%;
+        width: 50%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -532,17 +571,18 @@ body {
           transition-delay: 0.5s;
           vertical-align: top;
           &:hover {
-            transform: translateY(-81.5%);
+            transform: translateY(-83.5%);
             transition: all 3s;
           }
         }
-        .icon_img {
-          position: absolute;
-          bottom: 0%;
-          right: 0;
-          width: 20%;
-          animation: up-down 1.5s infinite ease-in-out alternate;
-        }
+      }
+      .icon_img {
+        position: absolute;
+        top: 70%;
+        right: 48%;
+        width: 10%;
+        animation: up-down 1.5s infinite ease-in-out alternate;
+        z-index: 1000;
       }
       .slide_desc {
         width: 40%;
@@ -628,7 +668,7 @@ body {
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 45%;
+        width: 50%;
         height: 70vh;
         overflow: hidden;
         border-radius: 30px;
@@ -640,17 +680,18 @@ body {
           object-position: top;
           &:hover {
             object-position: bottom;
-            transform: translateY(-90.5%);
+            transform: translateY(-91.5%);
             transition: all 5s;
           }
         }
-        .icon_img {
-          position: absolute;
-          bottom: 0%;
-          right: 0;
-          width: 15%;
-          animation: up-down 1.5s infinite ease-in-out alternate;
-        }
+      }
+      .icon_img {
+        position: absolute;
+        top: 70%;
+        right: 48%;
+        width: 10%;
+        animation: up-down 1.5s infinite ease-in-out alternate;
+        z-index: 1000;
       }
       @keyframes up-down {
         from {
@@ -817,14 +858,6 @@ body {
   margin: auto;
   width: 34px;
   height: 55px;
-  .scroll_tit {
-    width: 100px;
-    color: #fff;
-    font-size: 18px;
-    position: absolute;
-    bottom: -70%;
-    right: -110%;
-  }
 }
 
 .mousey {

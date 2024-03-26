@@ -8,6 +8,51 @@
 
 body {
   font-family: "Pretendard";
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  background: #fff;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  z-index: 10000;
+  transform: scale(1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  transition: 0.3s ease-in-out transform, 0.2s ease-in-out opacity;
+}
+.cursor.active {
+  opacity: 0.5;
+  transform: scale(0);
+}
+.cursor.hovered {
+  opacity: 0.08;
+}
+
+.cursor_follower {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 10000;
+  transform: translatex(5px, 5px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  transition: 0.6s ease-in-out transform, 0.2s ease-in-out opacity;
+}
+.cursor_follower.active {
+  opacity: 0.7;
+  transform: scale(3);
+}
+.cursor_follower.hovered {
+  opacity: 0.08;
 }
 
 .inner {
@@ -111,8 +156,8 @@ body {
   display: flex;
 }
 #jumbotron .min_box .min_role p {
-  animation: secFadeIn 7s forwards;
-  animation-delay: 7s;
+  animation: secFadeIn 7.5s forwards;
+  animation-delay: 7.5s;
   opacity: 0;
   font-weight: 400;
   color: #ffffff;
@@ -376,7 +421,7 @@ body {
 }
 .sec4 #goal .project_wrap .slide_cover {
   position: relative;
-  width: 45%;
+  width: 50%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -390,15 +435,16 @@ body {
   vertical-align: top;
 }
 .sec4 #goal .project_wrap .slide_cover img:hover {
-  transform: translateY(-76%);
+  transform: translateY(-79%);
   transition: all 3s;
 }
-.sec4 #goal .project_wrap .slide_cover .icon_img {
+.sec4 #goal .project_wrap .icon_img {
   position: absolute;
-  bottom: 0%;
-  right: 0;
-  width: 15%;
+  top: 70%;
+  right: 48%;
+  width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
+  z-index: 1000;
 }
 .sec4 #goal .project_wrap .slide_desc {
   width: 40%;
@@ -481,7 +527,7 @@ body {
 }
 .sec5 #prada .project_wrap .slide_cover {
   position: relative;
-  width: 45%;
+  width: 50%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -495,15 +541,16 @@ body {
   vertical-align: top;
 }
 .sec5 #prada .project_wrap .slide_cover img:hover {
-  transform: translateY(-81.5%);
+  transform: translateY(-83.5%);
   transition: all 3s;
 }
-.sec5 #prada .project_wrap .slide_cover .icon_img {
+.sec5 #prada .project_wrap .icon_img {
   position: absolute;
-  bottom: 0%;
-  right: 0;
-  width: 20%;
+  top: 70%;
+  right: 48%;
+  width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
+  z-index: 1000;
 }
 .sec5 #prada .project_wrap .slide_desc {
   width: 40%;
@@ -586,7 +633,7 @@ body {
 }
 .sec6 #ghibli .project_wrap .slide_cover {
   position: relative;
-  width: 45%;
+  width: 50%;
   height: 70vh;
   overflow: hidden;
   border-radius: 30px;
@@ -602,15 +649,16 @@ body {
 .sec6 #ghibli .project_wrap .slide_cover img:hover {
   -o-object-position: bottom;
      object-position: bottom;
-  transform: translateY(-90.5%);
+  transform: translateY(-91.5%);
   transition: all 5s;
 }
-.sec6 #ghibli .project_wrap .slide_cover .icon_img {
+.sec6 #ghibli .project_wrap .icon_img {
   position: absolute;
-  bottom: 0%;
-  right: 0;
-  width: 15%;
+  top: 70%;
+  right: 48%;
+  width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
+  z-index: 1000;
 }
 @keyframes up-down {
   from {
@@ -766,14 +814,6 @@ body {
   margin: auto;
   width: 34px;
   height: 55px;
-}
-.scroll_downs .scroll_tit {
-  width: 100px;
-  color: #fff;
-  font-size: 18px;
-  position: absolute;
-  bottom: -70%;
-  right: -110%;
 }
 
 .mousey {
