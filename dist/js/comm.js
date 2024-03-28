@@ -61,12 +61,12 @@ $(document).on("mousemove", function (e) {
   mouseY = e.pageY;
 });
 
-$(".link").on("mouseenter", function () {
+$("a, .slide_cover").on("mouseenter", function () {
   cursor.addClass("active");
   follower.addClass("active");
 });
 
-$(".link").on("mouseleave", function () {
+$("a, .slide_cover").on("mouseleave", function () {
   cursor.removeClass("active");
   follower.removeClass("active");
 });

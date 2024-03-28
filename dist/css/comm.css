@@ -36,8 +36,8 @@ body {
 .cursor_follower {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   z-index: 10000;
   transform: translatex(5px, 5px);
@@ -253,7 +253,7 @@ body {
 .sec2 #about .title .about_tit {
   font-size: 70px;
   color: #fff;
-  margin: 50px 0 80px;
+  margin: 50px 0 100px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #f2446e;
@@ -261,35 +261,65 @@ body {
 .sec2 #about .profile_wrap {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.sec2 #about .profile_wrap .profile_box {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  align-items: center;
-}
-.sec2 #about .profile_wrap .profile_box .profile_img_thumb {
-  width: 65%;
-}
-.sec2 #about .profile_wrap .profile_box .profile_img_thumb img {
-  width: 100%;
-}
-.sec2 #about .profile_wrap .profile_box .intro_my {
-  font-size: 20px;
+.sec2 #about .profile_wrap .rolling_text {
   color: #fff;
-  line-height: 1.5em;
-  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  background: #f2446e;
+  padding: 0 40px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 10px;
 }
-.sec2 #about .profile_wrap .profile_box .intro_my em {
-  font-style: normal;
-  color: rgba(242, 68, 110, 0.5);
-  font-weight: 900;
-  margin: 0;
+.sec2 #about .profile_wrap .rolling_text .line_text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+}
+.sec2 #about .profile_wrap .rolling_text .line_text:first-child {
+  animation: a 15s infinite;
+}
+@keyframes a {
+  0% {
+    margin-top: 0px;
+  }
+  16% {
+    margin-top: -60px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.sec2 #about .profile_wrap .profile_img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.sec2 #about .profile_wrap .profile_img img {
+  width: 100%;
+  max-width: 350px;
 }
 .sec2 #about .profile_wrap .profile_txt {
   margin: 0;
   padding: 0;
-  width: 70%;
+  width: 55%;
 }
 .sec2 #about .profile_wrap .profile_txt .txt_wrap,
 .sec2 #about .profile_wrap .profile_txt .box {
@@ -414,9 +444,25 @@ body {
   opacity: 1;
 }
 
+.sec4 #goal .finger_box {
+  position: absolute;
+  top: 11%;
+  right: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 13%;
+}
+.sec4 #goal .finger_box .finger_arrow {
+  width: 10%;
+}
+.sec4 #goal .finger_box .finger_desc {
+  color: #fff;
+  font-size: 18px;
+}
 .sec4 #goal .project_wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .sec4 #goal .project_wrap .slide_cover {
@@ -441,7 +487,7 @@ body {
 .sec4 #goal .project_wrap .icon_img {
   position: absolute;
   top: 70%;
-  right: 48%;
+  right: 45%;
   width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
   z-index: 1000;
@@ -520,9 +566,25 @@ body {
   text-indent: 0;
 }
 
+.sec5 #prada .finger_box {
+  position: absolute;
+  top: 11%;
+  right: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 13%;
+}
+.sec5 #prada .finger_box .finger_arrow {
+  width: 10%;
+}
+.sec5 #prada .finger_box .finger_desc {
+  color: #fff;
+  font-size: 18px;
+}
 .sec5 #prada .project_wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .sec5 #prada .project_wrap .slide_cover {
@@ -547,7 +609,7 @@ body {
 .sec5 #prada .project_wrap .icon_img {
   position: absolute;
   top: 70%;
-  right: 48%;
+  right: 45%;
   width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
   z-index: 1000;
@@ -626,9 +688,25 @@ body {
   text-indent: 0;
 }
 
+.sec6 #ghibli .finger_box {
+  position: absolute;
+  top: 11%;
+  right: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 13%;
+}
+.sec6 #ghibli .finger_box .finger_arrow {
+  width: 10%;
+}
+.sec6 #ghibli .finger_box .finger_desc {
+  color: #fff;
+  font-size: 18px;
+}
 .sec6 #ghibli .project_wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .sec6 #ghibli .project_wrap .slide_cover {
@@ -655,7 +733,7 @@ body {
 .sec6 #ghibli .project_wrap .icon_img {
   position: absolute;
   top: 70%;
-  right: 48%;
+  right: 45%;
   width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
   z-index: 1000;

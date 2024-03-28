@@ -38,8 +38,8 @@ body {
 .cursor_follower {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   z-index: 10000;
   transform: translatex(5px, 5px);
@@ -266,7 +266,7 @@ body {
       .about_tit {
         font-size: 70px;
         color: #fff;
-        margin: 50px 0 80px;
+        margin: 50px 0 100px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #f2446e;
@@ -275,34 +275,64 @@ body {
     .profile_wrap {
       display: flex;
       align-items: center;
-      .profile_box {
-        display: flex;
-        width: 30%;
-        flex-direction: column;
-        align-items: center;
-        .profile_img_thumb {
-          width: 65%;
-          img {
-            width: 100%;
+      justify-content: space-around;
+      .rolling_text {
+        color: #fff;
+        position: absolute;
+        top: 40%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+        background: #f2446e;
+        padding: 0 40px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 10px;
+        .line_text {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 30px;
+          line-height: 60px;
+          &:first-child {
+            animation: a 15s infinite;
           }
         }
-        .intro_my {
-          font-size: 20px;
-          color: #fff;
-          line-height: 1.5em;
-          text-align: center;
-          em {
-            font-style: normal;
-            color: rgb(242, 68, 110, 0.5);
-            font-weight: 900;
-            margin: 0;
-          }
+      }
+      @keyframes a {
+        0% {
+          margin-top: 0px;
+        }
+        16% {
+          margin-top: -60px;
+        }
+        33% {
+          margin-top: -120px;
+        }
+        50% {
+          margin-top: -180px;
+        }
+        66% {
+          margin-top: -120px;
+        }
+        82% {
+          margin-top: -60px;
+        }
+        100% {
+          margin-top: 0px;
+        }
+      }
+      .profile_img {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 350px;
         }
       }
       .profile_txt {
         margin: 0;
         padding: 0;
-        width: 70%;
+        width: 55%;
         .txt_wrap,
         .box {
           list-style-type: none;
@@ -444,9 +474,25 @@ body {
 }
 .sec4 {
   #goal {
+    .finger_box {
+      position: absolute;
+      top: 11%;
+      right: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 13%;
+      .finger_arrow {
+        width: 10%;
+      }
+      .finger_desc {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
     .project_wrap {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       .slide_cover {
         position: relative;
@@ -470,7 +516,7 @@ body {
       .icon_img {
         position: absolute;
         top: 70%;
-        right: 48%;
+        right: 45%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
@@ -553,9 +599,25 @@ body {
 }
 .sec5 {
   #prada {
+    .finger_box {
+      position: absolute;
+      top: 11%;
+      right: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 13%;
+      .finger_arrow {
+        width: 10%;
+      }
+      .finger_desc {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
     .project_wrap {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       .slide_cover {
         position: relative;
@@ -579,7 +641,7 @@ body {
       .icon_img {
         position: absolute;
         top: 70%;
-        right: 48%;
+        right: 45%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
@@ -662,9 +724,25 @@ body {
 }
 .sec6 {
   #ghibli {
+    .finger_box {
+      position: absolute;
+      top: 11%;
+      right: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 13%;
+      .finger_arrow {
+        width: 10%;
+      }
+      .finger_desc {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
     .project_wrap {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       .slide_cover {
         position: relative;
@@ -688,7 +766,7 @@ body {
       .icon_img {
         position: absolute;
         top: 70%;
-        right: 48%;
+        right: 45%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
