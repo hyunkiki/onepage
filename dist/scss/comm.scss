@@ -260,13 +260,47 @@ body {
 .sec2 {
   #about {
     .title {
-      transition: 2s all;
-      transform: translateY(50px);
-      opacity: 0;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      justify-items: center;
+      &::before {
+        content: "";
+        height: 2px;
+        width: 25vw;
+        background: #f2446e;
+        position: absolute;
+        left: 10%;
+        top: 28.5%;
+        transform: translateY(-50%);
+        animation: Virtual_line 2s linear;
+      }
+      &::after {
+        content: "";
+        height: 2px;
+        width: 25vw;
+        background: #f2446e;
+        position: absolute;
+        right: 10%;
+        top: 28.5%;
+        transform: translateY(-50%);
+        animation: Virtual_line 2s linear;
+      }
+      @keyframes Virtual_line {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 25vw;
+        }
+      }
       .about_tit {
         font-size: 70px;
-        color: #fff;
-        margin: 50px 0 100px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #f2446e;
@@ -279,7 +313,7 @@ body {
       .rolling_text {
         color: #fff;
         position: absolute;
-        top: 40%;
+        top: 36%;
         left: 23%;
         transform: translate(-50%, -50%);
         background: #f2446e;
@@ -393,14 +427,6 @@ body {
             }
           }
         }
-      }
-    }
-  }
-  &.active {
-    #about {
-      .title {
-        transform: translateY(0px);
-        opacity: 1;
       }
     }
   }

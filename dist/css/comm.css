@@ -246,14 +246,48 @@ body {
 }
 
 .sec2 #about .title {
-  transition: 2s all;
-  transform: translateY(50px);
-  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  justify-items: center;
+}
+.sec2 #about .title::before {
+  content: "";
+  height: 2px;
+  width: 25vw;
+  background: #f2446e;
+  position: absolute;
+  left: 10%;
+  top: 28.5%;
+  transform: translateY(-50%);
+  animation: Virtual_line 2s linear;
+}
+.sec2 #about .title::after {
+  content: "";
+  height: 2px;
+  width: 25vw;
+  background: #f2446e;
+  position: absolute;
+  right: 10%;
+  top: 28.5%;
+  transform: translateY(-50%);
+  animation: Virtual_line 2s linear;
+}
+@keyframes Virtual_line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25vw;
+  }
 }
 .sec2 #about .title .about_tit {
   font-size: 70px;
-  color: #fff;
-  margin: 50px 0 100px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #f2446e;
@@ -266,7 +300,7 @@ body {
 .sec2 #about .profile_wrap .rolling_text {
   color: #fff;
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 23%;
   transform: translate(-50%, -50%);
   background: #f2446e;
@@ -378,10 +412,6 @@ body {
 }
 .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
   width: 30%;
-}
-.sec2.active #about .title {
-  transform: translateY(0px);
-  opacity: 1;
 }
 
 .sec3 #skill .title {
