@@ -262,7 +262,6 @@ body {
     .title {
       display: flex;
       flex-wrap: wrap;
-      box-sizing: border-box;
       align-items: center;
       align-content: center;
       justify-content: center;
@@ -270,37 +269,31 @@ body {
       -webkit-justify-content: center;
       justify-items: center;
       &::before {
+        transition: 3s all;
+        transform: translateY(0px);
+        opacity: 0;
         content: "";
         height: 2px;
-        width: 25vw;
+        width: 0;
         background: #f2446e;
         position: absolute;
         left: 10%;
         top: 28.5%;
-        transform: translateY(-50%);
-        animation: Virtual_line 2s linear;
       }
       &::after {
+        transition: 3s all;
+        transform: translateY(0px);
+        opacity: 0;
         content: "";
         height: 2px;
-        width: 25vw;
+        width: 0;
         background: #f2446e;
         position: absolute;
         right: 10%;
         top: 28.5%;
-        transform: translateY(-50%);
-        animation: Virtual_line 2s linear;
-      }
-      @keyframes Virtual_line {
-        0% {
-          width: 0;
-        }
-        100% {
-          width: 25vw;
-        }
       }
       .about_tit {
-        font-size: 70px;
+        font-size: 80px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #f2446e;
@@ -313,7 +306,7 @@ body {
       .rolling_text {
         color: #fff;
         position: absolute;
-        top: 36%;
+        top: 38%;
         left: 23%;
         transform: translate(-50%, -50%);
         background: #f2446e;
@@ -430,17 +423,58 @@ body {
       }
     }
   }
+  &.active {
+    #about {
+      .title {
+        &::before {
+          opacity: 1;
+          width: 26vw;
+        }
+        &::after {
+          opacity: 1;
+          width: 26vw;
+        }
+      }
+    }
+  }
 }
 .sec3 {
   #skill {
     .title {
-      transition: 2s all;
-      transform: translateY(50px);
-      opacity: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      justify-items: center;
+      &::before {
+        transition: 3s all;
+        transform: translateY(0px);
+        opacity: 0;
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #6137f9;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+      }
+      &::after {
+        transition: 3s all;
+        transform: translateY(0px);
+        opacity: 0;
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #6137f9;
+        position: absolute;
+        right: 10%;
+        top: 15%;
+      }
       .skill_tit {
-        font-size: 70px;
-        color: #fff;
-        margin: 50px 0 80px;
+        font-size: 80px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #6137f9;
@@ -492,8 +526,14 @@ body {
   &.active {
     #skill {
       .title {
-        transform: translateY(0px);
-        opacity: 1;
+        &::before {
+          opacity: 1;
+          width: 26vw;
+        }
+        &::after {
+          opacity: 1;
+          width: 26vw;
+        }
       }
     }
   }

@@ -248,7 +248,6 @@ body {
 .sec2 #about .title {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -257,37 +256,31 @@ body {
   justify-items: center;
 }
 .sec2 #about .title::before {
+  transition: 3s all;
+  transform: translateY(0px);
+  opacity: 0;
   content: "";
   height: 2px;
-  width: 25vw;
+  width: 0;
   background: #f2446e;
   position: absolute;
   left: 10%;
   top: 28.5%;
-  transform: translateY(-50%);
-  animation: Virtual_line 2s linear;
 }
 .sec2 #about .title::after {
+  transition: 3s all;
+  transform: translateY(0px);
+  opacity: 0;
   content: "";
   height: 2px;
-  width: 25vw;
+  width: 0;
   background: #f2446e;
   position: absolute;
   right: 10%;
   top: 28.5%;
-  transform: translateY(-50%);
-  animation: Virtual_line 2s linear;
-}
-@keyframes Virtual_line {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 25vw;
-  }
 }
 .sec2 #about .title .about_tit {
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #f2446e;
@@ -300,7 +293,7 @@ body {
 .sec2 #about .profile_wrap .rolling_text {
   color: #fff;
   position: absolute;
-  top: 36%;
+  top: 38%;
   left: 23%;
   transform: translate(-50%, -50%);
   background: #f2446e;
@@ -413,16 +406,51 @@ body {
 .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
   width: 30%;
 }
+.sec2.active #about .title::before {
+  opacity: 1;
+  width: 26vw;
+}
+.sec2.active #about .title::after {
+  opacity: 1;
+  width: 26vw;
+}
 
 .sec3 #skill .title {
-  transition: 2s all;
-  transform: translateY(50px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  justify-items: center;
+}
+.sec3 #skill .title::before {
+  transition: 3s all;
+  transform: translateY(0px);
   opacity: 0;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #6137f9;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+.sec3 #skill .title::after {
+  transition: 3s all;
+  transform: translateY(0px);
+  opacity: 0;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #6137f9;
+  position: absolute;
+  right: 10%;
+  top: 15%;
 }
 .sec3 #skill .title .skill_tit {
-  font-size: 70px;
-  color: #fff;
-  margin: 50px 0 80px;
+  font-size: 80px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #6137f9;
@@ -469,9 +497,13 @@ body {
   justify-content: flex-start;
   padding-left: 40px;
 }
-.sec3.active #skill .title {
-  transform: translateY(0px);
+.sec3.active #skill .title::before {
   opacity: 1;
+  width: 26vw;
+}
+.sec3.active #skill .title::after {
+  opacity: 1;
+  width: 26vw;
 }
 
 .sec4 #goal .finger_box {
