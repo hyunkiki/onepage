@@ -293,7 +293,7 @@ body {
         top: 28.5%;
       }
       .about_tit {
-        font-size: 80px;
+        font-size: 90px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #f2446e;
@@ -428,11 +428,11 @@ body {
       .title {
         &::before {
           opacity: 1;
-          width: 26vw;
+          width: 25vw;
         }
         &::after {
           opacity: 1;
-          width: 26vw;
+          width: 25vw;
         }
       }
     }
@@ -474,7 +474,7 @@ body {
         top: 15%;
       }
       .skill_tit {
-        font-size: 80px;
+        font-size: 90px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #6137f9;
@@ -528,11 +528,11 @@ body {
       .title {
         &::before {
           opacity: 1;
-          width: 26vw;
+          width: 25vw;
         }
         &::after {
           opacity: 1;
-          width: 26vw;
+          width: 25vw;
         }
       }
     }
@@ -1030,7 +1030,7 @@ body {
             color: #000;
             transition: 0.8s;
             z-index: 3;
-            font-size: 80px;
+            font-size: 90px;
             padding: 50px 0;
           }
           .link_desc {
@@ -1043,7 +1043,28 @@ body {
             opacity: 0;
             z-index: 3;
             transition: 0.8s;
-            transform: translateY(5%);
+            // transform: translateY(5%);
+            font-size: 20px;
+          }
+          .link_skip {
+            font-size: 18px;
+            color: #000;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            z-index: 3;
+            transition: 0.8s;
+            // transform: translateY(5%);
+            font-size: 20px;
+            &::before {
+              content: "\f35d";
+              font-size: 25px;
+              font-weight: 900;
+              font-family: "Line Awesome Free";
+              margin-right: 10px;
+            }
           }
           &:hover {
             .icon {
@@ -1056,7 +1077,12 @@ body {
             .link_desc {
               opacity: 1;
               color: #fff;
-              transform: translateY(0);
+              // transform: translateY(0);
+            }
+            .link_skip {
+              opacity: 1;
+              color: #fff;
+              // transform: translateY(0);
             }
           }
         }

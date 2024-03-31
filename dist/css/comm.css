@@ -280,7 +280,7 @@ body {
   top: 28.5%;
 }
 .sec2 #about .title .about_tit {
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #f2446e;
@@ -408,11 +408,11 @@ body {
 }
 .sec2.active #about .title::before {
   opacity: 1;
-  width: 26vw;
+  width: 25vw;
 }
 .sec2.active #about .title::after {
   opacity: 1;
-  width: 26vw;
+  width: 25vw;
 }
 
 .sec3 #skill .title {
@@ -450,7 +450,7 @@ body {
   top: 15%;
 }
 .sec3 #skill .title .skill_tit {
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #6137f9;
@@ -499,11 +499,11 @@ body {
 }
 .sec3.active #skill .title::before {
   opacity: 1;
-  width: 26vw;
+  width: 25vw;
 }
 .sec3.active #skill .title::after {
   opacity: 1;
-  width: 26vw;
+  width: 25vw;
 }
 
 .sec4 #goal .finger_box {
@@ -972,7 +972,7 @@ body {
   color: #000;
   transition: 0.8s;
   z-index: 3;
-  font-size: 80px;
+  font-size: 90px;
   padding: 50px 0;
 }
 .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
@@ -985,7 +985,26 @@ body {
   opacity: 0;
   z-index: 3;
   transition: 0.8s;
-  transform: translateY(5%);
+  font-size: 20px;
+}
+.sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 3;
+  transition: 0.8s;
+  font-size: 20px;
+}
+.sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip::before {
+  content: "\f35d";
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Line Awesome Free";
+  margin-right: 10px;
 }
 .sec7 #contact .contact_link_wrap .contact_link_box .contact_link:hover .icon {
   color: #fff;
@@ -997,7 +1016,10 @@ body {
 .sec7 #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_desc {
   opacity: 1;
   color: #fff;
-  transform: translateY(0);
+}
+.sec7 #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_skip {
+  opacity: 1;
+  color: #fff;
 }
 .sec7 #contact .contact_view_wrap {
   display: flex;
