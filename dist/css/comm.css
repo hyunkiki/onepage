@@ -426,7 +426,7 @@ body {
   justify-items: center;
 }
 .sec3 #skill .title::before {
-  transition: 3s all;
+  transition: 3s;
   transform: translateY(0px);
   opacity: 0;
   content: "";
@@ -435,10 +435,10 @@ body {
   background: #6137f9;
   position: absolute;
   left: 10%;
-  top: 15%;
+  top: 18%;
 }
 .sec3 #skill .title::after {
-  transition: 3s all;
+  transition: 3s;
   transform: translateY(0px);
   opacity: 0;
   content: "";
@@ -447,55 +447,64 @@ body {
   background: #6137f9;
   position: absolute;
   right: 10%;
-  top: 15%;
+  top: 18%;
 }
 .sec3 #skill .title .skill_tit {
   font-size: 90px;
   text-align: center;
   font-family: "Fugaz One", sans-serif;
   color: #6137f9;
-}
-.sec3 #skill .skill_box {
-  display: flex;
-  height: 100%;
   margin: 0;
-  padding: 0;
-  justify-content: space-around;
 }
-.sec3 #skill .skill_box li {
-  width: 45%;
-  margin-bottom: 30px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-.sec3 #skill .skill_box li .icon_img_thumb {
-  width: 80px;
-}
-.sec3 #skill .skill_box li .icon_img_thumb .icon_img {
-  width: 100%;
-}
-.sec3 #skill .skill_box li .icon_contents {
-  width: calc(100% - 80px);
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-.sec3 #skill .skill_box li .icon_contents .icon_tit {
+.sec3 #skill .skill_desc_tit {
+  display: block;
   font-size: 30px;
   font-family: "Fugaz One", sans-serif;
-  color: #6137f9;
   font-weight: bold;
+  color: #6137f9;
+  padding: 0 90px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: 3s;
 }
-.sec3 #skill .skill_box li .icon_contents .icon_exp {
-  font-size: 20px;
+.sec3 #skill .skill_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 50vh;
+  justify-content: space-evenly;
+  border-radius: 240px;
+  border: 3px solid #6137f9;
+  margin: 0 auto;
+  background: rgba(97, 55, 249, 0.1);
+}
+.sec3 #skill .skill_wrap .skill_box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec3 #skill .skill_wrap .skill_box .skill_icon {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec3 #skill .skill_wrap .skill_box .skill_icon .icon_tit {
+  font-size: 18px;
   color: #fff;
-  margin: 20px 0;
-  line-height: 1.5em;
+  margin-top: 10px;
 }
-.sec3 #skill .skill_box:last-child {
-  justify-content: flex-start;
-  padding-left: 40px;
+.sec3 #skill .skill_wrap .skill1 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s linear;
+}
+.sec3 #skill .skill_wrap .skill2 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s linear;
+  transition-duration: 2s;
 }
 .sec3.active #skill .title::before {
   opacity: 1;
@@ -504,6 +513,18 @@ body {
 .sec3.active #skill .title::after {
   opacity: 1;
   width: 25vw;
+}
+.sec3.active #skill .skill_desc_tit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.sec3.active #skill .skill1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sec3.active #skill .skill2 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sec4 #goal .finger_box {
@@ -982,7 +1003,6 @@ body {
   top: 50%;
   left: 0;
   right: 0;
-  opacity: 0;
   z-index: 3;
   transition: 0.8s;
   font-size: 20px;
@@ -994,7 +1014,6 @@ body {
   top: 50%;
   left: 0;
   right: 0;
-  opacity: 0;
   z-index: 3;
   transition: 0.8s;
   font-size: 20px;
@@ -1014,11 +1033,9 @@ body {
   top: 0;
 }
 .sec7 #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_desc {
-  opacity: 1;
   color: #fff;
 }
 .sec7 #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_skip {
-  opacity: 1;
   color: #fff;
 }
 .sec7 #contact .contact_view_wrap {

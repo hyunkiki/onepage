@@ -450,7 +450,7 @@ body {
       -webkit-justify-content: center;
       justify-items: center;
       &::before {
-        transition: 3s all;
+        transition: 3s;
         transform: translateY(0px);
         opacity: 0;
         content: "";
@@ -459,10 +459,10 @@ body {
         background: #6137f9;
         position: absolute;
         left: 10%;
-        top: 15%;
+        top: 18%;
       }
       &::after {
-        transition: 3s all;
+        transition: 3s;
         transform: translateY(0px);
         opacity: 0;
         content: "";
@@ -471,55 +471,64 @@ body {
         background: #6137f9;
         position: absolute;
         right: 10%;
-        top: 15%;
+        top: 18%;
       }
       .skill_tit {
         font-size: 90px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #6137f9;
+        margin: 0;
       }
     }
-    .skill_box {
+    .skill_desc_tit {
+      display: block;
+      font-size: 30px;
+      font-family: "Fugaz One", sans-serif;
+      font-weight: bold;
+      color: #6137f9;
+      padding: 0 90px;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: 3s;
+    }
+    .skill_wrap {
       display: flex;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      justify-content: space-around;
-      li {
-        width: 45%;
-        margin-bottom: 30px;
+      flex-direction: column;
+      width: 90%;
+      height: 50vh;
+      justify-content: space-evenly;
+      border-radius: 240px;
+      border: 3px solid #6137f9;
+      margin: 0 auto;
+      background: rgb(97, 55, 249, 0.1);
+      .skill_box {
+        margin: 0;
+        padding: 0;
         display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        .icon_img_thumb {
-          width: 80px;
-          .icon_img {
-            width: 100%;
-          }
-        }
-        .icon_contents {
-          width: calc(100% - 80px);
+        justify-content: space-evenly;
+        .skill_icon {
+          list-style-type: none;
           display: flex;
           flex-direction: column;
-          margin-left: 20px;
+          align-items: center;
           .icon_tit {
-            font-size: 30px;
-            font-family: "Fugaz One", sans-serif;
-            color: #6137f9;
-            font-weight: bold;
-          }
-          .icon_exp {
-            font-size: 20px;
+            font-size: 18px;
             color: #fff;
-            margin: 20px 0;
-            line-height: 1.5em;
+            margin-top: 10px;
           }
         }
       }
-      &:last-child {
-        justify-content: flex-start;
-        padding-left: 40px;
+      .skill1 {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.9s linear;
+      }
+      .skill2 {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.9s linear;
+        transition-duration: 2s;
       }
     }
   }
@@ -534,6 +543,18 @@ body {
           opacity: 1;
           width: 25vw;
         }
+      }
+      .skill_desc_tit {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .skill1 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .skill2 {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }
@@ -1040,7 +1061,6 @@ body {
             top: 50%;
             left: 0;
             right: 0;
-            opacity: 0;
             z-index: 3;
             transition: 0.8s;
             // transform: translateY(5%);
@@ -1053,7 +1073,6 @@ body {
             top: 50%;
             left: 0;
             right: 0;
-            opacity: 0;
             z-index: 3;
             transition: 0.8s;
             // transform: translateY(5%);
@@ -1075,12 +1094,10 @@ body {
               top: 0;
             }
             .link_desc {
-              opacity: 1;
               color: #fff;
               // transform: translateY(0);
             }
             .link_skip {
-              opacity: 1;
               color: #fff;
               // transform: translateY(0);
             }
