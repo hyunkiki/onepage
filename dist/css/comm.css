@@ -483,10 +483,6 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 2s linear;
-  transition-delay: 0.9s;
 }
 .sec3 #skill .skill_wrap .skill_box .skill_icon {
   list-style-type: none;
@@ -516,10 +512,6 @@ body {
 .sec3.active #skill .skill_desc_tit {
   opacity: 1;
   transform: translateX(0);
-}
-.sec3.active #skill .skill_box {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .sec4 #goal .finger_box {
@@ -805,7 +797,7 @@ body {
 .sec6 #ghibli .project_wrap .slide_cover img:hover {
   -o-object-position: bottom;
      object-position: bottom;
-  transform: translateY(-91.5%);
+  transform: translateY(-91.3%);
   transition: all 5s;
 }
 .sec6 #ghibli .project_wrap .icon_img {

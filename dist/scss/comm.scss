@@ -507,10 +507,6 @@ body {
         padding: 0;
         display: flex;
         justify-content: space-evenly;
-        opacity: 0;
-        transform: translateY(30px);
-        transition: 2s linear;
-        transition-delay: 0.9s;
         .skill_icon {
           list-style-type: none;
           display: flex;
@@ -546,10 +542,6 @@ body {
       .skill_desc_tit {
         opacity: 1;
         transform: translateX(0);
-      }
-      .skill_box {
-        opacity: 1;
-        transform: translateY(0);
       }
     }
   }
@@ -840,7 +832,7 @@ body {
           object-position: top;
           &:hover {
             object-position: bottom;
-            transform: translateY(-91.5%);
+            transform: translateY(-91.3%);
             transition: all 5s;
           }
         }
