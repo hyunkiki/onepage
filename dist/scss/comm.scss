@@ -489,8 +489,8 @@ body {
       color: #6137f9;
       padding: 0 90px;
       opacity: 0;
-      transform: translateX(-30px);
-      transition: 3s;
+      transform: translateX(-60px);
+      transition: 2s;
     }
     .skill_wrap {
       display: flex;
@@ -507,28 +507,27 @@ body {
         padding: 0;
         display: flex;
         justify-content: space-evenly;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 2s linear;
+        transition-delay: 0.9s;
         .skill_icon {
           list-style-type: none;
           display: flex;
           flex-direction: column;
           align-items: center;
+          .icon_img_thumb {
+            width: 80%;
+            .icon_img {
+              width: 100%;
+            }
+          }
           .icon_tit {
             font-size: 18px;
             color: #fff;
             margin-top: 10px;
           }
         }
-      }
-      .skill1 {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: 0.9s linear;
-      }
-      .skill2 {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: 0.9s linear;
-        transition-duration: 2s;
       }
     }
   }
@@ -548,11 +547,7 @@ body {
         opacity: 1;
         transform: translateX(0);
       }
-      .skill1 {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .skill2 {
+      .skill_box {
         opacity: 1;
         transform: translateY(0);
       }
