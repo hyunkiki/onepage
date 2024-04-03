@@ -1211,13 +1211,13 @@ body {
 
 @media screen and (max-width: 1280px) {
   .inner {
-    padding: 0 100px;
+    padding: 0 80px;
   }
   #jumbotron .word_box {
-    font-size: 128px;
+    font-size: 140px;
   }
   #jumbotron .word:nth-of-type(2) {
-    font-size: 144px;
+    font-size: 160px;
   }
   #jumbotron .min_box .min_title h1 {
     font-size: 40px;
@@ -1229,7 +1229,13 @@ body {
     bottom: -70%;
   }
   .sec2 #about .title .about_tit {
-    font-size: 72px;
+    font-size: 80px;
+  }
+  .sec2 #about .title::before {
+    top: 20.5%;
+  }
+  .sec2 #about .title::after {
+    top: 20.5%;
   }
 }
 @media screen and (max-width: 1024px) {
