@@ -25,7 +25,6 @@ new fullpage("#fullpage", {
     console.log("Leaving section" + origin.index);
   },
 });
-
 var cursor = $(".cursor"),
   follower = $(".cursor_follower");
 

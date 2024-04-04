@@ -268,18 +268,9 @@ body {
       -webkit-align-items: center;
       -webkit-justify-content: center;
       justify-items: center;
-      &::before {
-        transition: 3s all;
-        transform: translateY(0px);
-        opacity: 0;
-        content: "";
-        height: 2px;
-        width: 0;
-        background: #f2446e;
-        position: absolute;
-        left: 10%;
-        top: 28.5%;
-      }
+      position: relative;
+      margin: 50px 0;
+      &::before,
       &::after {
         transition: 3s all;
         transform: translateY(0px);
@@ -289,14 +280,20 @@ body {
         width: 0;
         background: #f2446e;
         position: absolute;
-        right: 10%;
-        top: 28.5%;
+        top: 45.5%;
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
       }
       .about_tit {
         font-size: 90px;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: #f2446e;
+        margin: 0;
       }
     }
     .profile_wrap {
@@ -428,11 +425,11 @@ body {
       .title {
         &::before {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
         &::after {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
       }
     }
@@ -449,18 +446,9 @@ body {
       -webkit-align-items: center;
       -webkit-justify-content: center;
       justify-items: center;
-      &::before {
-        transition: 3s;
-        transform: translateY(0px);
-        opacity: 0;
-        content: "";
-        height: 2px;
-        width: 0;
-        background: #6137f9;
-        position: absolute;
-        left: 10%;
-        top: 18%;
-      }
+      position: relative;
+      margin: 50px 0;
+      &::before,
       &::after {
         transition: 3s;
         transform: translateY(0px);
@@ -470,9 +458,15 @@ body {
         width: 0;
         background: #6137f9;
         position: absolute;
-        right: 10%;
-        top: 18%;
+        top: 45%;
       }
+      &::before {
+        left: 0%;
+      }
+      &::after {
+        right: 0%;
+      }
+
       .skill_tit {
         font-size: 90px;
         text-align: center;
@@ -487,21 +481,21 @@ body {
       font-family: "Fugaz One", sans-serif;
       font-weight: bold;
       color: #6137f9;
-      padding: 0 90px;
+      padding: 0 10px;
       opacity: 0;
-      transform: translateX(-60px);
-      transition: 2s;
+      transform: translateX(-40px);
+      transition: 3s;
     }
     .skill_wrap {
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       height: 50vh;
       justify-content: space-evenly;
       border-radius: 240px;
       border: 3px solid #6137f9;
-      margin: 0 auto;
-      background: rgb(97, 55, 249, 0.1);
+      /* margin: 0 auto; */
+      background: rgba(97, 55, 249, 0.1);
       .skill_box {
         margin: 0;
         padding: 0;
@@ -532,11 +526,11 @@ body {
       .title {
         &::before {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
         &::after {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
       }
       .skill_desc_tit {
@@ -551,10 +545,10 @@ body {
     .finger_box {
       position: absolute;
       top: 11%;
-      right: 49%;
+      right: 47%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 13%;
       .finger_arrow {
         width: 10%;
@@ -566,31 +560,29 @@ body {
     }
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
-        height: 70vh;
-        overflow: hidden;
-        border-radius: 30px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 55%;
+        height: 100%;
         z-index: 900;
         img {
-          max-width: 100%;
-          transition: all 4s;
-          transition-delay: 0.5s;
-          vertical-align: top;
+          width: 100%;
+          height: 650px;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 30px;
+          transition: 3s all ease;
           &:hover {
-            transform: translateY(-79%);
-            transition: all 3s;
+            object-position: bottom;
           }
         }
       }
       .icon_img {
         position: absolute;
         top: 70%;
-        right: 45%;
+        right: 43%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
@@ -676,10 +668,10 @@ body {
     .finger_box {
       position: absolute;
       top: 11%;
-      right: 49%;
+      right: 47%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 13%;
       .finger_arrow {
         width: 10%;
@@ -691,31 +683,29 @@ body {
     }
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
-        height: 70vh;
-        overflow: hidden;
-        border-radius: 30px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 55%;
+        height: 100%;
         z-index: 900;
         img {
-          max-width: 100%;
-          transition: all 4s;
-          transition-delay: 0.5s;
-          vertical-align: top;
+          width: 100%;
+          height: 650px;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 30px;
+          transition: 3s all ease;
           &:hover {
-            transform: translateY(-83.5%);
-            transition: all 3s;
+            object-position: bottom;
           }
         }
       }
       .icon_img {
         position: absolute;
         top: 70%;
-        right: 45%;
+        right: 43%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
@@ -801,10 +791,10 @@ body {
     .finger_box {
       position: absolute;
       top: 11%;
-      right: 49%;
+      right: 47%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 13%;
       .finger_arrow {
         width: 10%;
@@ -816,31 +806,29 @@ body {
     }
     .project_wrap {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .slide_cover {
         position: relative;
-        width: 50%;
-        height: 70vh;
-        overflow: hidden;
-        border-radius: 30px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 55%;
+        height: 100%;
         z-index: 900;
         img {
-          max-width: 100%;
-          transition: all 8s;
+          width: 100%;
+          height: 650px;
+          object-fit: cover;
           object-position: top;
+          border-radius: 30px;
+          transition: 3s all ease;
           &:hover {
             object-position: bottom;
-            transform: translateY(-91.3%);
-            transition: all 5s;
           }
         }
       }
       .icon_img {
         position: absolute;
-        top: 70%;
-        right: 45%;
+        top: 65%;
+        right: 43%;
         width: 10%;
         animation: up-down 1.5s infinite ease-in-out alternate;
         z-index: 1000;
@@ -850,7 +838,7 @@ body {
           transform: translatey(0px);
         }
         to {
-          transform: translatey(-40px);
+          transform: translatey(-45px);
         }
       }
       .slide_desc {
@@ -952,8 +940,8 @@ body {
         width: 0;
         background: #fff;
         position: absolute;
-        left: 10%;
-        top: 31.5%;
+        left: 6%;
+        top: 29.5%;
       }
       &::after {
         transition: 3s all;
@@ -964,14 +952,14 @@ body {
         width: 0;
         background: #fff;
         position: absolute;
-        right: 10%;
-        top: 31.5%;
+        right: 6%;
+        top: 29.5%;
       }
     }
     .contact_link_wrap {
       display: flex;
       justify-content: space-between;
-      width: 70%;
+      width: 90%;
       margin: 0 auto;
       padding: 0;
       .contact_link_box {
@@ -1009,8 +997,8 @@ body {
           }
         }
         .contact_link {
-          width: 250px;
-          height: 250px;
+          width: 300px;
+          height: 300px;
           background-color: #fff;
           text-align: center;
           line-height: 80px;
@@ -1038,14 +1026,14 @@ body {
             color: #000;
             transition: 0.8s;
             z-index: 3;
-            font-size: 90px;
+            font-size: 120px;
             padding: 50px 0;
           }
           .link_desc {
             font-size: 18px;
             color: #000;
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 0;
             right: 0;
             z-index: 3;
@@ -1057,7 +1045,7 @@ body {
             font-size: 18px;
             color: #000;
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 0;
             right: 0;
             z-index: 3;
@@ -1113,11 +1101,11 @@ body {
       .contact_tit {
         &::before {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
         &::after {
           opacity: 1;
-          width: 25vw;
+          width: 28vw;
         }
       }
     }
@@ -1341,13 +1329,150 @@ body {
     bottom: -70%;
   }
   .sec2 #about .title .about_tit {
-    font-size: 80px;
+    font-size: 70px;
   }
-  .sec2 #about .title::before {
-    top: 20.5%;
-  }
+  .sec2 #about .title::before,
   .sec2 #about .title::after {
-    top: 20.5%;
+    top: 44.5%;
+  }
+  .sec2 #about .profile_wrap .rolling_text {
+    left: 22%;
+    top: 35%;
+  }
+  .sec2 #about .profile_wrap .profile_txt {
+    width: 60%;
+  }
+  .sec2 #about .profile_wrap .rolling_text .line_text {
+    font-size: 28px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
+    font-size: 28px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
+    width: 35%;
+  }
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_tit {
+    font-size: 18px;
+  }
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_sub {
+    font-size: 18px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box2 li {
+    flex-direction: column;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 70px;
+  }
+  .sec3.active #skill .skill_desc_tit {
+    font-size: 28px;
+    padding: 0;
+  }
+  .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_img_thumb {
+    width: 60%;
+  }
+  .sec4 #goal .finger_box {
+    width: 17%;
+    top: 10%;
+  }
+  .sec4 #goal .finger_box .finger_desc {
+    font-size: 16px;
+  }
+  .sec4 #goal .project_wrap .slide_cover img {
+    height: 600px;
+  }
+  .sec4 #goal .project_wrap .icon_img {
+    top: 75%;
+  }
+  .sec4 #goal .project_wrap .slide_desc .proj_name {
+    font-size: 48px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 16px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 16px;
+  }
+  .sec4 #goal .project_wrap .slide_desc p {
+    font-size: 16px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .site {
+    width: 100%;
+  }
+  .sec4 #goal .project_wrap .slide_desc .site .link {
+    font-size: 18px;
+    width: 110px;
+  }
+  .sec5 #prada .finger_box {
+    width: 17%;
+  }
+  .sec5 #prada .finger_box .finger_desc {
+    font-size: 16px;
+  }
+  .sec5 #prada .project_wrap .icon_img {
+    top: 75%;
+  }
+  .sec5 #prada .project_wrap .slide_desc .proj_name {
+    font-size: 48px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 16px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 16px;
+  }
+  .sec5 #prada .project_wrap .slide_desc p {
+    font-size: 16px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .site {
+    width: 100%;
+  }
+  .sec5 #prada .project_wrap .slide_desc .site .link {
+    font-size: 18px;
+    width: 110px;
+  }
+  .sec6 #ghibli .finger_box {
+    width: 17%;
+  }
+  .sec6 #ghibli .finger_box .finger_desc {
+    font-size: 16px;
+  }
+  .sec6 #ghibli .project_wrap .icon_img {
+    top: 75%;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .proj_name {
+    font-size: 48px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 16px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 16px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc p {
+    font-size: 16px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .site {
+    width: 100%;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .site .link {
+    font-size: 18px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 1024px) {
