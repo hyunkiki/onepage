@@ -482,9 +482,6 @@ body {
       font-weight: bold;
       color: #6137f9;
       padding: 0 10px;
-      opacity: 0;
-      transform: translateX(-40px);
-      transition: 3s;
     }
     .skill_wrap {
       display: flex;
@@ -533,10 +530,6 @@ body {
           width: 28vw;
         }
       }
-      .skill_desc_tit {
-        opacity: 1;
-        transform: translateX(0);
-      }
     }
   }
 }
@@ -562,20 +555,24 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100vh;
       .slide_cover {
         position: relative;
         width: 55%;
-        height: 100%;
+        height: 70%;
         z-index: 900;
-        img {
+        .slide_img {
           width: 100%;
-          height: 650px;
-          object-fit: cover;
-          object-position: top;
+          height: 100%;
           border-radius: 30px;
-          transition: 3s all ease;
+        }
+        .goal_img {
+          background: url(../../images/GOAL.png) no-repeat 0 0;
+          background-size: cover;
+          background-position: top;
+          transition: 4s all ease;
           &:hover {
-            object-position: bottom;
+            background-position: bottom;
           }
         }
       }
@@ -685,20 +682,24 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100vh;
       .slide_cover {
         position: relative;
         width: 55%;
-        height: 100%;
+        height: 70%;
         z-index: 900;
-        img {
+        .slide_img {
           width: 100%;
-          height: 650px;
-          object-fit: cover;
-          object-position: top;
+          height: 100%;
           border-radius: 30px;
-          transition: 3s all ease;
+        }
+        .prada_img {
+          background: url(../../images/prada.png) no-repeat 0 0;
+          background-size: cover;
+          background-position: top;
+          transition: 4s all ease;
           &:hover {
-            object-position: bottom;
+            background-position: bottom;
           }
         }
       }
@@ -808,20 +809,24 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100vh;
       .slide_cover {
         position: relative;
         width: 55%;
-        height: 100%;
+        height: 70%;
         z-index: 900;
-        img {
+        .slide_img {
           width: 100%;
-          height: 650px;
-          object-fit: cover;
-          object-position: top;
+          height: 100%;
           border-radius: 30px;
-          transition: 3s all ease;
+        }
+        .ghibli_img {
+          background: url(../../images/Ghibli.png) no-repeat 0 0;
+          background-size: cover;
+          background-position: top;
+          transition: 5s all ease;
           &:hover {
-            object-position: bottom;
+            background-position: bottom;
           }
         }
       }
@@ -931,18 +936,9 @@ body {
       font-size: 120px;
       color: #fff;
       font-family: "Poetsen One", sans-serif;
-      &::before {
-        transition: 3s all;
-        transform: translateY(0px);
-        opacity: 0;
-        content: "";
-        height: 2px;
-        width: 0;
-        background: #fff;
-        position: absolute;
-        left: 6%;
-        top: 29.5%;
-      }
+      position: relative;
+      margin: 50px 0;
+      &::before,
       &::after {
         transition: 3s all;
         transform: translateY(0px);
@@ -952,8 +948,14 @@ body {
         width: 0;
         background: #fff;
         position: absolute;
-        right: 6%;
-        top: 29.5%;
+        top: 53.5%;
+      }
+
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
       }
     }
     .contact_link_wrap {
@@ -1336,8 +1338,8 @@ body {
     top: 44.5%;
   }
   .sec2 #about .profile_wrap .rolling_text {
-    left: 22%;
-    top: 35%;
+    left: 21%;
+    top: 34%;
   }
   .sec2 #about .profile_wrap .profile_txt {
     width: 60%;
@@ -1388,7 +1390,6 @@ body {
   }
   .sec4 #goal .finger_box {
     width: 17%;
-    top: 10%;
   }
   .sec4 #goal .finger_box .finger_desc {
     font-size: 16px;
@@ -1474,10 +1475,225 @@ body {
     font-size: 18px;
     width: 110px;
   }
+  .sec7 #contact .contact_tit {
+    font-size: 90px;
+  }
+  .sec7 #contact .contact_link_wrap {
+    margin: 0;
+    width: 100%;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+    width: 240px;
+    height: 240px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
+    font-size: 90px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .inner {
-    padding: 0 50px;
+    padding: 0 60px;
+  }
+  #jumbotron .word_box {
+    font-size: 120px;
+  }
+  #jumbotron .word:nth-of-type(2) {
+    font-size: 140px;
+  }
+  #jumbotron .min_box .min_title h1 {
+    font-size: 35px;
+  }
+  .sec2 #about .title {
+    margin: 80px 0;
+  }
+  .sec2 #about .title .about_tit {
+    font-size: 50px;
+  }
+  .sec2 #about .profile_wrap {
+    justify-content: space-evenly;
+  }
+  .sec2 #about .profile_wrap .profile_txt {
+    width: 65%;
+  }
+  .sec2 #about .profile_wrap .rolling_text {
+    left: 20%;
+    top: 38%;
+    padding: 0 20px;
+  }
+  .sec2 #about .profile_wrap .rolling_text .line_text {
+    font-size: 26px;
+  }
+  .sec2 #about .profile_wrap .profile_img {
+    width: 35%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap {
+    justify-content: space-around;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box:first-child {
+    width: 30%;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .box2 li {
+    margin-bottom: 10px;
+  }
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_tit {
+    font-size: 16px;
+  }
+  .sec2
+    #about
+    .profile_wrap
+    .profile_txt
+    .txt_wrap
+    .txt_box
+    .box
+    li
+    .profile_smail_sub {
+    font-size: 16px;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 50px;
+  }
+  .sec3.active #skill .skill_desc_tit {
+    font-size: 26px;
+  }
+  .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_img_thumb {
+    width: 50%;
+  }
+  .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_tit {
+    font-size: 16px;
+  }
+  .sec4 #goal .finger_box {
+    display: none;
+  }
+  .sec4 #goal .project_wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sec4 #goal .project_wrap .icon_img {
+    top: 45%;
+    right: 5%;
+    width: 15%;
+  }
+  .sec4 #goal .project_wrap .slide_cover {
+    width: 100%;
+    margin-top: 20px;
+    height: 55%;
+  }
+  .sec4 #goal .project_wrap .slide_desc {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .proj_name {
+    font-size: 46px;
+  }
+  .sec4 #goal .project_wrap .slide_desc p {
+    display: none;
+  }
+  .sec4 #goal .project_wrap .slide_desc .site {
+    margin-top: 20px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .site .link {
+    width: 100%;
+  }
+  .sec5 #prada .finger_box {
+    display: none;
+  }
+  .sec5 #prada .project_wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sec5 #prada .project_wrap .icon_img {
+    top: 45%;
+    right: 5%;
+    width: 15%;
+  }
+  .sec5 #prada .project_wrap .slide_cover {
+    width: 100%;
+    margin-top: 20px;
+    height: 55%;
+  }
+  .sec5 #prada .project_wrap .slide_desc {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .proj_name {
+    font-size: 46px;
+  }
+  .sec5 #prada .project_wrap .slide_desc p {
+    display: none;
+  }
+  .sec5 #prada .project_wrap .slide_desc .site {
+    margin-top: 20px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .site .link {
+    width: 100%;
+  }
+
+  .sec6 #ghibli .finger_box {
+    display: none;
+  }
+  .sec6 #ghibli .project_wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sec6 #ghibli .project_wrap .icon_img {
+    top: 45%;
+    right: 5%;
+    width: 15%;
+  }
+  .sec6 #ghibli .project_wrap .slide_cover {
+    width: 100%;
+    margin-top: 20px;
+    height: 55%;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sec6 #ghibli.project_wrap .slide_desc .proj_name {
+    font-size: 46px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc p {
+    display: none;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .site {
+    margin-top: 20px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .site .link {
+    width: 100%;
+  }
+  .sec7 #contact .contact_tit {
+    font-size: 60px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+    width: 180px;
+    height: 180px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
+    font-size: 60px;
+    padding: 40px 0;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+    font-size: 16px;
+    top: 45%;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
+    font-size: 16px;
+    top: 45%;
   }
 }
 @media screen and (max-width: 768px) {
