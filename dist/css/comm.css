@@ -447,13 +447,24 @@ body {
   color: #6137f9;
   margin: 0;
 }
-.sec3 #skill .skill_desc_tit {
+.sec3 #skill .skill_desc_box {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+.sec3 #skill .skill_desc_box .skill_desc_tit {
   display: block;
   font-size: 30px;
   font-family: "Fugaz One", sans-serif;
   font-weight: bold;
   color: #6137f9;
-  padding: 0 10px;
+  margin: 0;
+}
+.sec3 #skill .skill_desc_box .skill_desc {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .sec3 #skill .skill_wrap {
   display: flex;
@@ -1248,7 +1259,9 @@ body {
   }
   .sec3.active #skill .skill_desc_tit {
     font-size: 28px;
-    padding: 0;
+  }
+  .sec3 #skill .skill_desc_box .skill_desc {
+    font-size: 18px;
   }
   .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_img_thumb {
     width: 60%;
@@ -1419,6 +1432,9 @@ body {
   .sec3.active #skill .skill_desc_tit {
     font-size: 26px;
   }
+  .sec3 #skill .skill_desc_box .skill_desc {
+    font-size: 16px;
+  }
   .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_img_thumb {
     width: 50%;
   }
@@ -1430,17 +1446,16 @@ body {
   }
   .sec4 #goal .project_wrap {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
   .sec4 #goal .project_wrap .icon_img {
-    top: 45%;
+    top: 42%;
     right: 5%;
     width: 15%;
   }
   .sec4 #goal .project_wrap .slide_cover {
     width: 100%;
-    margin-top: 20px;
-    height: 55%;
+    height: 50%;
   }
   .sec4 #goal .project_wrap .slide_desc {
     width: 100%;
@@ -1451,6 +1466,12 @@ body {
   }
   .sec4 #goal .project_wrap .slide_desc p {
     display: none;
+  }
+  .sec4 #goal .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 18px;
+  }
+  .sec4 #goal .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 18px;
   }
   .sec4 #goal .project_wrap .slide_desc .site {
     margin-top: 20px;
@@ -1463,17 +1484,16 @@ body {
   }
   .sec5 #prada .project_wrap {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
   .sec5 #prada .project_wrap .icon_img {
-    top: 45%;
+    top: 42%;
     right: 5%;
     width: 15%;
   }
   .sec5 #prada .project_wrap .slide_cover {
     width: 100%;
-    margin-top: 20px;
-    height: 55%;
+    height: 50%;
   }
   .sec5 #prada .project_wrap .slide_desc {
     width: 100%;
@@ -1484,6 +1504,12 @@ body {
   }
   .sec5 #prada .project_wrap .slide_desc p {
     display: none;
+  }
+  .sec5 #prada .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 18px;
+  }
+  .sec5 #prada .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 18px;
   }
   .sec5 #prada .project_wrap .slide_desc .site {
     margin-top: 20px;
@@ -1496,17 +1522,16 @@ body {
   }
   .sec6 #ghibli .project_wrap {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
   .sec6 #ghibli .project_wrap .icon_img {
-    top: 45%;
+    top: 42%;
     right: 5%;
     width: 15%;
   }
   .sec6 #ghibli .project_wrap .slide_cover {
     width: 100%;
-    margin-top: 20px;
-    height: 55%;
+    height: 50%;
   }
   .sec6 #ghibli .project_wrap .slide_desc {
     width: 100%;
@@ -1517,6 +1542,12 @@ body {
   }
   .sec6 #ghibli .project_wrap .slide_desc p {
     display: none;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 18px;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 18px;
   }
   .sec6 #ghibli .project_wrap .slide_desc .site {
     margin-top: 20px;
@@ -1546,11 +1577,97 @@ body {
 }
 @media screen and (max-width: 768px) {
   .inner {
-    padding: 0 50px;
+    padding: 0 40px;
   }
-}
-@media screen and (max-width: 600px) {
-  .inner {
-    padding: 0 25px;
+  #jumbotron .word_box {
+    font-size: 100px;
+  }
+  #jumbotron .word:nth-of-type(2) {
+    font-size: 120px;
+  }
+  #jumbotron .min_box .min_title h1 {
+    font-size: 30px;
+  }
+  #jumbotron .min_box .min_role p {
+    font-size: 16px;
+  }
+  .sec2 #about .title .about_tit {
+    font-size: 30px;
+  }
+  .sec2 #about .title {
+    margin: 100px 0;
+  }
+  .sec2 #about .profile_wrap {
+    flex-direction: column;
+  }
+  .sec2 #about .profile_wrap .rolling_text {
+    left: 48%;
+    top: 26%;
+    padding: 0 10px;
+  }
+  .sec2 #about .profile_wrap .rolling_text .line_text {
+    font-size: 24px;
+  }
+  .sec2 #about .profile_wrap .profile_txt {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap .txt_box .big_tit {
+    font-size: 24px;
+  }
+  .sec2 #about .profile_wrap .profile_txt .txt_wrap {
+    justify-content: space-between;
+  }
+  .sec3 #skill .title .skill_tit {
+    font-size: 30px;
+  }
+  .sec3.active #skill .skill_desc_tit {
+    font-size: 24px;
+  }
+  .sec3 #skill .skill_desc_box {
+    width: 50%;
+  }
+  .sec3 #skill .skill_wrap .skill_box .skill_icon .icon_img_thumb {
+    width: 40%;
+  }
+  .sec4 #goal .project_wrap .slide_cover {
+    height: 40%;
+  }
+  .sec4 #goal .project_wrap .icon_img {
+    top: 38%;
+  }
+  .sec4 #goal .project_wrap .slide_desc .proj_name {
+    font-size: 44px;
+  }
+  .sec5 #prada .project_wrap .slide_cover {
+    height: 40%;
+  }
+  .sec5 #prada .project_wrap .icon_img {
+    top: 38%;
+  }
+  .sec5 #prada .project_wrap .slide_desc .proj_name {
+    font-size: 44px;
+  }
+  .sec6 #ghibli .project_wrap .slide_cover {
+    height: 40%;
+  }
+  .sec6 #ghibli .project_wrap .icon_img {
+    top: 35%;
+  }
+  .sec6 #ghibli .project_wrap .slide_desc .proj_name {
+    font-size: 44px;
+  }
+  .sec7 #contact .contact_tit {
+    font-size: 30px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+    width: 140px;
+    height: 140px;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+    display: none;
+  }
+  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
+    display: none;
   }
 }/*# sourceMappingURL=comm.css.map */
