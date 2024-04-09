@@ -517,8 +517,17 @@ body {
           align-items: center;
           .icon_img_thumb {
             width: 80%;
+            animation: icon_move 0.8s linear infinite alternate;
             .icon_img {
               width: 100%;
+            }
+          }
+          @keyframes icon_move {
+            0% {
+              transform: translateY(0) rotate(0);
+            }
+            100% {
+              transform: translateY(-5px) rotate(-10deg);
             }
           }
           .icon_tit {
