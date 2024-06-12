@@ -944,6 +944,141 @@ body {
   }
 }
 .sec7 {
+  #kanu {
+    .finger_box {
+      position: absolute;
+      top: 11%;
+      right: 47%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 13%;
+      .finger_arrow {
+        width: 10%;
+      }
+      .finger_desc {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+    .project_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      .slide_cover {
+        position: relative;
+        width: 55%;
+        height: 70%;
+        z-index: 900;
+        .slide_img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+        }
+        .kanu_img {
+          background: url(../../images/KANU.png) no-repeat 0 0;
+          background-size: cover;
+          background-position: top;
+          transition: 5s all ease;
+          &:hover {
+            background-position: bottom;
+          }
+        }
+      }
+      .icon_img {
+        position: absolute;
+        top: 65%;
+        right: 43%;
+        width: 10%;
+        animation: up-down 1.5s infinite ease-in-out alternate;
+        z-index: 1000;
+      }
+      @keyframes up-down {
+        from {
+          transform: translatey(0px);
+        }
+        to {
+          transform: translatey(-45px);
+        }
+      }
+      .slide_desc {
+        width: 40%;
+        .proj_name {
+          font-size: 50px;
+          font-family: "Fugaz One", sans-serif;
+          color: #22de1b;
+          margin: 0;
+        }
+        .desc {
+          padding: 0;
+          li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            line-height: 2em;
+            .info_tit {
+              display: inline-block;
+              min-width: 120px;
+              color: #22de1b;
+              font-size: 18px;
+              font-weight: 700;
+            }
+            .info_exp {
+              color: #fff;
+              font-size: 18px;
+            }
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+        .site {
+          list-style-type: none;
+          width: 70%;
+          display: flex;
+          margin-top: 50px;
+          .link {
+            position: relative;
+            display: block;
+            width: 130px;
+            background: #106d0d;
+            text-align: center;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 20px 0px;
+            margin-right: 20px;
+            &::before {
+              position: absolute;
+              content: "\f061";
+              font-family: "Line Awesome Free";
+              font-weight: 900;
+              font-size: 20px;
+              color: #fff;
+              right: 0;
+              top: 20px;
+              opacity: 0;
+              height: 100%;
+              width: 40px;
+              transition: all 0.3s linear 0s;
+            }
+            &:hover {
+              text-indent: -20px;
+              &:before {
+                opacity: 1;
+                text-indent: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sec8 {
   #contact {
     .contact_tit {
       display: flex;
