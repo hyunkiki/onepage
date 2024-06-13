@@ -942,7 +942,7 @@ body {
 }
 .sec7 #kanu .project_wrap .icon_img {
   position: absolute;
-  top: 65%;
+  top: 70%;
   right: 43%;
   width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
