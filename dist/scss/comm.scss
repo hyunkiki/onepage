@@ -1634,21 +1634,49 @@ body {
     font-size: 18px;
     width: 110px;
   }
-  .sec7 #contact .contact_tit {
+  .sec7 #kanu .finger_box {
+    width: 17%;
+  }
+  .sec7 #kanu .finger_box .finger_desc {
+    font-size: 16px;
+  }
+  .sec7 #kanu .project_wrap .icon_img {
+    top: 75%;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .proj_name {
+    font-size: 48px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 16px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 16px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc p {
+    font-size: 16px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .site {
+    width: 100%;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .site .link {
+    font-size: 18px;
+    width: 110px;
+  }
+  .sec8 #contact .contact_tit {
     font-size: 90px;
   }
-  .sec7 #contact .contact_link_wrap {
+  .sec8 #contact .contact_link_wrap {
     margin: 0;
     width: 100%;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link {
     width: 240px;
     height: 240px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
     font-size: 90px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
     font-size: 18px;
   }
 }
@@ -1853,22 +1881,62 @@ body {
   .sec6 #ghibli .project_wrap .slide_desc .site .link {
     width: 100%;
   }
-  .sec7 #contact .contact_tit {
+
+  .sec7 #kanu .finger_box {
+    display: none;
+  }
+  .sec7 #kanu .project_wrap {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .sec7 #kanu .project_wrap .icon_img {
+    top: 42%;
+    right: 3%;
+    width: 15%;
+  }
+  .sec7 #kanu .project_wrap .slide_cover {
+    width: 100%;
+    height: 50%;
+  }
+  .sec7 #kanu .project_wrap .slide_desc {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .proj_name {
+    font-size: 46px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc p {
+    display: none;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .desc li .info_tit {
+    font-size: 18px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .desc li .info_exp {
+    font-size: 18px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .site {
+    margin-top: 20px;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .site .link {
+    width: 100%;
+  }
+
+  .sec8 #contact .contact_tit {
     font-size: 60px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link {
     width: 180px;
     height: 180px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .icon {
     font-size: 60px;
     padding: 40px 0;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
     font-size: 16px;
     top: 45%;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
     font-size: 16px;
     top: 45%;
   }
@@ -1955,17 +2023,28 @@ body {
   .sec6 #ghibli .project_wrap .slide_desc .proj_name {
     font-size: 44px;
   }
-  .sec7 #contact .contact_tit {
+
+  .sec7 #kanu .project_wrap .slide_cover {
+    height: 40%;
+  }
+  .sec7 #kanu .project_wrap .icon_img {
+    top: 40%;
+  }
+  .sec7 #kanu .project_wrap .slide_desc .proj_name {
+    font-size: 44px;
+  }
+
+  .sec8 #contact .contact_tit {
     font-size: 30px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link {
     width: 140px;
     height: 140px;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
     display: none;
   }
-  .sec7 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
+  .sec8 #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
     display: none;
   }
 }
